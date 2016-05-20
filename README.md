@@ -24,6 +24,7 @@ A curated list of collision detection resources
 ## Useful Links
 
 * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
+* [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
