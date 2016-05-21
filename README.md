@@ -8,7 +8,7 @@ A curated list of collision detection resources
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
-## [Libraries]](#awesome-collision-detection)
+## [Libraries](#awesome-collision-detection)
 
 **Active**
 
