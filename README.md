@@ -4,10 +4,11 @@ A curated list of collision detection resources
 
 #### Table of Contents
 * [Libraries](#libraries)
+* [Articles](#articles)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
-## Libraries
+## [Libraries]](#awesome-collision-detection)
 
 **Active**
 
@@ -21,7 +22,7 @@ A curated list of collision detection resources
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
 
-## Articles
+## [Articles](#awesome-collision-detection)
 
 * Narrow-phase
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
