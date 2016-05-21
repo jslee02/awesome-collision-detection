@@ -21,10 +21,15 @@ A curated list of collision detection resources
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
 
-## Useful Links
+## Articles
 
-* [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
-* [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
+* Narrow-phase
+  * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
+  
+* Space partitioning
+
+  * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
+  * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
