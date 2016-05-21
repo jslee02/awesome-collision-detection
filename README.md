@@ -5,6 +5,7 @@ A curated list of collision detection resources
 #### Table of Contents
 * [Libraries](#libraries)
 * [Articles](#articles)
+* [Books](#books)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
@@ -21,6 +22,10 @@ A curated list of collision detection resources
 
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
+
+## [Books](#awesome-collision-detection)
+
+* [Real-Time Collision Detection](http://www.amazon.com/Real-Time-Collision-Detection-Interactive-Technology/dp/1558607323/ref=sr_1_1?s=books&ie=UTF8&qid=1463804277&sr=1-1&keywords=real+time+collision+detection) 2004
 
 ## [Articles](#awesome-collision-detection)
 
