@@ -26,7 +26,8 @@ A curated list of collision detection open resources
 
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
-* [GIMPACT](http://gimpact.sourceforge.net/)
+* [GIMPACT](http://gimpact.sourceforge.net/) - A software library with tools for geometry processing and collision detection, focused on solving most common problems on Virtual Reality development.
+* [SOLID](http://solid.sourceforge.net/) -  A library for collision detection of 3D objects undergoing rigid motion and deformation designed for interactive 3D graphics applications.
 
 ## [Books](#awesome-collision-detection)
 
