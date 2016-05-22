@@ -31,7 +31,7 @@ A curated list of collision detection resources
 
 * Narrow-phase
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
-  * [3D Collision detection c++](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
+  * [3D Collision detection](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
   
 * Space partitioning
 
