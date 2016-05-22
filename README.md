@@ -26,6 +26,7 @@ A curated list of collision detection open resources
 
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
+* [GIMPACT](http://gimpact.sourceforge.net/)
 
 ## [Books](#awesome-collision-detection)
 
@@ -36,6 +37,7 @@ A curated list of collision detection open resources
 * Narrow-phase
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
   * [3D Collision detection](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
+  * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
   
 * Space partitioning
 
