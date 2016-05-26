@@ -49,6 +49,10 @@ A curated list of collision detection open resources
   * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
   * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
 
+* Mesh collision
+
+  * K. Hauser, [Robust contact generation for robot simulation with unstructured meshes](http://motion.pratt.duke.edu/simulation/index.html), ISRR 2013  ([pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf)) 
+
 ## [Other Awesome Lists](#awesome-collision-detection)
 
 * [Awesome Robotics Libraries](https://github.com/jslee02/awesome-robotics-libraries) - This is a list of various libraris and software for robotics. It's also attempting to provide some comparisons for selected libraries and software.
