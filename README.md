@@ -37,8 +37,10 @@ A curated list of collision detection open resources
 ## [Articles](#awesome-collision-detection)
 
 * Narrow-phase
+
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
   * [3D Collision detection](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
+  * [Collision Detection](http://www.jeffreythompson.org/collision-detection/) ([code]()) by Jeff Thompson - This book explains the algorithms behind those collisions using basic shapes like circles, rectangles, and lines so you can implement them into your own projects.
   * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
   
 * Space partitioning
