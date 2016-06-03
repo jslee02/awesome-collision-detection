@@ -22,7 +22,7 @@ A curated list of collision detection open resources
 * [ReactPhysics3d](http://www.reactphysics3d.com/) ([github](https://github.com/DanielChappuis/reactphysics3d)) - An open source C++ physics engine library that can be used in 3D simulations and games.
 * qu3e ([github](https://github.com/RandyGaul/qu3e)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
 
-> Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection feature, but they can be used just as a collision detection library.
+> Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection feature, but they can be used just as collision detection libraries.
 
 **Inactive**
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
