@@ -64,6 +64,7 @@ A curated list of collision detection open resources
   * Faster cover tree
     * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
     * https://github.com/manzilzaheer/CoverTree
+  * [FLANN - Fast Library for Approximate Nearest Neighbors](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/mariusmuja/flann)) 
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
