@@ -57,7 +57,13 @@ A curated list of collision detection open resources
 
 * Nearest neighbor
   
-  * [Cover Tree for Nearest Neighbor caclulations](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) by Alina Beygelzimer et al, ICML 2006.
+  * Cover tree
+    * [Wikipedia](https://en.wikipedia.org/wiki/Cover_tree)
+    * [Cover Tree for Nearest Neighbor caclulations](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) by Alina Beygelzimer et al, ICML 2006.
+    * https://github.com/DNCrane/Cover-Tree
+  * Faster cover tree
+    * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
+    * https://github.com/manzilzaheer/CoverTree
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
