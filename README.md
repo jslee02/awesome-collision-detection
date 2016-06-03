@@ -53,7 +53,11 @@ A curated list of collision detection open resources
 
 * Mesh collision
 
-  * K. Hauser, [Robust contact generation for robot simulation with unstructured meshes](http://motion.pratt.duke.edu/simulation/index.html), ISRR 2013  ([pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf)) 
+  * K. Hauser, [Robust contact generation for robot simulation with unstructured meshes](http://motion.pratt.duke.edu/simulation/index.html), ISRR 2013  ([pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf))
+
+* Nearest neighbor
+  
+  * [Cover Tree for Nearest Neighbor caclulations](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) by Alina Beygelzimer et al, ICML 2006.
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
