@@ -44,7 +44,7 @@ A curated list of collision detection open resources
   * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
 
 * Triangle-triangle test
-  * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al.
+  * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. ([pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf) | [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp))
   * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al.
 
 * Space partitioning
