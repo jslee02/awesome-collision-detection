@@ -44,7 +44,7 @@ A curated list of collision detection open resources
   * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
 
 * Triangle-triangle test
-  * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al.
+  * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. ([pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf))
   * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. ([pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf) | [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp))
   * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. ([pdf](https://hal.inria.fr/inria-00072100/document) | [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h))
   * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. ([pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf) | [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c))
