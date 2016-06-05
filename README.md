@@ -54,6 +54,7 @@ A curated list of collision detection open resources
 
 * Space partitioning
 
+  * [Benchmark of various spatial data structures for collision detection](https://github.com/ttvd/spatial-collision-datastructures)
   * Bounding volume heirarchy
     * [Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring](http://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf) ([paper](http://dl.acm.org/citation.cfm?id=2790065), [code](https://github.com/leonardo-domingues/atrbvh)) by Leonardo R. Domingues and Helio Pedrini.
     * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
