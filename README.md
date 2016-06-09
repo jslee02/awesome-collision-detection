@@ -36,6 +36,10 @@ A curated list of collision detection open resources
 
 ## [Articles](#awesome-collision-detection)
 
+* Framework
+
+  * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf) by Erwin Coumans
+
 * Narrow-phase
 
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
