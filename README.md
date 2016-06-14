@@ -36,6 +36,9 @@ A curated list of collision detection open resources
 
 ## [Articles](#awesome-collision-detection)
 
+* Overview
+  * [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by [Nilson Souto](https://www.toptal.com/resume/nilson-souto)
+
 * Framework
 
   * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf) by Erwin Coumans
@@ -54,7 +57,6 @@ A curated list of collision detection open resources
     * [A failure case was reported in SO](http://stackoverflow.com/a/29563443/3122234).
   * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. ([pdf](https://hal.inria.fr/inria-00072100/document) | [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h))
   * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. ([pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf) | [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c))
-
 
 * Space partitioning
 
