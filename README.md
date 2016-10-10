@@ -42,6 +42,7 @@ A curated list of collision detection open resources
 * Framework
 
   * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf) by Erwin Coumans
+  * [OpenCL accelerated rigid body and collision detection](http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf) by Erwin Coumans
 
 * Narrow-phase
 
