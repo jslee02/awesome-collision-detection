@@ -40,8 +40,8 @@ A curated list of collision detection open resources
 
   * [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by [Nilson Souto](https://www.toptal.com/resume/nilson-souto)
   * [GPU Rigid Body Simulation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC2013_ErwinCoumans_GPU_rigid_body_simulation.pdf) (GDC 2013), Erwin Coumans
-  * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf), Erwin Coumans
   * [OpenCL accelerated rigid body and collision detection](http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf) (RSS 2011), Erwin Coumans
+  * [Contact Generation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC10_Coumans_Erwin_Contact.pdf) (GDC 2010), Erwin Coumans
 
 * Narrow-phase
 
