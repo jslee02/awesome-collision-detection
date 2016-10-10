@@ -36,13 +36,12 @@ A curated list of collision detection open resources
 
 ## [Articles](#awesome-collision-detection)
 
-* Overview
+* Overview & Tutorial
+
   * [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by [Nilson Souto](https://www.toptal.com/resume/nilson-souto)
-
-* Framework
-
-  * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf) by Erwin Coumans
-  * [OpenCL accelerated rigid body and collision detection](http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf) by Erwin Coumans
+  * [GPU Rigid Body Simulation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC2013_ErwinCoumans_GPU_rigid_body_simulation.pdf) (GDC 2013), Erwin Coumans
+  * [Contact Generation](bullet.googlecode.com/files/GDC10_Coumans_Erwin_Contact.pdf), Erwin Coumans
+  * [OpenCL accelerated rigid body and collision detection](http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf) (RSS 2011), Erwin Coumans
 
 * Narrow-phase
 
@@ -52,6 +51,7 @@ A curated list of collision detection open resources
   * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
 
 * Triangle-triangle test
+
   * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
   * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. ([pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf))
   * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. ([pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf) | [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp))
