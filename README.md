@@ -72,6 +72,10 @@ A curated list of collision detection open resources
 
   * K. Hauser, [Robust contact generation for robot simulation with unstructured meshes](http://motion.pratt.duke.edu/simulation/index.html), ISRR 2013  ([pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf))
 
+* Penetration depth computation
+
+  * C. Je, M. Tang, Y. Lee, M. Lee, and Y Kim, PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection, TOG 2012 ([pdf](https://arxiv.org/pdf/1508.06181v1.pdf))
+
 * Nearest neighbor
   
   * Cover tree
