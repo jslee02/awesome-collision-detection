@@ -13,14 +13,14 @@ A curated list of collision detection open resources
 
 **Active**
 
-* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Collision Detection and Physics Simulation
+* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - Collision Detection and Physics Simulation
 * [ColDet](https://sourceforge.net/projects/coldet/) - A collision detection library for generic polyhedra.
-* [FCL](https://github.com/flexible-collision-library/fcl) ([github](https://github.com/flexible-collision-library/fcl)) - Flexible Collision Library.
-* [libccd](https://github.com/danfis/libccd) ([github](https://github.com/danfis/libccd)) - Library for collision detection between two convex shapes.
+* [FCL](https://github.com/flexible-collision-library/fcl) ([github](https://github.com/flexible-collision-library/fcl) ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000)) - Flexible Collision Library.
+* [libccd](https://github.com/danfis/libccd) ([github](https://github.com/danfis/libccd) ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000)) - Library for collision detection between two convex shapes.
 * [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
 * [OZCollide](http://www.tsarevitch.org/ozcollide/) - A fast, complete and free collision detection library.
-* [ReactPhysics3d](http://www.reactphysics3d.com/) ([github](https://github.com/DanielChappuis/reactphysics3d)) - An open source C++ physics engine library that can be used in 3D simulations and games.
-* qu3e ([github](https://github.com/RandyGaul/qu3e)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
+* [ReactPhysics3d](http://www.reactphysics3d.com/) ([github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000)) - An open source C++ physics engine library that can be used in 3D simulations and games.
+* qu3e ([github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
 
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection feature, but they can be used just as collision detection libraries.
 
