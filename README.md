@@ -43,6 +43,9 @@ A curated list of collision detection open resources
   * [OpenCL accelerated rigid body and collision detection](http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf) (RSS 2011), Erwin Coumans
   * [Contact Generation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC10_Coumans_Erwin_Contact.pdf) (GDC 2010), Erwin Coumans
 
+* Benchmark
+  * [spatial-collision-datastructures](https://github.com/ttvd/spatial-collision-datastructures) - Benchmark of various spatial data structures for collision detection.
+
 * Narrow-phase
 
   * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
