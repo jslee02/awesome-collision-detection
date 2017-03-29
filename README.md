@@ -19,11 +19,11 @@ A curated list of collision detection open resources
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
 | [ColDet](https://sourceforge.net/projects/coldet/) | (todo) | (todo) | (todo) | (todo) | (todo) | (todo) |
-| [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/flexible-collision-library/fcl) ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
-| [libccd](https://github.com/danfis/libccd) | (todo) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/danfis/libccd) ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000) |
+| [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
+| [libccd](https://github.com/danfis/libccd) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/danfis/libccd) | ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000) |
 | [ODE](http://www.ode.org/) | (todo) | (todo) | (todo) | C++, [Python](http://pyode.sourceforge.net/) | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
 | [OZCollide](http://www.tsarevitch.org/ozcollide/) | (todo) | (todo) | (todo) | (todo) | (todo) | (todo) |
-| [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
+| [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
 | qu3e | (todo) | (todo) | (todo) | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection features, but they can be used just as collision detection libraries.
