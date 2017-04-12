@@ -28,8 +28,9 @@ A curated list of collision detection open resources
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection features, but they can be used just as collision detection libraries.
 
 **Inactive**
-* [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
 * [GIMPACT](http://gimpact.sourceforge.net/) - A software library with tools for geometry processing and collision detection, focused on solving most common problems on Virtual Reality development.
+* [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
+* OZCollide [[github](https://github.com/jslee02/OZCollide) (unofficial repo)]
 * [SOLID](http://solid.sourceforge.net/) -  A library for collision detection of 3D objects undergoing rigid motion and deformation designed for interactive 3D graphics applications.
 
 ## [Books](#awesome-collision-detection)
