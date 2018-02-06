@@ -19,7 +19,7 @@ A curated list of collision detection open resources
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | [BEPUphysics 1](http://www.bepuphysics.com/) | (todo) | (todo) | C#, .NET | Apache v2 | [github](https://github.com/bepu/bepuphysics1) | ![BEPUphysics 1](https://img.shields.io/github/stars/bepu/bepuphysics1.svg?style=social&label=Star&maxAge=2592000) |
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
-| ColDet | (todo) | (todo) | C++ | LGPL-2.0 | [sourceforge](https://sourceforge.net/projects/coldet/) | (todo) |
+| ColDet | (todo) | (todo) | C++ | LGPL-2.0 | [sourceforge](https://sourceforge.net/projects/coldet/) | |
 | collision-rs | (todo) | (todo) | rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![rustgd/collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
 | [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | C++ | BSD-3-Clause | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
 | [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![JitterPhysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
