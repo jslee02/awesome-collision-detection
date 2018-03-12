@@ -4,8 +4,9 @@ A curated list of collision detection open resources
 
 #### Table of Contents
 * [Libraries](#libraries)
-* [Articles](#articles)
+* [Papers](#papers)
 * [Books](#books)
+* [Articles](#articles)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
@@ -40,6 +41,12 @@ A curated list of collision detection open resources
 ### Mesh Simplication
 
 * [bounding-mesh](http://www.boundingmesh.com/) ([github](https://github.com/gaschler/bounding-mesh) ![bounding-mesh](https://img.shields.io/github/stars/gaschler/bounding-mesh.svg?style=social&label=Star&maxAge=2592000)) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
+
+## [Papers](#awesome-collision-detection)
+
+### Continuous Collision Detection
+
+* Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf) | [video](https://youtu.be/IBZiobGk5-Y)]
 
 ## [Books](#awesome-collision-detection)
 
