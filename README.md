@@ -60,7 +60,7 @@ A curated list of collision detection open resources
 
 #### Penetration Depth Computation
 
-* PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al. ([pdf](https://arxiv.org/pdf/1508.06181v1.pdf))
+* PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al. [[pdf](https://arxiv.org/pdf/1508.06181v1.pdf)]
 
 #### Continuous Collision Detection
 
@@ -68,7 +68,7 @@ A curated list of collision detection open resources
 
 #### Nearest Neighbor
 
-* Faster cover tree (2015), M. Izbicki et al. [[pdf](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf)|[code](https://github.com/manzilzaheer/CoverTree)]
+* Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf)|[code](https://github.com/manzilzaheer/CoverTree)]
 * Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann_visapp09.pdf)|[code](https://github.com/mariusmuja/flann)]
 * Cover Tree for Nearest Neighbor caclulations (2006), A. Beygelzimer et al. [[web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html)|[code](https://github.com/DNCrane/Cover-Tree)]
 
