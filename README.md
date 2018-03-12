@@ -57,7 +57,7 @@ A curated list of collision detection open resources
 
 #### Mesh Collision
 
-* [Robust contact generation for robot simulation with unstructured meshes](http://motion.pratt.duke.edu/simulation/index.html) (2013), K. Hauser. [[pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf)]
+* Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.pratt.duke.edu/simulation/index.html)]
 
 #### Penetration Depth Computation
 
