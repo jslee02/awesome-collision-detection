@@ -66,6 +66,8 @@ A curated list of collision detection open resources
 #### Proximity Query / Signed Distance Field
 
 * Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]
+* Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]
+* Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic. [[pdf](https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf)]
 * Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al. [[pdf](https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf), [web](http://gamma.cs.unc.edu/SSV/)]
 
 #### Continuous Collision Detection
@@ -81,6 +83,15 @@ A curated list of collision detection open resources
 * Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]
 * Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann_visapp09.pdf), [code](https://github.com/mariusmuja/flann)]
 * Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
+
+####  Comprehensive Collision Detection Library
+
+* FCL: A General Purpose Library for Collision and Proximity Queries (2012), J. Pan et al. [[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.2177&rep=rep1&type=pdf), [code](https://github.com/flexible-collision-library/fcl)]
+
+#### Survey
+
+* Collision Detection: A Survey (2007), S. Kockara et al. [[pdf](https://pdfs.semanticscholar.org/250e/296b4b4c1b7ac0229e57d6638fe81188121e.pdf)]
+* 3D collision detection: a survey (2001), P. Jiménez et al. [[pdf](ftp://134.197.33.49/downloads/russell/jimenez_2001_3d_collision_detection_survey.pdf)]
 
 ## [Books](#awesome-collision-detection)
 
