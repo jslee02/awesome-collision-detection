@@ -49,10 +49,10 @@ A curated list of collision detection open resources
 
   * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
   * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]
-  * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf)|[code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]
+  * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf), [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]
     * A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
-  * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document)|[code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
-  * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf)|[code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
+  * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
+  * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
 
 #### Mesh Collision
 
@@ -64,13 +64,13 @@ A curated list of collision detection open resources
 
 #### Continuous Collision Detection
 
-* Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf)|[video](https://youtu.be/IBZiobGk5-Y)]
+* Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf), [video](https://youtu.be/IBZiobGk5-Y)]
 
 #### Nearest Neighbor
 
-* Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf)|[code](https://github.com/manzilzaheer/CoverTree)]
-* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann_visapp09.pdf)|[code](https://github.com/mariusmuja/flann)]
-* Cover Tree for Nearest Neighbor caclulations (2006), A. Beygelzimer et al. [[web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html)|[code](https://github.com/DNCrane/Cover-Tree)]
+* Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]
+* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann_visapp09.pdf), [code](https://github.com/mariusmuja/flann)]
+* Cover Tree for Nearest Neighbor caclulations (2006), A. Beygelzimer et al. [[web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
 
 ## [Books](#awesome-collision-detection)
 
