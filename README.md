@@ -27,6 +27,7 @@ A curated list of collision detection open resources
 | [ncollide](http://ncollide.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/ncollide) | ![sebcrozet/ncollide](https://img.shields.io/github/stars/sebcrozet/ncollide.svg?style=social&label=Star&maxAge=2592000) |
 | [ODE](http://www.ode.org/) | (todo) | (todo) | C++, [Python](http://pyode.sourceforge.net/) | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
 | [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
+| tinyc2 | (todo) | 2d | C/C++ | Zlib | [github](https://github.com/RandyGaul/tinyheaders) | ![RandyGaul/tinyheaders](https://img.shields.io/github/stars/RandyGaul/tinyheaders.svg?style=social&label=Star&maxAge=2592000) |
 | qu3e | (todo) | (todo) | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection features, but they can be used just as collision detection libraries.
