@@ -70,6 +70,7 @@ A curated list of collision detection open resources
 #### Continuous Collision Detection
 
 * Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf), [web](http://graphics.ewha.ac.kr/C2A/)]
+* C2A: Controlled Conservative Advancement for Continuous Collision Detection of Polygonal Models (2009), M. Tang et al. [[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.500.7676&rep=rep1&type=pdf)]
 * Continuous Collision Detection for Articulated Models using Taylor Models and Temporal Culling (2007), X. Zhang et al. [[pdf](https://hal.inria.fr/file/index/docid/390313/filename/SIGGRAPH2007.pdf), [web](http://graphics.ewha.ac.kr/CATCH/)]
 * Interactive continuous collision detection for non-convex polyhedra (2006), X. Zhang et al. [[pdf](https://link.springer.com/content/pdf/10.1007/s00371-006-0060-0.pdf), [web](http://graphics.ewha.ac.kr/FAST/)]
 
