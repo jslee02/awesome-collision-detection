@@ -20,7 +20,6 @@ A curated list of collision detection open resources
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | [BEPUphysics 1](http://www.bepuphysics.com/) | (todo) | (todo) | C#, .NET | Apache v2 | [github](https://github.com/bepu/bepuphysics1) | ![BEPUphysics 1](https://img.shields.io/github/stars/bepu/bepuphysics1.svg?style=social&label=Star&maxAge=2592000) |
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
-| ColDet | (todo) | (todo) | C++ | LGPL-2.0 | [sourceforge](https://sourceforge.net/projects/coldet/) | |
 | collision-rs | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![rustgd/collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
 | [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | C++ | BSD-3-Clause | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
 | [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![JitterPhysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
@@ -33,10 +32,12 @@ A curated list of collision detection open resources
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection features, but they can be used just as collision detection libraries.
 
 **Inactive**
-* [GIMPACT](http://gimpact.sourceforge.net/) - A software library with tools for geometry processing and collision detection, focused on solving most common problems on Virtual Reality development.
+
+* [ColDet](https://sourceforge.net/projects/coldet/) - 3D Collision Detection.
+* [GIMPACT](http://gimpact.sourceforge.net/) - Tools for geometry processing and collision detection.
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
-* OZCollide [[github](https://github.com/jslee02/OZCollide) (unofficial repo)]
-* [SOLID](http://solid.sourceforge.net/) -  A library for collision detection of 3D objects undergoing rigid motion and deformation designed for interactive 3D graphics applications.
+* OZCollide [[github](https://github.com/jslee02/OZCollide)]
+* [SOLID](http://solid.sourceforge.net/) - Collision detection of 3D objects undergoing rigid motion and deformation.
 
 ### Mesh Simplication
 
