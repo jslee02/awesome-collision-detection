@@ -40,9 +40,11 @@ A curated list of collision detection open resources
 * OZCollide [[github](https://github.com/jslee02/OZCollide)]
 * [SOLID](http://solid.sourceforge.net/) - Collision detection of 3D objects undergoing rigid motion and deformation.
 
-### Mesh Simplication
+### Mesh Processing
 
 * [bounding-mesh](http://www.boundingmesh.com/) ([github](https://github.com/gaschler/bounding-mesh) ![bounding-mesh](https://img.shields.io/github/stars/gaschler/bounding-mesh.svg?style=social&label=Star&maxAge=2592000)) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
+* cinolib ([github](https://github.com/mlivesu/cinolib) ![mlivesu/cinolib](https://img.shields.io/github/stars/mlivesu/cinolib.svg?style=social&label=Star&maxAge=2592000)) - A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+* [libigl](https://libigl.github.io/) ([github](https://github.com/libigl/libigl) ![libigl/libigl](https://img.shields.io/github/stars/libigl/libigl.svg?style=social&label=Star&maxAge=2592000)) - A simple C++ geometry processing library.
 
 ## [Papers](#awesome-collision-detection)
 
