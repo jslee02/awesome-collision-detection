@@ -128,6 +128,10 @@ A curated list of collision detection open resources
   * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
   * [Efficient BVH Construction via Approximate Agglomerative Clustering](http://dl.acm.org/citation.cfm?id=2492054) by Yan Gu et al. ([pdf](http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci))
   * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
+  
+#### SDF and mesh interaction
+
+* [Local Optimization for Robust Signed Distance Field Collision](https://mmacklin.com/sdfcontact.pdf) by [Miles Macklin](http://blog.mmacklin.com/), Kenny Erleben, Matthias Müller, Nuttapong Chentanez, Stefan Jeschke, Zach Corse - a new method for collision detection, that allows fast cloth simulation
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
