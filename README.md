@@ -59,7 +59,7 @@ A curated list of collision detection open resources
 
 #### Mesh Collision
 
-* Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](http://motion.pratt.duke.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.pratt.duke.edu/simulation/index.html)]
+* Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.cs.illinois.edu/simulation/index.html)]
 
 #### Penetration Depth Computation
 
@@ -83,7 +83,7 @@ A curated list of collision detection open resources
 #### Nearest Neighbor
 
 * Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]
-* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann_visapp09.pdf), [code](https://github.com/mariusmuja/flann)]
+* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf), [code](https://github.com/mariusmuja/flann)]
 * Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
 
 ####  Comprehensive Collision Detection Library
@@ -93,7 +93,7 @@ A curated list of collision detection open resources
 #### Survey
 
 * Collision Detection: A Survey (2007), S. Kockara et al. [[pdf](https://pdfs.semanticscholar.org/250e/296b4b4c1b7ac0229e57d6638fe81188121e.pdf)]
-* 3D collision detection: a survey (2001), P. Jiménez et al. [[pdf](ftp://134.197.33.49/downloads/russell/jimenez_2001_3d_collision_detection_survey.pdf)]
+* 3D collision detection: a survey (2001), P. Jiménez et al. [[pdf](https://users.soe.ucsc.edu/~pang/161/w06/notes/jtt01.pdf)]
 
 ## [Books](#awesome-collision-detection)
 
@@ -117,7 +117,7 @@ A curated list of collision detection open resources
 
 * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
 * [3D Collision detection](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
-* [Collision Detection](http://www.jeffreythompson.org/collision-detection/) ([code]()) by Jeff Thompson - This book explains the algorithms behind those collisions using basic shapes like circles, rectangles, and lines so you can implement them into your own projects.
+* [Collision Detection](http://www.jeffreythompson.org/collision-detection/) ([code](https://github.com/jeffThompson/CollisionDetection)) by Jeff Thompson - This book explains the algorithms behind those collisions using basic shapes like circles, rectangles, and lines so you can implement them into your own projects.
 * [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
 
 #### Space Partitioning
