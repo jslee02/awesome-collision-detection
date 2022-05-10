@@ -67,6 +67,7 @@ A curated list of collision detection open resources
 
 #### Proximity Query / Signed Distance Field
 
+* Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al. [[pdf](https://mmacklin.com/sdfcontact.pdf), [slides](https://mmacklin.com/sdfcontact_slides.pdf), [video](https://youtu.be/icU6Bm-HZ-E)]
 * Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]
 * Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]
 * Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic. [[pdf](https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf)]
@@ -128,10 +129,6 @@ A curated list of collision detection open resources
   * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
   * [Efficient BVH Construction via Approximate Agglomerative Clustering](http://dl.acm.org/citation.cfm?id=2492054) by Yan Gu et al. ([pdf](http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci))
   * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
-  
-#### SDF and Mesh Interaction
-
-* [Local Optimization for Robust Signed Distance Field Collision](https://mmacklin.com/sdfcontact.pdf) by [Miles Macklin](http://blog.mmacklin.com/), Kenny Erleben, Matthias Müller, Nuttapong Chentanez, Stefan Jeschke, Zach Corse - a new method for collision detection, that allows fast cloth simulation
 
 ## [Other Awesome Lists](#awesome-collision-detection)
 
