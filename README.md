@@ -48,6 +48,10 @@ A curated list of collision detection open resources
 
 ## [Papers](#awesome-collision-detection)
 
+#### Collision Detection and Distance Computation
+
+  * A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
+
 #### Triangle-triangle Test
 
   * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
