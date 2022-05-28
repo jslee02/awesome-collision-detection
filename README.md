@@ -22,6 +22,7 @@ A curated list of collision detection open resources
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
 | collision-rs | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![rustgd/collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
 | [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | C++ | BSD-3-Clause | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
+| [HPP-FCL](https://github.com/humanoid-path-planner/hpp-fcl) | Box<br/>Sphere<br/>Cylinder<br/>Capsule<br/>Ellipsoid<br/>Cone<br/>Meshes<br/>Convex Meshes<br/>Height Field | Collision <br/> Distance <br/> Security Margins | C++, Python | BSD-3-Clause | [github](https://github.com/humanoid-path-planner/hpp-fcl) | ![fcl](https://img.shields.io/github/stars/humanoid-path-planner/hpp-fcl.svg?style=social&label=Star&maxAge=2592000) |
 | [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![JitterPhysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
 | [libccd](https://github.com/danfis/libccd) | (todo) | (todo) | C | BSD-3-Clause | [github](https://github.com/danfis/libccd) | ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000) |
 | [ncollide](http://ncollide.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/ncollide) | ![sebcrozet/ncollide](https://img.shields.io/github/stars/sebcrozet/ncollide.svg?style=social&label=Star&maxAge=2592000) |
@@ -48,14 +49,19 @@ A curated list of collision detection open resources
 
 ## [Papers](#awesome-collision-detection)
 
+#### Collision Detection and Distance Computation
+
+* A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
+* Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
+
 #### Triangle-triangle Test
 
-  * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
-  * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]
-  * A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf), [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]
-    * A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
-  * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
-  * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
+* A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
+* Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]
+* A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf), [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]
+  * A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
+* Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
+* A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
 
 #### Mesh Collision
 
