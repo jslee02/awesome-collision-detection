@@ -57,7 +57,7 @@ A curated list of collision detection open resources
 
 #### Differentiable Collision Detection
 
-* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)
+* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)]
 
 #### Triangle-triangle Test
 
