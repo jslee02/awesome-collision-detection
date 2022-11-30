@@ -54,6 +54,11 @@ A curated list of collision detection open resources
 * A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
 * Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
 
+
+#### Differentiable Collision Detection
+
+* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)
+
 #### Triangle-triangle Test
 
 * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
