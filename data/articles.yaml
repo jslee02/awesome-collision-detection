@@ -1,0 +1,73 @@
+- name: 'Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects'
+  url: https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects
+  description: by [Nilson Souto](https://www.toptal.com/resume/nilson-souto)
+  _subsection: Overview & Tutorial
+- name: GPU Rigid Body Simulation
+  url: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC2013_ErwinCoumans_GPU_rigid_body_simulation.pdf
+  description: (GDC 2013), Erwin Coumans
+  _subsection: Overview & Tutorial
+- name: OpenCL accelerated rigid body and collision detection
+  url: http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf
+  description: (RSS 2011), Erwin Coumans
+  _subsection: Overview & Tutorial
+- name: Contact Generation
+  url: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC10_Coumans_Erwin_Contact.pdf
+  description: (GDC 2010), Erwin Coumans
+  _subsection: Overview & Tutorial
+- name: spatial-collision-datastructures
+  url: https://github.com/ttvd/spatial-collision-datastructures
+  description: '- Benchmark of various spatial data structures for collision detection.'
+  _subsection: Benchmark
+- name: Algorithm table for narrowphase algorithms
+  url: http://www.realtimerendering.com/intersections.html
+  _subsection: Narrow-phase
+- name: 3D Collision detection
+  url: http://www.miguelcasillas.com/?mcportfolio=collision-detection-c
+  description: by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
+  _subsection: Narrow-phase
+- name: Collision Detection
+  url: http://www.jeffreythompson.org/collision-detection/
+  description: by Jeff Thompson - This book explains the algorithms behind those collisions using basic shapes like circles,
+    rectangles, and lines so you can implement them into your own projects.
+  links:
+  - label: code
+    url: https://github.com/jeffThompson/CollisionDetection
+  _subsection: Narrow-phase
+- name: 'Note: The Gibert-Jonson-Keerthi algorithm'
+  url: http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf
+  description: by Christer Ericson
+  _subsection: Narrow-phase
+- name: Benchmark of various spatial data structures for collision detection
+  url: https://github.com/ttvd/spatial-collision-datastructures
+  _subsection: Space Partitioning
+- name: Bounding volume heirarchy
+  _subsection: Space Partitioning
+  _type: header
+- _indent: 1
+  name: Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring
+  url: http://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf
+  description: by Leonardo R. Domingues and Helio Pedrini.
+  links:
+  - label: paper
+    url: http://dl.acm.org/citation.cfm?id=2790065
+  - label: code
+    url: https://github.com/leonardo-domingues/atrbvh
+  _subsection: Space Partitioning
+- _indent: 1
+  name: Dynamic AABB Tree
+  url: http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/
+  description: by [Randy Gaul](http://www.randygaul.net/about/)
+  _subsection: Space Partitioning
+- _indent: 1
+  name: Efficient BVH Construction via Approximate Agglomerative Clustering
+  url: http://dl.acm.org/citation.cfm?id=2492054
+  description: by Yan Gu et al.
+  links:
+  - label: pdf
+    url: http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci
+  _subsection: Space Partitioning
+- _indent: 1
+  name: Octree vs BVH
+  url: http://thomasdiewald.com/blog/?p=1488
+  description: by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
+  _subsection: Space Partitioning

@@ -1,0 +1,10 @@
+- name: Real-Time Collision Detection
+  description: ', CRC Press 2004'
+  links:
+  - label: amazon
+    url: http://www.amazon.com/Real-Time-Collision-Detection-Interactive-Technology/dp/1558607323/ref=sr_1_1?s=books&ie=UTF8&qid=1463804277&sr=1-1&keywords=real+time+collision+detection
+- name: Collision Detection in Interactive 3D Environments
+  description: ', CRC Press 2003'
+  links:
+  - label: amazon
+    url: http://www.amazon.com/Collision-Detection-Interactive-Environments-Technology/dp/155860801X

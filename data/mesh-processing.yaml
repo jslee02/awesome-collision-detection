@@ -1,0 +1,14 @@
+- name: bounding-mesh
+  url: http://www.boundingmesh.com/
+  github: gaschler/bounding-mesh
+  badge_github: gaschler/bounding-mesh
+  description: Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
+- name: cinolib
+  github: mlivesu/cinolib
+  badge_github: mlivesu/cinolib
+  description: A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+- name: libigl
+  url: https://libigl.github.io/
+  github: libigl/libigl
+  badge_github: libigl/libigl
+  description: A simple C++ geometry processing library.

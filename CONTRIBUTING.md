@@ -1,14 +1,37 @@
 # Contribution Guidelines
-Please ensure your pull request adheres to the following guidelines:
 
-* Please search previous suggestions before making a new one, as yours may be a duplicate.
-* Please make an individual pull request for each suggestion.
-* New categories, or improvements to the existing categorisation are welcome.
-* Use the following format: \[LIBRARY-NAME\]\(WEB-LINK\) (\[REPO-KIND\]\(REPO-LINK\)) - DESCRIPTION.
-* Keep descriptions short and simple, but descriptive.
-* End all descriptions with a full stop/period.
-* Order projects alphabetically within each category.
-* Check your spelling and grammar.
-* Make sure your text editor is set to remove trailing whitespace.
+## Suggesting a New Resource
 
-Thank you for your suggestions!
+Please use the GitHub issue form for new suggestions:
+
+- Open `Suggest a Resource`
+- Fill in the category, description, and repository fields as completely as you can
+- For papers and articles, use the `Subsection` field for the relevant topic heading
+
+Maintainers can then label the issue and let the automation handle evaluation and PR generation.
+
+## Fixing an Existing Entry
+
+This repository uses a YAML-first workflow:
+
+- `data/*.yaml` is the source of truth
+- `README.md` is generated from the YAML data
+
+If you are opening a direct PR:
+
+1. Edit the relevant `data/*.yaml` file, not `README.md`
+2. Keep entries in the correct section and order
+3. Run `python3 scripts/validate_entries.py`
+4. Run `python3 scripts/generate_readme.py`
+5. Commit the regenerated `README.md`
+6. Sign off commits with `git commit --signoff`
+
+## General Rules
+
+- Search previous suggestions first to avoid duplicates
+- Keep descriptions short, factual, and easy to scan
+- Use the appropriate category and subsection
+- Check spelling and grammar
+- Remove trailing whitespace
+
+Thank you for the contribution.

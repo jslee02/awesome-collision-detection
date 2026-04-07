@@ -18,19 +18,19 @@ A curated list of collision detection open resources
 
 | Name | Shapes | Features | Languages | Licenses | Code | Popularity |
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
-| [BEPUphysics 1](http://www.bepuphysics.com/) | (todo) | (todo) | C#, .NET | Apache v2 | [github](https://github.com/bepu/bepuphysics1) | ![BEPUphysics 1](https://img.shields.io/github/stars/bepu/bepuphysics1.svg?style=social&label=Star&maxAge=2592000) |
+| [BEPUphysics 1](http://www.bepuphysics.com/) | (todo) | (todo) | C#, .NET | Apache v2 | [github](https://github.com/bepu/bepuphysics1) | ![bepuphysics1](https://img.shields.io/github/stars/bepu/bepuphysics1.svg?style=social&label=Star&maxAge=2592000) |
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
-| collision-rs | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![rustgd/collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
+| collision-rs | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
 | [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | C++ | BSD-3-Clause | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
-| [coal (HPP-FCL)](https://github.com/coal-library/coal) | Box<br/>Sphere<br/>Cylinder<br/>Capsule<br/>Ellipsoid<br/>Cone<br/>Meshes<br/>Convex Meshes<br/>Height Field | Collision <br/> Distance <br/> Security Margins | C++, Python | BSD-3-Clause | [github](https://github.com/coal-library/coal) | ![fcl](https://img.shields.io/github/stars/humanoid-path-planner/hpp-fcl.svg?style=social&label=Star&maxAge=2592000) |
-| [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![JitterPhysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
+| [coal (HPP-FCL)](https://github.com/coal-library/coal) | Box<br/>Sphere<br/>Cylinder<br/>Capsule<br/>Ellipsoid<br/>Cone<br/>Meshes<br/>Convex Meshes<br/>Height Field | Collision<br/>Distance<br/>Security Margins | C++, Python | BSD-3-Clause | [github](https://github.com/coal-library/coal) | ![hpp-fcl](https://img.shields.io/github/stars/humanoid-path-planner/hpp-fcl.svg?style=social&label=Star&maxAge=2592000) |
+| [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![jitterphysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
 | [libccd](https://github.com/danfis/libccd) | (todo) | (todo) | C | BSD-3-Clause | [github](https://github.com/danfis/libccd) | ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000) |
-| [ncollide](http://ncollide.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/ncollide) | ![sebcrozet/ncollide](https://img.shields.io/github/stars/sebcrozet/ncollide.svg?style=social&label=Star&maxAge=2592000) |
-| [ODE](http://www.ode.org/) | Sphere<br/>Box<br/>Cylinder<br/>Capsule<br/>Plane<br/>Ray<br/>Triangular-mesh | (todo) | C++, [Python](http://pyode.sourceforge.net/) | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
-| [OpenGJK](https://www.mattiamontanari.com/opengjk/) | (todo) | (todo) | C++, C#, Go, Matlab, Python, Unity | GPL-3.0 | [github](https://github.com/MattiaMontanari/openGJK) | ![MattiaMontanari/openGJK](https://img.shields.io/github/stars/MattiaMontanari/openGJK.svg?style=social&label=Star&maxAge=2592000) |
-| [Parry](https://github.com/dimforge/parry) | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/dimforge/parry) | ![dimforge/parry](https://img.shields.io/github/stars/dimforge/parry.svg?style=social&label=Star&maxAge=2592000) |
+| [ncollide](http://ncollide.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/ncollide) | ![ncollide](https://img.shields.io/github/stars/sebcrozet/ncollide.svg?style=social&label=Star&maxAge=2592000) |
+| [ODE](http://www.ode.org/) | Sphere<br/>Box<br/>Cylinder<br/>Capsule<br/>Plane<br/>Ray<br/>Triangular-mesh | (todo) | C++, [Python](http://pyode.sourceforge.net/) | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) |  |
+| [OpenGJK](https://www.mattiamontanari.com/opengjk/) | (todo) | (todo) | C++, C#, Go, Matlab, Python, Unity | GPL-3.0 | [github](https://github.com/MattiaMontanari/openGJK) | ![openGJK](https://img.shields.io/github/stars/MattiaMontanari/openGJK.svg?style=social&label=Star&maxAge=2592000) |
+| [Parry](https://github.com/dimforge/parry) | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/dimforge/parry) | ![parry](https://img.shields.io/github/stars/dimforge/parry.svg?style=social&label=Star&maxAge=2592000) |
 | [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
-| tinyc2 | (todo) | 2d | C/C++ | Zlib | [github](https://github.com/RandyGaul/tinyheaders) | ![RandyGaul/tinyheaders](https://img.shields.io/github/stars/RandyGaul/tinyheaders.svg?style=social&label=Star&maxAge=2592000) |
+| tinyc2 | (todo) | 2d | C/C++ | Zlib | [github](https://github.com/RandyGaul/tinyheaders) | ![tinyheaders](https://img.shields.io/github/stars/RandyGaul/tinyheaders.svg?style=social&label=Star&maxAge=2592000) |
 | qu3e | (todo) | (todo) | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
 > Some libraries (e.g., ODE and Bullet) are physics engines that contain collision detection features, but they can be used just as collision detection libraries.
@@ -46,68 +46,68 @@ A curated list of collision detection open resources
 ### Mesh Processing
 
 * [bounding-mesh](http://www.boundingmesh.com/) ([github](https://github.com/gaschler/bounding-mesh) ![bounding-mesh](https://img.shields.io/github/stars/gaschler/bounding-mesh.svg?style=social&label=Star&maxAge=2592000)) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
-* cinolib ([github](https://github.com/mlivesu/cinolib) ![mlivesu/cinolib](https://img.shields.io/github/stars/mlivesu/cinolib.svg?style=social&label=Star&maxAge=2592000)) - A generic programming header only C++ library for processing polygonal and polyhedral meshes.
-* [libigl](https://libigl.github.io/) ([github](https://github.com/libigl/libigl) ![libigl/libigl](https://img.shields.io/github/stars/libigl/libigl.svg?style=social&label=Star&maxAge=2592000)) - A simple C++ geometry processing library.
+* cinolib ([github](https://github.com/mlivesu/cinolib) ![cinolib](https://img.shields.io/github/stars/mlivesu/cinolib.svg?style=social&label=Star&maxAge=2592000)) - A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+* [libigl](https://libigl.github.io/) ([github](https://github.com/libigl/libigl) ![libigl](https://img.shields.io/github/stars/libigl/libigl.svg?style=social&label=Star&maxAge=2592000)) - A simple C++ geometry processing library.
 
 ## [Papers](#awesome-collision-detection)
 
 #### Collision Detection and Distance Computation
 
-* GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al. [[pdf](https://hal.science/hal-04070039v1/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/colbench)]
-* Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
-* A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
+* GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al. [[[pdf](https://hal.science/hal-04070039v1/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/colbench)]]
+* Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]]
+* A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]]
 
 #### Differentiable Collision Detection
 
-* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)]
+* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)]]
 
 #### Triangle-triangle Test
 
 * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
-* Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]
-* A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf), [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]
+* Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]]
+* A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf), [code](http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp)]]
   * A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
-* Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
-* A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
+* Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]]
+* A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]]
 
 #### Mesh Collision
 
-* Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.cs.illinois.edu/simulation/index.html)]
+* Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[[pdf](https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.cs.illinois.edu/simulation/index.html)]]
 
 #### Penetration Depth Computation
 
-* PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al. [[pdf](https://arxiv.org/pdf/1508.06181v1.pdf)]
+* PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al. [[[pdf](https://arxiv.org/pdf/1508.06181v1.pdf)]]
 
 #### Proximity Query / Signed Distance Field
 
-* Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al. [[pdf](https://mmacklin.com/sdfcontact.pdf), [slides](https://mmacklin.com/sdfcontact_slides.pdf), [video](https://youtu.be/icU6Bm-HZ-E)]
-* Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]
-* Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]
-* Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic. [[pdf](https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf)]
-* Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al. [[pdf](https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf), [web](http://gamma.cs.unc.edu/SSV/)]
+* Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al. [[[pdf](https://mmacklin.com/sdfcontact.pdf), [slides](https://mmacklin.com/sdfcontact_slides.pdf), [video](https://youtu.be/icU6Bm-HZ-E)]]
+* Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]]
+* Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]]
+* Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic. [[[pdf](https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf)]]
+* Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al. [[[pdf](https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf), [web](http://gamma.cs.unc.edu/SSV/)]]
 
 #### Continuous Collision Detection
 
-* Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf), [web](http://graphics.ewha.ac.kr/C2A/)]
-* Efficient Geometrically Exact Continuous Collision Detection (2012), T. Brochu et al. [[pdf](https://www.researchgate.net/profile/Essex_Edwards/publication/254200434_Efficient_Geometrically_Exact_Continuous_Collision_Detection/links/5540dd8a0cf2322227304cce/Efficient-Geometrically-Exact-Continuous-Collision-Detection.pdf), [video](https://youtu.be/5bGPoMbXIzs)]
-* C2A: Controlled Conservative Advancement for Continuous Collision Detection of Polygonal Models (2009), M. Tang et al. [[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.500.7676&rep=rep1&type=pdf)]
-* Continuous Collision Detection for Articulated Models using Taylor Models and Temporal Culling (2007), X. Zhang et al. [[pdf](https://hal.inria.fr/file/index/docid/390313/filename/SIGGRAPH2007.pdf), [web](http://graphics.ewha.ac.kr/CATCH/)]
-* Interactive continuous collision detection for non-convex polyhedra (2006), X. Zhang et al. [[pdf](https://link.springer.com/content/pdf/10.1007/s00371-006-0060-0.pdf), [web](http://graphics.ewha.ac.kr/FAST/)]
+* Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013), M. Tang et al. [[[pdf](http://graphics.ewha.ac.kr/C2A/TVCG13.pdf), [web](http://graphics.ewha.ac.kr/C2A/)]]
+* Efficient Geometrically Exact Continuous Collision Detection (2012), T. Brochu et al. [[[pdf](https://www.researchgate.net/profile/Essex_Edwards/publication/254200434_Efficient_Geometrically_Exact_Continuous_Collision_Detection/links/5540dd8a0cf2322227304cce/Efficient-Geometrically-Exact-Continuous-Collision-Detection.pdf), [video](https://youtu.be/5bGPoMbXIzs)]]
+* C2A: Controlled Conservative Advancement for Continuous Collision Detection of Polygonal Models (2009), M. Tang et al. [[[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.500.7676&rep=rep1&type=pdf)]]
+* Continuous Collision Detection for Articulated Models using Taylor Models and Temporal Culling (2007), X. Zhang et al. [[[pdf](https://hal.inria.fr/file/index/docid/390313/filename/SIGGRAPH2007.pdf), [web](http://graphics.ewha.ac.kr/CATCH/)]]
+* Interactive continuous collision detection for non-convex polyhedra (2006), X. Zhang et al. [[[pdf](https://link.springer.com/content/pdf/10.1007/s00371-006-0060-0.pdf), [web](http://graphics.ewha.ac.kr/FAST/)]]
 
 #### Nearest Neighbor
 
-* Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]
-* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf), [code](https://github.com/mariusmuja/flann)]
-* Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
+* Faster cover tree (2015), M. Izbicki et al. [[[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]]
+* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[[pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf), [code](https://github.com/mariusmuja/flann)]]
+* Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]]
 
-####  Comprehensive Collision Detection Library
+#### Comprehensive Collision Detection Library
 
-* FCL: A General Purpose Library for Collision and Proximity Queries (2012), J. Pan et al. [[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.2177&rep=rep1&type=pdf), [code](https://github.com/flexible-collision-library/fcl)]
+* FCL: A General Purpose Library for Collision and Proximity Queries (2012), J. Pan et al. [[[pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.2177&rep=rep1&type=pdf), [code](https://github.com/flexible-collision-library/fcl)]]
 
 #### Survey
 
-* Collision Detection: A Survey (2007), S. Kockara et al. [[pdf](https://pdfs.semanticscholar.org/250e/296b4b4c1b7ac0229e57d6638fe81188121e.pdf)]
-* 3D collision detection: a survey (2001), P. Jiménez et al. [[pdf](https://users.soe.ucsc.edu/~pang/161/w06/notes/jtt01.pdf)]
+* Collision Detection: A Survey (2007), S. Kockara et al. [[[pdf](https://pdfs.semanticscholar.org/250e/296b4b4c1b7ac0229e57d6638fe81188121e.pdf)]]
+* 3D collision detection: a survey (2001), P. Jiménez et al. [[[pdf](https://users.soe.ucsc.edu/~pang/161/w06/notes/jtt01.pdf)]]
 
 ## [Books](#awesome-collision-detection)
 
@@ -140,7 +140,7 @@ A curated list of collision detection open resources
 * Bounding volume heirarchy
   * [Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring](http://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf) ([paper](http://dl.acm.org/citation.cfm?id=2790065), [code](https://github.com/leonardo-domingues/atrbvh)) by Leonardo R. Domingues and Helio Pedrini.
   * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
-  * [Efficient BVH Construction via Approximate Agglomerative Clustering](http://dl.acm.org/citation.cfm?id=2492054) by Yan Gu et al. ([pdf](http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci))
+  * [Efficient BVH Construction via Approximate Agglomerative Clustering](http://dl.acm.org/citation.cfm?id=2492054) ([pdf](http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci)) by Yan Gu et al.
   * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
 
 ## [Other Awesome Lists](#awesome-collision-detection)

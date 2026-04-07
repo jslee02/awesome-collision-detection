@@ -1,0 +1,184 @@
+- name: 'GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al.'
+  links:
+  - label: pdf
+    url: https://hal.science/hal-04070039v1/document
+  - label: code
+    url: https://github.com/humanoid-path-planner/hpp-fcl
+  - label: benchmarks
+    url: https://github.com/lmontaut/colbench
+  _subsection: Collision Detection and Distance Computation
+- name: 'Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al.'
+  links:
+  - label: pdf
+    url: https://hal.archives-ouvertes.fr/hal-03662157/document
+  - label: code
+    url: https://github.com/humanoid-path-planner/hpp-fcl
+  - label: benchmarks
+    url: https://github.com/lmontaut/collision-detection-benchmark
+  _subsection: Collision Detection and Distance Computation
+- name: A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson
+    and Keerthi
+  links:
+  - label: pdf
+    url: https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf
+  _subsection: Collision Detection and Distance Computation
+- name: 'Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al.'
+  links:
+  - label: pdf
+    url: https://hal.archives-ouvertes.fr/hal-03780482v2/document
+  - label: code
+    url: https://github.com/humanoid-path-planner/hpp-fcl
+  _subsection: Differentiable Collision Detection
+- name: A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
+  _subsection: Triangle-triangle Test
+- name: Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al.
+  links:
+  - label: pdf
+    url: http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf
+  _subsection: Triangle-triangle Test
+- name: A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al.
+  links:
+  - label: pdf
+    url: http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf
+  - label: code
+    url: http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp
+  _subsection: Triangle-triangle Test
+  notes:
+  - A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
+- name: Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al.
+  links:
+  - label: pdf
+    url: https://hal.inria.fr/inria-00072100/document
+  - label: code
+    url: https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h
+  _subsection: Triangle-triangle Test
+- name: A Fast Triangle-Triangle Intersecion Test (1997), T. Muller.
+  links:
+  - label: pdf
+    url: http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf
+  - label: code
+    url: https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c
+  _subsection: Triangle-triangle Test
+- name: Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser.
+  links:
+  - label: pdf
+    url: https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf
+  - label: web
+    url: http://motion.cs.illinois.edu/simulation/index.html
+  _subsection: Mesh Collision
+- name: 'PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al.'
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/1508.06181v1.pdf
+  _subsection: Penetration Depth Computation
+- name: Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al.
+  links:
+  - label: pdf
+    url: https://mmacklin.com/sdfcontact.pdf
+  - label: slides
+    url: https://mmacklin.com/sdfcontact_slides.pdf
+  - label: video
+    url: https://youtu.be/icU6Bm-HZ-E
+  _subsection: Proximity Query / Signed Distance Field
+- name: Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al.
+  links:
+  - label: pdf
+    url: https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf
+  - label: video
+    url: https://youtu.be/x_Iq2yM4FcA
+  _subsection: Proximity Query / Signed Distance Field
+- name: 'Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al.'
+  links:
+  - label: pdf
+    url: https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf
+  - label: code
+    url: https://github.com/ethz-asl/voxblox
+  _subsection: Proximity Query / Signed Distance Field
+- name: Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic.
+  links:
+  - label: pdf
+    url: https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf
+  _subsection: Proximity Query / Signed Distance Field
+- name: Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al.
+  links:
+  - label: pdf
+    url: https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf
+  - label: web
+    url: http://gamma.cs.unc.edu/SSV/
+  _subsection: Proximity Query / Signed Distance Field
+- name: Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013),
+    M. Tang et al.
+  links:
+  - label: pdf
+    url: http://graphics.ewha.ac.kr/C2A/TVCG13.pdf
+  - label: web
+    url: http://graphics.ewha.ac.kr/C2A/
+  _subsection: Continuous Collision Detection
+- name: Efficient Geometrically Exact Continuous Collision Detection (2012), T. Brochu et al.
+  links:
+  - label: pdf
+    url: https://www.researchgate.net/profile/Essex_Edwards/publication/254200434_Efficient_Geometrically_Exact_Continuous_Collision_Detection/links/5540dd8a0cf2322227304cce/Efficient-Geometrically-Exact-Continuous-Collision-Detection.pdf
+  - label: video
+    url: https://youtu.be/5bGPoMbXIzs
+  _subsection: Continuous Collision Detection
+- name: 'C2A: Controlled Conservative Advancement for Continuous Collision Detection of Polygonal Models (2009), M. Tang et
+    al.'
+  links:
+  - label: pdf
+    url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.500.7676&rep=rep1&type=pdf
+  _subsection: Continuous Collision Detection
+- name: Continuous Collision Detection for Articulated Models using Taylor Models and Temporal Culling (2007), X. Zhang et
+    al.
+  links:
+  - label: pdf
+    url: https://hal.inria.fr/file/index/docid/390313/filename/SIGGRAPH2007.pdf
+  - label: web
+    url: http://graphics.ewha.ac.kr/CATCH/
+  _subsection: Continuous Collision Detection
+- name: Interactive continuous collision detection for non-convex polyhedra (2006), X. Zhang et al.
+  links:
+  - label: pdf
+    url: https://link.springer.com/content/pdf/10.1007/s00371-006-0060-0.pdf
+  - label: web
+    url: http://graphics.ewha.ac.kr/FAST/
+  _subsection: Continuous Collision Detection
+- name: Faster cover tree (2015), M. Izbicki et al.
+  links:
+  - label: pdf
+    url: http://proceedings.mlr.press/v37/izbicki15.pdf
+  - label: code
+    url: https://github.com/manzilzaheer/CoverTree
+  _subsection: Nearest Neighbor
+- name: Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe.
+  links:
+  - label: pdf
+    url: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf
+  - label: code
+    url: https://github.com/mariusmuja/flann
+  _subsection: Nearest Neighbor
+- name: Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al.
+  links:
+  - label: pdf
+    url: https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf
+  - label: web
+    url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
+  - label: code
+    url: https://github.com/DNCrane/Cover-Tree
+  _subsection: Nearest Neighbor
+- name: 'FCL: A General Purpose Library for Collision and Proximity Queries (2012), J. Pan et al.'
+  links:
+  - label: pdf
+    url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.2177&rep=rep1&type=pdf
+  - label: code
+    url: https://github.com/flexible-collision-library/fcl
+  _subsection: Comprehensive Collision Detection Library
+- name: 'Collision Detection: A Survey (2007), S. Kockara et al.'
+  links:
+  - label: pdf
+    url: https://pdfs.semanticscholar.org/250e/296b4b4c1b7ac0229e57d6638fe81188121e.pdf
+  _subsection: Survey
+- name: '3D collision detection: a survey (2001), P. Jiménez et al.'
+  links:
+  - label: pdf
+    url: https://users.soe.ucsc.edu/~pang/161/w06/notes/jtt01.pdf
+  _subsection: Survey

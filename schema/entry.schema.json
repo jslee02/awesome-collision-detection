@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Awesome Collision Detection Entry",
+  "description": "Schema for entries in the awesome-collision-detection data files",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the resource"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary URL"
+    },
+    "github": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$",
+      "description": "GitHub owner/repo"
+    },
+    "gitlab": {
+      "type": "string",
+      "description": "GitLab path"
+    },
+    "bitbucket": {
+      "type": "string",
+      "description": "Bitbucket path"
+    },
+    "code_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Non-forge source URL"
+    },
+    "badge_github": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$",
+      "description": "Alternate GitHub owner/repo used for shields badges"
+    },
+    "description": {
+      "type": "string",
+      "description": "Free-form trailing text or short description"
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier or short license text"
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported languages"
+    },
+    "shapes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported shapes"
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported features"
+    },
+    "links": {
+      "type": "array",
+      "description": "Supplementary links rendered inline",
+      "items": {
+        "type": "object",
+        "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Indented notes rendered below the entry"
+    },
+    "archived": {
+      "type": "boolean",
+      "description": "Whether the resource is archived/inactive"
+    },
+    "_subsection": {
+      "type": "string",
+      "description": "Section subsection"
+    },
+    "_type": {
+      "type": "string",
+      "description": "Rendering hint, e.g. header"
+    },
+    "_indent": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Bullet indentation depth"
+    },
+    "_meta": {
+      "type": "object",
+      "description": "Auto-populated metadata from GitHub API",
+      "properties": {
+        "stars": { "type": "integer" },
+        "last_commit": { "type": "string", "format": "date" },
+        "archived": { "type": "boolean" },
+        "license": { "type": "string" },
+        "language": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

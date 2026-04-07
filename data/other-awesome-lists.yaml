@@ -1,0 +1,5 @@
+- name: Awesome Robotics Libraries
+  url: https://github.com/jslee02/awesome-robotics-libraries
+  github: jslee02/awesome-robotics-libraries
+  description: This is a list of various libraris and software for robotics. It's also attempting to provide some comparisons
+    for selected libraries and software.

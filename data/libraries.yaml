@@ -1,0 +1,161 @@
+- name: BEPUphysics 1
+  _subsection: Active
+  url: http://www.bepuphysics.com/
+  languages:
+  - C#
+  - .NET
+  license: Apache v2
+  github: bepu/bepuphysics1
+  badge_github: bepu/bepuphysics1
+- name: Bullet
+  _subsection: Active
+  url: http://bulletphysics.org
+  languages:
+  - C++
+  - Python
+  license: Zlib
+  github: bulletphysics/bullet3
+  badge_github: bulletphysics/bullet3
+- name: collision-rs
+  _subsection: Active
+  languages:
+  - Rust
+  license: Apache-2.0
+  github: rustgd/collision-rs
+  badge_github: rustgd/collision-rs
+- name: FCL
+  _subsection: Active
+  url: https://github.com/flexible-collision-library/fcl
+  languages:
+  - C++
+  license: BSD-3-Clause
+  github: flexible-collision-library/fcl
+  badge_github: flexible-collision-library/fcl
+- name: coal (HPP-FCL)
+  _subsection: Active
+  url: https://github.com/coal-library/coal
+  shapes:
+  - Box
+  - Sphere
+  - Cylinder
+  - Capsule
+  - Ellipsoid
+  - Cone
+  - Meshes
+  - Convex Meshes
+  - Height Field
+  features:
+  - Collision
+  - Distance
+  - Security Margins
+  languages:
+  - C++
+  - Python
+  license: BSD-3-Clause
+  github: coal-library/coal
+  badge_github: humanoid-path-planner/hpp-fcl
+- name: JitterPhysics
+  _subsection: Active
+  url: https://github.com/mattleibow/jitterphysics
+  languages:
+  - C#
+  - .NET
+  license: MIT
+  github: mattleibow/jitterphysics
+  badge_github: mattleibow/jitterphysics
+- name: libccd
+  _subsection: Active
+  url: https://github.com/danfis/libccd
+  languages:
+  - C
+  license: BSD-3-Clause
+  github: danfis/libccd
+  badge_github: danfis/libccd
+- name: ncollide
+  _subsection: Active
+  url: http://ncollide.org/
+  languages:
+  - Rust
+  license: BSD-3-Clause
+  github: sebcrozet/ncollide
+  badge_github: sebcrozet/ncollide
+- name: ODE
+  _subsection: Active
+  url: http://www.ode.org/
+  shapes:
+  - Sphere
+  - Box
+  - Cylinder
+  - Capsule
+  - Plane
+  - Ray
+  - Triangular-mesh
+  languages:
+  - C++
+  - '[Python](http://pyode.sourceforge.net/)'
+  license: LGPL-2.1 or BSD-3-Clause
+  bitbucket: odedevs/ode
+- name: OpenGJK
+  _subsection: Active
+  url: https://www.mattiamontanari.com/opengjk/
+  languages:
+  - C++
+  - C#
+  - Go
+  - Matlab
+  - Python
+  - Unity
+  license: GPL-3.0
+  github: MattiaMontanari/openGJK
+  badge_github: MattiaMontanari/openGJK
+- name: Parry
+  _subsection: Active
+  url: https://github.com/dimforge/parry
+  languages:
+  - Rust
+  license: Apache-2.0
+  github: dimforge/parry
+  badge_github: dimforge/parry
+- name: ReactPhysics3d
+  _subsection: Active
+  url: http://www.reactphysics3d.com/
+  languages:
+  - C++
+  license: Zlib
+  github: DanielChappuis/reactphysics3d
+  badge_github: DanielChappuis/reactphysics3d
+- name: tinyc2
+  _subsection: Active
+  features:
+  - 2d
+  languages:
+  - C/C++
+  license: Zlib
+  github: RandyGaul/tinyheaders
+  badge_github: RandyGaul/tinyheaders
+- name: qu3e
+  _subsection: Active
+  languages:
+  - C++
+  license: Zlib
+  github: RandyGaul/qu3e
+  badge_github: RandyGaul/qu3e
+- name: ColDet
+  url: https://sourceforge.net/projects/coldet/
+  description: 3D Collision Detection.
+  _subsection: Inactive
+- name: GIMPACT
+  url: http://gimpact.sourceforge.net/
+  description: Tools for geometry processing and collision detection.
+  _subsection: Inactive
+- name: OPCODE
+  url: http://www.codercorner.com/Opcode.htm
+  description: Optimized Collision Detection.
+  _subsection: Inactive
+- name: OZCollide
+  github: jslee02/OZCollide
+  _subsection: Inactive
+- name: SOLID
+  url: http://solid.sourceforge.net/
+  description: Collision detection of 3D objects undergoing rigid motion and deformation.
+  _subsection: Inactive
