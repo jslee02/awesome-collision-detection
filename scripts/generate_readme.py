@@ -92,7 +92,7 @@ def render_resource_links(entry: dict) -> str:
     rendered = [f"[{link['label']}]({link['url']})" for link in links]
     if entry.get("url") or entry.get("description"):
         return f" ({', '.join(rendered)})"
-    return f" [[{', '.join(rendered)}]]"
+    return f" [{', '.join(rendered)}]"
 
 
 def render_resource_entry(entry: dict) -> list[str]:

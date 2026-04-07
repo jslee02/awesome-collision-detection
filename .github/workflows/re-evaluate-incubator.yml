@@ -116,15 +116,6 @@ jobs:
                   issue_number: issue.number,
                   labels: ['accepted'],
                 });
-                await github.rest.actions.createWorkflowDispatch({
-                  owner,
-                  repo,
-                  workflow_id: 'add-accepted-entry.yml',
-                  ref: context.payload.repository.default_branch,
-                  inputs: {
-                    issue_number: String(issue.number),
-                  },
-                });
               } else if (rec === 'duplicate') {
                 await github.rest.issues.createComment({
                   owner,
