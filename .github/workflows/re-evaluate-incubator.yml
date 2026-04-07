@@ -38,20 +38,20 @@ jobs:
               return slugMatch ? slugMatch[1] : '';
             }
 
-            const issues = await github.rest.issues.listForRepo({
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner,
               repo,
               labels: 'incubator',
               state: 'open',
-              per_page: 50,
+              per_page: 100,
             });
 
-            if (issues.data.length === 0) {
+            if (issues.length === 0) {
               console.log('No incubator issues to re-evaluate.');
               return;
             }
 
-            for (const issue of issues.data) {
+            for (const issue of issues) {
               const body = issue.body || '';
               let ghRepo = '';
               const ghFieldMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);

@@ -8,6 +8,7 @@ import json
 import os
 import sys
 from pathlib import Path
+import urllib.error
 from urllib.parse import urlparse
 
 import yaml
@@ -83,11 +84,15 @@ def fetch_meta(github_repo: str) -> tuple[dict, str | None, str | None]:
     if not github_repo:
         return {}, None, None
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    data = fetch_json(
-        f"https://api.github.com/repos/{github_repo}",
-        token,
-        USER_AGENT,
-    )
+    try:
+        data = fetch_json(
+            f"https://api.github.com/repos/{github_repo}",
+            token,
+            USER_AGENT,
+        )
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+        print(f"WARN: Could not fetch metadata for {github_repo}: {exc}", file=sys.stderr)
+        return {}, None, None
     if not isinstance(data, dict):
         return {}, None, None
 

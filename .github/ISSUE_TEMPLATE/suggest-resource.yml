@@ -36,6 +36,7 @@ body:
     id: category
     attributes:
       label: Category
+      description: "Choose `New Category` only if none of the existing categories fit. Accepted suggestions in a new category require a manual maintainer PR."
       options:
         - Libraries
         - Mesh Processing
@@ -95,7 +96,7 @@ body:
     id: additional_links
     attributes:
       label: Additional Links
-      description: Optional. One per line as `label: https://...`, for example `pdf: https://...`
+      description: "Optional. One per line as `label: https://...`, for example `pdf: https://...`"
       placeholder: |
         pdf: https://example.com/paper.pdf
         code: https://github.com/org/project

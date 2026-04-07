@@ -97,34 +97,41 @@ jobs:
               'Other Awesome Lists': 'other-awesome-lists',
             };
 
-            if (!payload.name || !payload.category || !categoryMap[payload.category]) {
+            if (!payload.name || !payload.category) {
               core.setFailed('Could not parse required fields from issue body');
               return;
             }
 
-            payload.yaml_file = categoryMap[payload.category];
+            core.setOutput('name', payload.name);
+            core.setOutput('issue_number', String(issueNumber));
+            core.setOutput('category', payload.category);
+
+            payload.yaml_file = categoryMap[payload.category] || '';
+            core.setOutput('yaml_file', payload.yaml_file);
+            core.setOutput('unsupported_category', payload.yaml_file ? 'false' : 'true');
+
+            if (!payload.yaml_file) {
+              return;
+            }
+
             fs.writeFileSync('/tmp/add-entry-input.json', JSON.stringify(payload, null, 2));
 
-            core.setOutput('name', payload.name);
-            core.setOutput('yaml_file', payload.yaml_file);
-            core.setOutput('issue_number', String(issueNumber));
-
       - name: Build entry and update YAML
-        if: success()
+        if: success() && steps.parse.outputs.unsupported_category != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/add_entry_from_payload.py /tmp/add-entry-input.json
 
       - name: Regenerate README
-        if: success()
+        if: success() && steps.parse.outputs.unsupported_category != 'true'
         run: python3 scripts/generate_readme.py
 
       - name: Validate
-        if: success()
+        if: success() && steps.parse.outputs.unsupported_category != 'true'
         run: python3 scripts/validate_entries.py
 
       - name: Create PR
-        if: success()
+        if: success() && steps.parse.outputs.unsupported_category != 'true'
         id: pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -160,8 +167,39 @@ jobs:
 
           echo "url=${PR_URL}" >> "$GITHUB_OUTPUT"
 
+      - name: Comment on issue for unsupported category
+        if: steps.parse.outputs.unsupported_category == 'true'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = Number('${{ steps.parse.outputs.issue_number }}');
+            const category = '${{ steps.parse.outputs.category }}';
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              body: [
+                'This issue was accepted, but no PR was generated automatically.',
+                '',
+                `The selected category, "${category}", is not mapped to an existing data file yet.`,
+                'Accepted suggestions in new categories need a manual maintainer PR to add the category structure before the entry itself can be added.',
+                '',
+                'The `needs-review` label has been applied so this does not get lost.',
+              ].join('\n'),
+            });
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              labels: ['needs-review'],
+            });
+
       - name: Comment on issue
-        if: success()
+        if: success() && steps.parse.outputs.unsupported_category != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ steps.parse.outputs.issue_number }}
