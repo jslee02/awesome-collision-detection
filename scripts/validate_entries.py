@@ -22,8 +22,10 @@ def load_schema(path: Path) -> dict[str, Any]:
 def load_yaml(path: Path) -> list[Entry]:
     with path.open(encoding="utf-8") as f:
         data = yaml.safe_load(f)
-        if not isinstance(data, list):
+        if data is None:
             return []
+        if not isinstance(data, list):
+            raise ValueError(f"{path.name} must contain a top-level YAML list")
         return cast(list[Entry], data)
 
 

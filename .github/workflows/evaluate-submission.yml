@@ -112,6 +112,20 @@ jobs:
               labels: [label],
             });
 
+            if (label === 'accepted') {
+              // Labels applied with the default GITHUB_TOKEN do not trigger
+              // downstream workflows, so explicitly dispatch the add-entry job.
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: 'add-accepted-entry.yml',
+                ref: context.payload.repository.default_branch,
+                inputs: {
+                  issue_number: String(issue),
+                },
+              });
+            }
+
             if (rec === 'duplicate' || (rec === 'reject' && archived)) {
               await github.rest.issues.update({
                 owner,
