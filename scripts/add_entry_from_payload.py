@@ -35,12 +35,13 @@ def parse_links(value: str) -> list[dict]:
         raw = raw.strip().lstrip("-*").strip()
         if not raw:
             continue
+        if raw.startswith(("http://", "https://")):
+            links.append({"label": "link", "url": raw})
+            continue
         if ":" in raw:
             label, url = raw.split(":", 1)
             if url.strip().startswith(("http://", "https://")):
                 links.append({"label": label.strip(), "url": url.strip()})
-        elif raw.startswith(("http://", "https://")):
-            links.append({"label": "link", "url": raw})
     return links
 
 
