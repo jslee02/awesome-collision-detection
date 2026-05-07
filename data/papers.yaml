@@ -66,6 +66,17 @@
   - label: web
     url: http://motion.cs.illinois.edu/simulation/index.html
   _subsection: Mesh Collision
+- name: Approximate Convex Decomposition for 3D Meshes with Collision-Aware Concavity and Tree Search (2022), X. Wei et al.
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2205.02961
+  - label: project
+    url: https://colin97.github.io/CoACD/
+  - label: code
+    url: https://github.com/SarahWeiii/CoACD
+  - label: video
+    url: https://www.youtube.com/watch?v=r12O0z0723s
+  _subsection: Mesh Collision
 - name: 'PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al.'
   links:
   - label: pdf

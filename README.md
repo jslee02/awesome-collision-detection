@@ -19,17 +19,25 @@ A curated list of collision detection open resources
 | Name | Shapes | Features | Languages | Licenses | Code | Popularity |
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | [BEPUphysics 1](http://www.bepuphysics.com/) | (todo) | (todo) | C#, .NET | Apache v2 | [github](https://github.com/bepu/bepuphysics1) | ![bepuphysics1](https://img.shields.io/github/stars/bepu/bepuphysics1.svg?style=social&label=Star&maxAge=2592000) |
+| [Box2D](https://box2d.org) | Circle<br/>Capsule<br/>Segment<br/>Polygon<br/>Chain | 2D<br/>Collision<br/>Distance<br/>Continuous Collision Detection<br/>Ray Cast<br/>Shape Cast | C | MIT | [github](https://github.com/erincatto/box2d) | ![box2d](https://img.shields.io/github/stars/erincatto/box2d.svg?style=social&label=Star&maxAge=2592000) |
 | [Bullet](http://bulletphysics.org) | (todo) | (todo) | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
+| [CCD-Wrapper](https://github.com/Continuous-Collision-Detection/CCD-Wrapper) | Vertex-Face<br/>Edge-Edge | Continuous Collision Detection<br/>Benchmark | C++ | MIT | [github](https://github.com/Continuous-Collision-Detection/CCD-Wrapper) | ![CCD-Wrapper](https://img.shields.io/github/stars/Continuous-Collision-Detection/CCD-Wrapper.svg?style=social&label=Star&maxAge=2592000) |
 | collision-rs | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/rustgd/collision-rs) | ![collision-rs](https://img.shields.io/github/stars/rustgd/collision-rs.svg?style=social&label=Star&maxAge=2592000) |
 | [FCL](https://github.com/flexible-collision-library/fcl) | (todo) | (todo) | C++ | BSD-3-Clause | [github](https://github.com/flexible-collision-library/fcl) | ![fcl](https://img.shields.io/github/stars/flexible-collision-library/fcl.svg?style=social&label=Star&maxAge=2592000) |
 | [coal (HPP-FCL)](https://github.com/coal-library/coal) | Box<br/>Sphere<br/>Cylinder<br/>Capsule<br/>Ellipsoid<br/>Cone<br/>Meshes<br/>Convex Meshes<br/>Height Field | Collision<br/>Distance<br/>Security Margins | C++, Python | BSD-3-Clause | [github](https://github.com/coal-library/coal) | ![hpp-fcl](https://img.shields.io/github/stars/humanoid-path-planner/hpp-fcl.svg?style=social&label=Star&maxAge=2592000) |
 | [JitterPhysics](https://github.com/mattleibow/jitterphysics) | (todo) | (todo) | C#, .NET | MIT | [github](https://github.com/mattleibow/jitterphysics) | ![jitterphysics](https://img.shields.io/github/stars/mattleibow/jitterphysics.svg?style=social&label=Star&maxAge=2592000) |
+| [Kraft](https://github.com/BeRo1985/kraft) | Sphere<br/>Capsule<br/>Box<br/>Convex Hull<br/>Triangle Mesh | Collision<br/>Continuous Collision Detection<br/>Distance<br/>Ray Cast<br/>Sphere Cast | Object Pascal | Zlib | [github](https://github.com/BeRo1985/kraft) | ![kraft](https://img.shields.io/github/stars/BeRo1985/kraft.svg?style=social&label=Star&maxAge=2592000) |
 | [libccd](https://github.com/danfis/libccd) | (todo) | (todo) | C | BSD-3-Clause | [github](https://github.com/danfis/libccd) | ![libccd](https://img.shields.io/github/stars/danfis/libccd.svg?style=social&label=Star&maxAge=2592000) |
+| [MuJoCo](https://mujoco.org/) | Sphere<br/>Capsule<br/>Box<br/>Cylinder<br/>Plane<br/>Mesh<br/>Height Field | Collision<br/>Contact<br/>Distance<br/>Multibody Dynamics | C++, Python | Apache-2.0 | [github](https://github.com/google-deepmind/mujoco) | ![mujoco](https://img.shields.io/github/stars/google-deepmind/mujoco.svg?style=social&label=Star&maxAge=2592000) |
 | [ncollide](http://ncollide.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/ncollide) | ![ncollide](https://img.shields.io/github/stars/sebcrozet/ncollide.svg?style=social&label=Star&maxAge=2592000) |
 | [ODE](http://www.ode.org/) | Sphere<br/>Box<br/>Cylinder<br/>Capsule<br/>Plane<br/>Ray<br/>Triangular-mesh | (todo) | C++, [Python](http://pyode.sourceforge.net/) | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) |  |
 | [OpenGJK](https://www.mattiamontanari.com/opengjk/) | (todo) | (todo) | C++, C#, Go, Matlab, Python, Unity | GPL-3.0 | [github](https://github.com/MattiaMontanari/openGJK) | ![openGJK](https://img.shields.io/github/stars/MattiaMontanari/openGJK.svg?style=social&label=Star&maxAge=2592000) |
 | [Parry](https://github.com/dimforge/parry) | (todo) | (todo) | Rust | Apache-2.0 | [github](https://github.com/dimforge/parry) | ![parry](https://img.shields.io/github/stars/dimforge/parry.svg?style=social&label=Star&maxAge=2592000) |
+| [PhysX](https://nvidia-omniverse.github.io/PhysX/) | Sphere<br/>Capsule<br/>Box<br/>Plane<br/>Convex Mesh<br/>Triangle Mesh<br/>Height Field | Collision<br/>Scene Query<br/>Contact<br/>Rigid Body Dynamics | C++ | BSD-3-Clause | [github](https://github.com/NVIDIA-Omniverse/PhysX) | ![PhysX](https://img.shields.io/github/stars/NVIDIA-Omniverse/PhysX.svg?style=social&label=Star&maxAge=2592000) |
+| [python-fcl](https://github.com/BerkeleyAutomation/python-fcl) | Box<br/>Sphere<br/>Ellipsoid<br/>Capsule<br/>Cone<br/>Convex<br/>Cylinder<br/>Half-space<br/>Plane<br/>Mesh<br/>OcTree | Collision<br/>Distance<br/>Continuous Collision Detection | Python, Cython | BSD-3-Clause | [github](https://github.com/BerkeleyAutomation/python-fcl) | ![python-fcl](https://img.shields.io/github/stars/BerkeleyAutomation/python-fcl.svg?style=social&label=Star&maxAge=2592000) |
+| [pytorch_volumetric](https://github.com/UM-ARM-Lab/pytorch_volumetric) | Mesh<br/>Voxel Grid<br/>Signed Distance Field | Distance<br/>SDF<br/>Collision Checking<br/>Differentiable Queries | Python | MIT | [github](https://github.com/UM-ARM-Lab/pytorch_volumetric) | ![pytorch_volumetric](https://img.shields.io/github/stars/UM-ARM-Lab/pytorch_volumetric.svg?style=social&label=Star&maxAge=2592000) |
 | [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
+| [Tight-Inclusion](https://continuous-collision-detection.github.io/tight_inclusion/) | Vertex-Face<br/>Edge-Edge | Continuous Collision Detection<br/>Minimum Separation<br/>Conservative Collision Detection | C++ | MIT | [github](https://github.com/Continuous-Collision-Detection/Tight-Inclusion) | ![Tight-Inclusion](https://img.shields.io/github/stars/Continuous-Collision-Detection/Tight-Inclusion.svg?style=social&label=Star&maxAge=2592000) |
 | tinyc2 | (todo) | 2d | C/C++ | Zlib | [github](https://github.com/RandyGaul/tinyheaders) | ![tinyheaders](https://img.shields.io/github/stars/RandyGaul/tinyheaders.svg?style=social&label=Star&maxAge=2592000) |
 | qu3e | (todo) | (todo) | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
@@ -47,6 +55,7 @@ A curated list of collision detection open resources
 
 * [bounding-mesh](http://www.boundingmesh.com/) ([github](https://github.com/gaschler/bounding-mesh) ![bounding-mesh](https://img.shields.io/github/stars/gaschler/bounding-mesh.svg?style=social&label=Star&maxAge=2592000)) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
 * cinolib ([github](https://github.com/mlivesu/cinolib) ![cinolib](https://img.shields.io/github/stars/mlivesu/cinolib.svg?style=social&label=Star&maxAge=2592000)) - A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+* [CoACD](https://colin97.github.io/CoACD/) ([github](https://github.com/SarahWeiii/CoACD) ![CoACD](https://img.shields.io/github/stars/SarahWeiii/CoACD.svg?style=social&label=Star&maxAge=2592000)) - Approximate convex decomposition for collision-aware mesh approximation.
 * [libigl](https://libigl.github.io/) ([github](https://github.com/libigl/libigl) ![libigl](https://img.shields.io/github/stars/libigl/libigl.svg?style=social&label=Star&maxAge=2592000)) - A simple C++ geometry processing library.
 
 ## [Papers](#awesome-collision-detection)
@@ -73,6 +82,7 @@ A curated list of collision detection open resources
 #### Mesh Collision
 
 * Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.cs.illinois.edu/simulation/index.html)]
+* Approximate Convex Decomposition for 3D Meshes with Collision-Aware Concavity and Tree Search (2022), X. Wei et al. [[pdf](https://arxiv.org/pdf/2205.02961), [project](https://colin97.github.io/CoACD/), [code](https://github.com/SarahWeiii/CoACD), [video](https://www.youtube.com/watch?v=r12O0z0723s)]
 
 #### Penetration Depth Computation
 
@@ -126,6 +136,7 @@ A curated list of collision detection open resources
 #### Benchmark
 
 * [spatial-collision-datastructures](https://github.com/ttvd/spatial-collision-datastructures) - Benchmark of various spatial data structures for collision detection.
+* [Continuous Collision Detection](https://continuous-collision-detection.github.io/) ([code](https://github.com/continuous-collision-detection)) Project page for continuous collision detection papers, implementations, benchmarks, and datasets.
 
 #### Narrow-phase
 

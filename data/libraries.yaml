@@ -7,6 +7,27 @@
   license: Apache v2
   github: bepu/bepuphysics1
   badge_github: bepu/bepuphysics1
+- name: Box2D
+  _subsection: Active
+  url: https://box2d.org
+  shapes:
+  - Circle
+  - Capsule
+  - Segment
+  - Polygon
+  - Chain
+  features:
+  - 2D
+  - Collision
+  - Distance
+  - Continuous Collision Detection
+  - Ray Cast
+  - Shape Cast
+  languages:
+  - C
+  license: MIT
+  github: erincatto/box2d
+  badge_github: erincatto/box2d
 - name: Bullet
   _subsection: Active
   url: http://bulletphysics.org
@@ -16,6 +37,20 @@
   license: Zlib
   github: bulletphysics/bullet3
   badge_github: bulletphysics/bullet3
+- name: CCD-Wrapper
+  _subsection: Active
+  url: https://github.com/Continuous-Collision-Detection/CCD-Wrapper
+  shapes:
+  - Vertex-Face
+  - Edge-Edge
+  features:
+  - Continuous Collision Detection
+  - Benchmark
+  languages:
+  - C++
+  license: MIT
+  github: Continuous-Collision-Detection/CCD-Wrapper
+  badge_github: Continuous-Collision-Detection/CCD-Wrapper
 - name: collision-rs
   _subsection: Active
   languages:
@@ -63,6 +98,26 @@
   license: MIT
   github: mattleibow/jitterphysics
   badge_github: mattleibow/jitterphysics
+- name: Kraft
+  _subsection: Active
+  url: https://github.com/BeRo1985/kraft
+  shapes:
+  - Sphere
+  - Capsule
+  - Box
+  - Convex Hull
+  - Triangle Mesh
+  features:
+  - Collision
+  - Continuous Collision Detection
+  - Distance
+  - Ray Cast
+  - Sphere Cast
+  languages:
+  - Object Pascal
+  license: Zlib
+  github: BeRo1985/kraft
+  badge_github: BeRo1985/kraft
 - name: libccd
   _subsection: Active
   url: https://github.com/danfis/libccd
@@ -71,6 +126,28 @@
   license: BSD-3-Clause
   github: danfis/libccd
   badge_github: danfis/libccd
+- name: MuJoCo
+  _subsection: Active
+  url: https://mujoco.org/
+  shapes:
+  - Sphere
+  - Capsule
+  - Box
+  - Cylinder
+  - Plane
+  - Mesh
+  - Height Field
+  features:
+  - Collision
+  - Contact
+  - Distance
+  - Multibody Dynamics
+  languages:
+  - C++
+  - Python
+  license: Apache-2.0
+  github: google-deepmind/mujoco
+  badge_github: google-deepmind/mujoco
 - name: ncollide
   _subsection: Active
   url: http://ncollide.org/
@@ -116,6 +193,69 @@
   license: Apache-2.0
   github: dimforge/parry
   badge_github: dimforge/parry
+- name: PhysX
+  _subsection: Active
+  url: https://nvidia-omniverse.github.io/PhysX/
+  shapes:
+  - Sphere
+  - Capsule
+  - Box
+  - Plane
+  - Convex Mesh
+  - Triangle Mesh
+  - Height Field
+  features:
+  - Collision
+  - Scene Query
+  - Contact
+  - Rigid Body Dynamics
+  languages:
+  - C++
+  license: BSD-3-Clause
+  github: NVIDIA-Omniverse/PhysX
+  badge_github: NVIDIA-Omniverse/PhysX
+- name: python-fcl
+  _subsection: Active
+  url: https://github.com/BerkeleyAutomation/python-fcl
+  shapes:
+  - Box
+  - Sphere
+  - Ellipsoid
+  - Capsule
+  - Cone
+  - Convex
+  - Cylinder
+  - Half-space
+  - Plane
+  - Mesh
+  - OcTree
+  features:
+  - Collision
+  - Distance
+  - Continuous Collision Detection
+  languages:
+  - Python
+  - Cython
+  license: BSD-3-Clause
+  github: BerkeleyAutomation/python-fcl
+  badge_github: BerkeleyAutomation/python-fcl
+- name: pytorch_volumetric
+  _subsection: Active
+  url: https://github.com/UM-ARM-Lab/pytorch_volumetric
+  shapes:
+  - Mesh
+  - Voxel Grid
+  - Signed Distance Field
+  features:
+  - Distance
+  - SDF
+  - Collision Checking
+  - Differentiable Queries
+  languages:
+  - Python
+  license: MIT
+  github: UM-ARM-Lab/pytorch_volumetric
+  badge_github: UM-ARM-Lab/pytorch_volumetric
 - name: ReactPhysics3d
   _subsection: Active
   url: http://www.reactphysics3d.com/
@@ -124,6 +264,21 @@
   license: Zlib
   github: DanielChappuis/reactphysics3d
   badge_github: DanielChappuis/reactphysics3d
+- name: Tight-Inclusion
+  _subsection: Active
+  url: https://continuous-collision-detection.github.io/tight_inclusion/
+  shapes:
+  - Vertex-Face
+  - Edge-Edge
+  features:
+  - Continuous Collision Detection
+  - Minimum Separation
+  - Conservative Collision Detection
+  languages:
+  - C++
+  license: MIT
+  github: Continuous-Collision-Detection/Tight-Inclusion
+  badge_github: Continuous-Collision-Detection/Tight-Inclusion
 - name: tinyc2
   _subsection: Active
   features:

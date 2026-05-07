@@ -18,6 +18,13 @@
   url: https://github.com/ttvd/spatial-collision-datastructures
   description: '- Benchmark of various spatial data structures for collision detection.'
   _subsection: Benchmark
+- name: Continuous Collision Detection
+  url: https://continuous-collision-detection.github.io/
+  description: Project page for continuous collision detection papers, implementations, benchmarks, and datasets.
+  links:
+  - label: code
+    url: https://github.com/continuous-collision-detection
+  _subsection: Benchmark
 - name: Algorithm table for narrowphase algorithms
   url: http://www.realtimerendering.com/intersections.html
   _subsection: Narrow-phase

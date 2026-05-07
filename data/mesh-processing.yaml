@@ -7,6 +7,11 @@
   github: mlivesu/cinolib
   badge_github: mlivesu/cinolib
   description: A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+- name: CoACD
+  url: https://colin97.github.io/CoACD/
+  github: SarahWeiii/CoACD
+  badge_github: SarahWeiii/CoACD
+  description: Approximate convex decomposition for collision-aware mesh approximation.
 - name: libigl
   url: https://libigl.github.io/
   github: libigl/libigl
