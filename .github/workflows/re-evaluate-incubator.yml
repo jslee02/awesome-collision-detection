@@ -52,6 +52,11 @@ jobs:
             }
 
             for (const issue of issues) {
+              if (issue.pull_request) {
+                console.log(`#${issue.number}: pull request, skipping`);
+                continue;
+              }
+
               const body = issue.body || '';
               let ghRepo = '';
               const ghFieldMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
