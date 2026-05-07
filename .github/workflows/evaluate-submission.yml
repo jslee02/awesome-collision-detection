@@ -61,9 +61,7 @@ jobs:
 
           python3 scripts/evaluate_entry.py --data-dir data/ --json "${{ steps.extract.outputs.repo }}" 2>/dev/null > /tmp/eval-result.json || true
           REC=$(python3 -c "import json; print(json.load(open('/tmp/eval-result.json')).get('recommendation','error'))" 2>/dev/null || echo "error")
-          ARCHIVED=$(python3 -c "import json; print(str(json.load(open('/tmp/eval-result.json')).get('archived',False)).lower())" 2>/dev/null || echo "false")
           echo "recommendation=$REC" >> "$GITHUB_OUTPUT"
-          echo "archived=$ARCHIVED" >> "$GITHUB_OUTPUT"
 
       - name: Post evaluation comment
         if: steps.extract.outputs.repo != ''
@@ -85,26 +83,20 @@ jobs:
         with:
           script: |
             const rec = '${{ steps.eval.outputs.recommendation }}';
-            const archived = '${{ steps.eval.outputs.archived }}' === 'true';
             const issue = context.issue.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
-            let label;
-            if (rec === 'reject' && archived) {
-              label = 'rejected';
-            } else {
-              const labelMap = {
-                accept: 'accepted',
-                likely_accept: 'needs-review',
-                incubator: 'incubator',
-                reject: 'incubator',
-                duplicate: 'duplicate',
-                error: 'needs-review',
-                needs_review: 'needs-review',
-              };
-              label = labelMap[rec] || 'needs-review';
-            }
+            const labelMap = {
+              accept: 'accepted',
+              likely_accept: 'needs-review',
+              incubator: 'incubator',
+              reject: 'rejected',
+              duplicate: 'duplicate',
+              error: 'needs-review',
+              needs_review: 'needs-review',
+            };
+            const label = labelMap[rec] || 'needs-review';
 
             await github.rest.issues.addLabels({
               owner,
@@ -127,7 +119,7 @@ jobs:
               });
             }
 
-            if (rec === 'duplicate' || (rec === 'reject' && archived)) {
+            if (rec === 'duplicate' || rec === 'reject') {
               await github.rest.issues.update({
                 owner,
                 repo,
