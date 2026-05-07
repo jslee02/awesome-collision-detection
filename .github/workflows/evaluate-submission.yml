@@ -101,6 +101,7 @@ jobs:
                 reject: 'incubator',
                 duplicate: 'duplicate',
                 error: 'needs-review',
+                needs_review: 'needs-review',
               };
               label = labelMap[rec] || 'needs-review';
             }

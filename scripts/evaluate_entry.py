@@ -7,7 +7,7 @@ Usage:
     python3 scripts/evaluate_entry.py --data-dir data/ owner/repo
 
 Exit codes:
-    0 = accept, 1 = incubator, 2 = reject, 3 = error
+    0 = accept, 1 = incubator, 2 = reject, 3 = error/needs-review
 """
 
 from __future__ import annotations
@@ -51,6 +51,7 @@ GUIDANCE = {
     ),
 }
 USER_AGENT = "awesome-collision-detection-evaluator"
+MANUAL_CHECKS = {"uniqueness"}
 
 
 def _fetch_json(url: str, token: str | None = None) -> dict | list | None:
@@ -214,13 +215,21 @@ def evaluate(
         "detail": "requires manual review",
     }
 
-    auto_score = sum(1 for check in checks.values() if check["pass"] is True)
-    auto_total = sum(1 for check in checks.values() if check["pass"] is not None)
+    auto_checks = {name: check for name, check in checks.items() if name not in MANUAL_CHECKS}
+    auto_score = sum(1 for check in auto_checks.values() if check["pass"] is True)
+    auto_total = len(auto_checks)
     failed_checks = [name for name, check in checks.items() if check["pass"] is False]
+    unknown_checks = [name for name, check in auto_checks.items() if check["pass"] is None]
 
     if archived:
         recommendation = "reject"
         reason = "Repository is archived"
+    elif unknown_checks:
+        recommendation = "needs_review"
+        reason = (
+            "Could not complete auto-checkable criteria "
+            f"({', '.join(unknown_checks)}); maintainer review is required before acceptance"
+        )
     elif auto_score >= 3:
         recommendation = "accept"
         reason = (
@@ -266,6 +275,7 @@ def evaluate(
         "auto_score": auto_score,
         "auto_total": auto_total,
         "failed_checks": failed_checks,
+        "unknown_checks": unknown_checks,
         "recommendation": recommendation,
         "reason": reason,
         "meta": meta,
@@ -340,6 +350,7 @@ def render_report(result: dict) -> str:
     rec_map = {
         "accept": "🟢 Accept",
         "likely_accept": "🟢 Likely Accept",
+        "needs_review": "⚠️ Needs Review",
         "incubator": "🟡 Incubator",
         "reject": "🔴 Reject",
     }
@@ -360,6 +371,12 @@ def render_report(result: dict) -> str:
             guidance = GUIDANCE.get(name)
             if guidance:
                 lines.extend(["", f"**{name.capitalize()}**", guidance])
+
+    if result.get("unknown_checks"):
+        lines.extend(["", "### Needs manual review"])
+        for name in result["unknown_checks"]:
+            detail = result["checks"].get(name, {}).get("detail", "status unknown")
+            lines.extend(["", f"**{name.capitalize()}**", detail])
 
     lines.extend(
         [
