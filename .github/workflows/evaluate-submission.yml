@@ -96,7 +96,7 @@ jobs:
             } else {
               const labelMap = {
                 accept: 'accepted',
-                likely_accept: 'accepted',
+                likely_accept: 'needs-review',
                 incubator: 'incubator',
                 reject: 'incubator',
                 duplicate: 'duplicate',

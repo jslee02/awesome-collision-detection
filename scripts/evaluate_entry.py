@@ -7,7 +7,7 @@ Usage:
     python3 scripts/evaluate_entry.py --data-dir data/ owner/repo
 
 Exit codes:
-    0 = accept, 1 = incubator, 2 = reject, 3 = error/needs-review
+    0 = accept, 1 = incubator, 2 = reject, 3 = manual review/error
 """
 
 from __future__ import annotations
@@ -405,7 +405,7 @@ def main() -> int:
         print(render_report(result))
 
     recommendation = result.get("recommendation")
-    if recommendation in {"accept", "likely_accept"}:
+    if recommendation == "accept":
         return 0
     if recommendation == "incubator":
         return 1

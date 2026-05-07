@@ -68,7 +68,7 @@ jobs:
               let result;
               try {
                 const output = execSync(
-                  `python3 scripts/evaluate_entry.py --data-dir data/ --json "${ghRepo}"`,
+                  `python3 scripts/evaluate_entry.py --data-dir data/ --json "${ghRepo}" || true`,
                   { env: { ...process.env }, timeout: 30000 }
                 ).toString();
                 result = JSON.parse(output);
@@ -78,7 +78,7 @@ jobs:
               }
 
               const rec = result.recommendation;
-              if (rec === 'accept' || rec === 'likely_accept') {
+              if (rec === 'accept') {
                 let report;
                 try {
                   report = execSync(
@@ -124,6 +124,44 @@ jobs:
                   inputs: {
                     issue_number: String(issue.number),
                   },
+                });
+              } else if (rec === 'likely_accept') {
+                let report;
+                try {
+                  report = execSync(
+                    `python3 scripts/evaluate_entry.py --data-dir data/ "${ghRepo}" || true`,
+                    { env: { ...process.env }, timeout: 30000 }
+                  ).toString();
+                } catch (e) {
+                  report = `Re-evaluation suggests this project may qualify with maintainer review (score: ${result.auto_score}/${result.auto_total}).`;
+                }
+
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  body: [
+                    'Monthly re-evaluation update',
+                    '',
+                    'This project may now meet the inclusion criteria, but it still needs maintainer review before acceptance.',
+                    '',
+                    report,
+                    '',
+                    'The `needs-review` label will be applied and no auto-generated PR will be queued.',
+                  ].join('\n'),
+                });
+
+                await github.rest.issues.removeLabel({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  name: 'incubator',
+                }).catch(() => {});
+                await github.rest.issues.addLabels({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  labels: ['needs-review'],
                 });
               } else if (rec === 'duplicate') {
                 await github.rest.issues.createComment({
