@@ -19,9 +19,18 @@ except ModuleNotFoundError:
     from github_metadata import fetch_default_branch_commit_date, fetch_json
 
 USER_AGENT = "awesome-collision-detection-bot"
+ISSUE_FORM_EMPTY_VALUES = {"_no response_"}
+
+
+def clean_issue_form_value(value: object) -> str:
+    if not isinstance(value, str):
+        return ""
+    value = value.strip()
+    return "" if value.lower() in ISSUE_FORM_EMPTY_VALUES else value
 
 
 def split_csv(value: str) -> list[str]:
+    value = clean_issue_form_value(value)
     return [
         item.strip()
         for item in value.replace("\n", ",").split(",")
@@ -31,6 +40,7 @@ def split_csv(value: str) -> list[str]:
 
 def parse_links(value: str) -> list[dict]:
     links = []
+    value = clean_issue_form_value(value)
     for raw in value.splitlines():
         raw = raw.strip().lstrip("-*").strip()
         if not raw:
@@ -171,18 +181,22 @@ def insert_entry(entries: list[dict], entry: dict, yaml_file: str) -> list[dict]
 
 def build_entry(payload: dict) -> dict:
     entry = {"name": payload["name"]}
-    if payload.get("url"):
-        entry["url"] = payload["url"]
+    url = clean_issue_form_value(payload.get("url", ""))
+    if url:
+        entry["url"] = url
 
-    apply_repo_fields(entry, payload.get("github_repo", ""), payload.get("alternative_repo", ""))
-    meta, meta_license, meta_language = fetch_meta(payload.get("github_repo", ""))
+    github_repo = clean_issue_form_value(payload.get("github_repo", ""))
+    alternative_repo = clean_issue_form_value(payload.get("alternative_repo", ""))
+    apply_repo_fields(entry, github_repo, alternative_repo)
+    meta, meta_license, meta_language = fetch_meta(github_repo)
     if meta:
         entry["_meta"] = meta
 
     category = payload["category"]
-    description = payload.get("description", "").strip()
+    description = clean_issue_form_value(payload.get("description", ""))
     if category == "Libraries":
-        subsection = "Inactive" if payload.get("library_status") == "Inactive" else "Active"
+        library_status = clean_issue_form_value(payload.get("library_status", ""))
+        subsection = "Inactive" if library_status == "Inactive" else "Active"
         entry["_subsection"] = subsection
         shapes = split_csv(payload.get("shapes", ""))
         features = split_csv(payload.get("features", ""))
@@ -195,8 +209,9 @@ def build_entry(payload: dict) -> dict:
             entry["languages"] = languages
         elif meta_language:
             entry["languages"] = [meta_language]
-        if payload.get("license"):
-            entry["license"] = payload["license"].strip()
+        license_text = clean_issue_form_value(payload.get("license", ""))
+        if license_text:
+            entry["license"] = license_text
         elif meta_license:
             entry["license"] = meta_license
         if description and subsection == "Inactive":
@@ -205,14 +220,22 @@ def build_entry(payload: dict) -> dict:
         if description:
             entry["description"] = description
     elif category in {"Papers", "Books", "Articles"}:
-        if payload.get("subsection") and category in {"Papers", "Articles"}:
-            entry["_subsection"] = payload["subsection"].strip()
+        subsection = clean_issue_form_value(payload.get("subsection", ""))
+        if subsection and category in {"Papers", "Articles"}:
+            entry["_subsection"] = subsection
         elif category in {"Papers", "Articles"}:
             entry["_subsection"] = "Other"
         if description:
             entry["description"] = description
         links = parse_links(payload.get("additional_links", ""))
-        links = add_repo_link_if_needed(links, payload)
+        links = add_repo_link_if_needed(
+            links,
+            {
+                **payload,
+                "github_repo": github_repo,
+                "alternative_repo": alternative_repo,
+            },
+        )
         if links:
             entry["links"] = links
     elif category == "Other Awesome Lists":

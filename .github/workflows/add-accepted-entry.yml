@@ -61,7 +61,8 @@ jobs:
             function extractField(name) {
               const re = new RegExp(`### ${name}\\s*\\n\\s*\\n?\\s*([\\s\\S]*?)(?=\\n###|$)`);
               const match = body.match(re);
-              return match ? match[1].trim() : '';
+              const value = match ? match[1].trim() : '';
+              return value.toLowerCase() === '_no response_' ? '' : value;
             }
 
             function normalizeGitHubRepo(value) {
