@@ -64,6 +64,23 @@ def _fetch_json(url: str, token: str | None = None) -> dict | list | None:
         return None
 
 
+def fetch_readme_status(owner_repo: str, token: str | None = None) -> tuple[bool | None, str]:
+    url = f"{API_BASE}/repos/{owner_repo}/readme"
+    try:
+        readme_data = fetch_json(url, token, USER_AGENT)
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return False, "no README"
+        print(f"ERROR: HTTP {e.code} for {url}", file=sys.stderr)
+        return None, "README status unknown (fetch failed)"
+    except (urllib.error.URLError, TimeoutError) as e:
+        print(f"ERROR: {e} for {url}", file=sys.stderr)
+        return None, "README status unknown (fetch failed)"
+
+    has_readme = isinstance(readme_data, dict) and "content" in readme_data
+    return has_readme, "README found" if has_readme else "no README"
+
+
 def find_duplicates(owner_repo: str, data_dir: Path) -> list[dict]:
     slug = owner_repo.lower()
     matches = []
@@ -152,8 +169,7 @@ def evaluate(
     homepage_url = data.get("homepage") or ""
     language = data.get("language") or ""
 
-    readme_data = _fetch_json(f"{API_BASE}/repos/{owner_repo}/readme", token)
-    has_readme = readme_data is not None and "content" in (readme_data or {})
+    has_readme, readme_detail = fetch_readme_status(owner_repo, token)
 
     checks: dict[str, dict] = {}
     checks["popularity"] = {
@@ -176,7 +192,7 @@ def evaluate(
 
     checks["documentation"] = {
         "pass": has_readme,
-        "detail": "README found" if has_readme else "no README",
+        "detail": readme_detail,
     }
 
     mature = False
@@ -285,6 +301,13 @@ def render_report(result: dict) -> str:
         lines.append(f"> {result['description']}")
         lines.append("")
 
+    if result.get("has_readme") is True:
+        readme_display = "✅"
+    elif result.get("has_readme") is False:
+        readme_display = "❌"
+    else:
+        readme_display = "Unknown"
+
     lines.extend(
         [
             "### Repository Info",
@@ -295,7 +318,7 @@ def render_report(result: dict) -> str:
             f"| Created | {result.get('created_at', 'unknown')} |",
             f"| Last Commit (default branch) | {result.get('last_commit', 'unknown')} |",
             f"| Archived | {'Yes' if result.get('archived') else 'No'} |",
-            f"| README | {'✅' if result.get('has_readme') else '❌'} |",
+            f"| README | {readme_display} |",
             f"| License | {'✅ ' + result['license'] if result.get('license') else '❌'} |",
             f"| Homepage | {'✅' if result.get('has_homepage') else '❌'} |",
             "",

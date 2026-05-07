@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Block direct README edits
-        if: github.event.pull_request.user.type != 'Bot'
         uses: actions/github-script@v8
         with:
           script: |
