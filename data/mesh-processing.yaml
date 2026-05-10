@@ -3,17 +3,37 @@
   github: gaschler/bounding-mesh
   badge_github: gaschler/bounding-mesh
   description: Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation.
+  _meta:
+    stars: 349
+    last_commit: '2019-04-25'
+    license: BSD-2-Clause
+    language: C++
 - name: cinolib
   github: mlivesu/cinolib
   badge_github: mlivesu/cinolib
   description: A generic programming header only C++ library for processing polygonal and polyhedral meshes.
+  _meta:
+    stars: 1091
+    last_commit: '2026-04-22'
+    license: MIT
+    language: C++
 - name: CoACD
   url: https://colin97.github.io/CoACD/
   github: SarahWeiii/CoACD
   badge_github: SarahWeiii/CoACD
   description: Approximate convex decomposition for collision-aware mesh approximation.
+  _meta:
+    stars: 1017
+    last_commit: '2026-05-04'
+    license: MIT
+    language: C++
 - name: libigl
   url: https://libigl.github.io/
   github: libigl/libigl
   badge_github: libigl/libigl
   description: A simple C++ geometry processing library.
+  _meta:
+    stars: 5014
+    last_commit: '2026-05-07'
+    license: GPL-3.0
+    language: C++

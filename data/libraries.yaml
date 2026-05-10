@@ -1,15 +1,22 @@
 - name: BEPUphysics 1
   _subsection: Active
   url: http://www.bepuphysics.com/
+  description: Pure C# physics engine with broadphase and narrowphase collision detection.
   languages:
   - C#
   - .NET
   license: Apache v2
   github: bepu/bepuphysics1
   badge_github: bepu/bepuphysics1
+  _meta:
+    stars: 425
+    last_commit: '2021-08-02'
+    license: Apache-2.0
+    language: C#
 - name: Box2D
   _subsection: Active
   url: https://box2d.org
+  description: 2D physics engine with collision, distance, ray cast, and shape cast queries.
   shapes:
   - Circle
   - Capsule
@@ -28,18 +35,30 @@
   license: MIT
   github: erincatto/box2d
   badge_github: erincatto/box2d
+  _meta:
+    stars: 9653
+    last_commit: '2026-05-10'
+    license: MIT
+    language: C
 - name: Bullet
   _subsection: Active
   url: http://bulletphysics.org
+  description: Real-time physics SDK with collision detection for games, robotics, and simulation.
   languages:
   - C++
   - Python
   license: Zlib
   github: bulletphysics/bullet3
   badge_github: bulletphysics/bullet3
+  _meta:
+    stars: 14464
+    last_commit: '2025-10-22'
+    license: Other
+    language: C++
 - name: CCD-Wrapper
   _subsection: Active
   url: https://github.com/Continuous-Collision-Detection/CCD-Wrapper
+  description: Wrapper and benchmark for continuous collision detection algorithms.
   shapes:
   - Vertex-Face
   - Edge-Edge
@@ -51,24 +70,42 @@
   license: MIT
   github: Continuous-Collision-Detection/CCD-Wrapper
   badge_github: Continuous-Collision-Detection/CCD-Wrapper
+  _meta:
+    stars: 60
+    last_commit: '2022-02-22'
+    license: MIT
+    language: C++
 - name: collision-rs
   _subsection: Active
+  description: Rust collision detection library with broadphase and narrowphase queries.
   languages:
   - Rust
   license: Apache-2.0
   github: rustgd/collision-rs
   badge_github: rustgd/collision-rs
+  _meta:
+    stars: 130
+    last_commit: '2021-10-08'
+    license: Apache-2.0
+    language: Rust
 - name: FCL
   _subsection: Active
   url: https://github.com/flexible-collision-library/fcl
+  description: Flexible Collision Library for collision, distance, and continuous collision queries.
   languages:
   - C++
   license: BSD-3-Clause
   github: flexible-collision-library/fcl
   badge_github: flexible-collision-library/fcl
+  _meta:
+    stars: 1697
+    last_commit: '2026-02-02'
+    license: Other
+    language: C++
 - name: coal (HPP-FCL)
   _subsection: Active
   url: https://github.com/coal-library/coal
+  description: Collision detection and distance query library derived from HPP-FCL.
   shapes:
   - Box
   - Sphere
@@ -89,18 +126,29 @@
   license: BSD-3-Clause
   github: coal-library/coal
   badge_github: humanoid-path-planner/hpp-fcl
+  _meta:
+    stars: 586
+    last_commit: '2026-05-09'
+    license: Other
+    language: C++
 - name: JitterPhysics
   _subsection: Active
   url: https://github.com/mattleibow/jitterphysics
+  description: C# rigid body physics engine with collision detection support.
   languages:
   - C#
   - .NET
   license: MIT
   github: mattleibow/jitterphysics
   badge_github: mattleibow/jitterphysics
+  _meta:
+    stars: 47
+    last_commit: '2021-08-08'
+    license: MIT
 - name: Kraft
   _subsection: Active
   url: https://github.com/BeRo1985/kraft
+  description: Object Pascal physics engine with discrete and optional continuous collision detection.
   shapes:
   - Sphere
   - Capsule
@@ -118,17 +166,28 @@
   license: Zlib
   github: BeRo1985/kraft
   badge_github: BeRo1985/kraft
+  _meta:
+    stars: 126
+    last_commit: '2026-05-01'
+    language: Pascal
 - name: libccd
   _subsection: Active
   url: https://github.com/danfis/libccd
+  description: Small C library for collision detection between convex shapes using GJK and EPA.
   languages:
   - C
   license: BSD-3-Clause
   github: danfis/libccd
   badge_github: danfis/libccd
+  _meta:
+    stars: 639
+    last_commit: '2018-12-22'
+    license: Other
+    language: C
 - name: MuJoCo
   _subsection: Active
   url: https://mujoco.org/
+  description: Physics simulator with contact, collision, and distance queries for robotics and control.
   shapes:
   - Sphere
   - Capsule
@@ -148,17 +207,29 @@
   license: Apache-2.0
   github: google-deepmind/mujoco
   badge_github: google-deepmind/mujoco
+  _meta:
+    stars: 13427
+    last_commit: '2026-05-10'
+    license: Apache-2.0
+    language: C++
 - name: ncollide
   _subsection: Active
   url: http://ncollide.org/
+  description: Rust collision detection library for 2D and 3D geometric queries.
   languages:
   - Rust
   license: BSD-3-Clause
   github: sebcrozet/ncollide
   badge_github: sebcrozet/ncollide
+  _meta:
+    stars: 934
+    last_commit: '2022-03-18'
+    license: Apache-2.0
+    language: Rust
 - name: ODE
   _subsection: Active
   url: http://www.ode.org/
+  description: Open Dynamics Engine with rigid body simulation and collision detection.
   shapes:
   - Sphere
   - Box
@@ -175,6 +246,7 @@
 - name: OpenGJK
   _subsection: Active
   url: https://www.mattiamontanari.com/opengjk/
+  description: GJK-based minimum distance library with bindings for multiple languages.
   languages:
   - C++
   - C#
@@ -185,17 +257,29 @@
   license: GPL-3.0
   github: MattiaMontanari/openGJK
   badge_github: MattiaMontanari/openGJK
+  _meta:
+    stars: 197
+    last_commit: '2026-04-30'
+    license: GPL-3.0
+    language: C++
 - name: Parry
   _subsection: Active
   url: https://github.com/dimforge/parry
+  description: Rust collision detection and geometric query library from Dimforge.
   languages:
   - Rust
   license: Apache-2.0
   github: dimforge/parry
   badge_github: dimforge/parry
+  _meta:
+    stars: 819
+    last_commit: '2026-04-04'
+    license: Apache-2.0
+    language: Rust
 - name: PhysX
   _subsection: Active
   url: https://nvidia-omniverse.github.io/PhysX/
+  description: NVIDIA physics SDK with scene queries, contact generation, and collision detection.
   shapes:
   - Sphere
   - Capsule
@@ -214,9 +298,15 @@
   license: BSD-3-Clause
   github: NVIDIA-Omniverse/PhysX
   badge_github: NVIDIA-Omniverse/PhysX
+  _meta:
+    stars: 4531
+    last_commit: '2026-04-13'
+    license: BSD-3-Clause
+    language: C++
 - name: python-fcl
   _subsection: Active
   url: https://github.com/BerkeleyAutomation/python-fcl
+  description: Python bindings for FCL collision, distance, and continuous collision queries.
   shapes:
   - Box
   - Sphere
@@ -239,9 +329,15 @@
   license: BSD-3-Clause
   github: BerkeleyAutomation/python-fcl
   badge_github: BerkeleyAutomation/python-fcl
+  _meta:
+    stars: 269
+    last_commit: '2026-04-08'
+    license: BSD-3-Clause
+    language: Cython
 - name: pytorch_volumetric
   _subsection: Active
   url: https://github.com/UM-ARM-Lab/pytorch_volumetric
+  description: PyTorch utilities for volumetric signed distance fields and differentiable collision queries.
   shapes:
   - Mesh
   - Voxel Grid
@@ -256,17 +352,29 @@
   license: MIT
   github: UM-ARM-Lab/pytorch_volumetric
   badge_github: UM-ARM-Lab/pytorch_volumetric
+  _meta:
+    stars: 246
+    last_commit: '2026-03-26'
+    license: MIT
+    language: Python
 - name: ReactPhysics3d
   _subsection: Active
   url: http://www.reactphysics3d.com/
+  description: C++ 3D physics engine with rigid body collision detection.
   languages:
   - C++
   license: Zlib
   github: DanielChappuis/reactphysics3d
   badge_github: DanielChappuis/reactphysics3d
+  _meta:
+    stars: 1744
+    last_commit: '2025-01-09'
+    license: Zlib
+    language: C++
 - name: Tight-Inclusion
   _subsection: Active
   url: https://continuous-collision-detection.github.io/tight_inclusion/
+  description: Conservative continuous collision detection library with minimum separation support.
   shapes:
   - Vertex-Face
   - Edge-Edge
@@ -279,8 +387,14 @@
   license: MIT
   github: Continuous-Collision-Detection/Tight-Inclusion
   badge_github: Continuous-Collision-Detection/Tight-Inclusion
+  _meta:
+    stars: 157
+    last_commit: '2026-01-19'
+    license: MIT
+    language: C++
 - name: tinyc2
   _subsection: Active
+  description: Single-header 2D collision detection library for primitive shapes.
   features:
   - 2d
   languages:
@@ -288,13 +402,24 @@
   license: Zlib
   github: RandyGaul/tinyheaders
   badge_github: RandyGaul/tinyheaders
+  _meta:
+    stars: 4975
+    last_commit: '2026-04-22'
+    language: C
 - name: qu3e
   _subsection: Active
+  description: Lightweight 3D rigid body physics engine with collision detection.
   languages:
   - C++
   license: Zlib
   github: RandyGaul/qu3e
   badge_github: RandyGaul/qu3e
+  _meta:
+    stars: 991
+    last_commit: '2021-05-09'
+    archived: true
+    license: Zlib
+    language: C
 - name: ColDet
   url: https://sourceforge.net/projects/coldet/
   description: 3D Collision Detection.
@@ -309,7 +434,13 @@
   _subsection: Inactive
 - name: OZCollide
   github: jslee02/OZCollide
+  description: Legacy collision detection library.
   _subsection: Inactive
+  _meta:
+    stars: 4
+    last_commit: '2017-04-01'
+    license: LGPL-2.1
+    language: C++
 - name: SOLID
   url: http://solid.sourceforge.net/
   description: Collision detection of 3D objects undergoing rigid motion and deformation.

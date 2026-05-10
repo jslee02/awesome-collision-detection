@@ -1,5 +1,10 @@
 - name: Awesome Robotics Libraries
   url: https://github.com/jslee02/awesome-robotics-libraries
   github: jslee02/awesome-robotics-libraries
-  description: This is a list of various libraris and software for robotics. It's also attempting to provide some comparisons
+  description: This is a list of various libraries and software for robotics. It's also attempting to provide some comparisons
     for selected libraries and software.
+  _meta:
+    stars: 2911
+    last_commit: '2026-05-07'
+    license: CC0-1.0
+    language: Python

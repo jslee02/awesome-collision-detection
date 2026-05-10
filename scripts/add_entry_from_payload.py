@@ -214,7 +214,7 @@ def build_entry(payload: dict) -> dict:
             entry["license"] = license_text
         elif meta_license:
             entry["license"] = meta_license
-        if description and subsection == "Inactive":
+        if description:
             entry["description"] = description
     elif category == "Mesh Processing":
         if description:

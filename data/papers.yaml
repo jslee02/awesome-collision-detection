@@ -40,8 +40,6 @@
   links:
   - label: pdf
     url: http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf
-  - label: code
-    url: http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/TriangleIntersection/code.cpp
   _subsection: Triangle-triangle Test
   notes:
   - A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
@@ -129,8 +127,6 @@
   links:
   - label: pdf
     url: https://www.researchgate.net/profile/Essex_Edwards/publication/254200434_Efficient_Geometrically_Exact_Continuous_Collision_Detection/links/5540dd8a0cf2322227304cce/Efficient-Geometrically-Exact-Continuous-Collision-Detection.pdf
-  - label: video
-    url: https://youtu.be/5bGPoMbXIzs
   _subsection: Continuous Collision Detection
 - name: 'C2A: Controlled Conservative Advancement for Continuous Collision Detection of Polygonal Models (2009), M. Tang et
     al.'

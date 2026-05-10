@@ -7,7 +7,7 @@
   description: (GDC 2013), Erwin Coumans
   _subsection: Overview & Tutorial
 - name: OpenCL accelerated rigid body and collision detection
-  url: http://www.cs.rpi.edu/~trink/RSS-2011/Presentations/coumans.pdf
+  url: https://www.cse.lehigh.edu/~trink/RSS-2011/Presentations/coumans.pdf
   description: (RSS 2011), Erwin Coumans
   _subsection: Overview & Tutorial
 - name: Contact Generation
@@ -47,7 +47,7 @@
 - name: Benchmark of various spatial data structures for collision detection
   url: https://github.com/ttvd/spatial-collision-datastructures
   _subsection: Space Partitioning
-- name: Bounding volume heirarchy
+- name: Bounding volume hierarchy
   _subsection: Space Partitioning
   _type: header
 - _indent: 1

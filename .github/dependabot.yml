@@ -1,0 +1,10 @@
+# To get started with Dependabot version updates, specify package ecosystems
+# and package manifest locations. See:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
