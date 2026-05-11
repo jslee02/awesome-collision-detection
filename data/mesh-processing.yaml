@@ -33,7 +33,7 @@
   badge_github: libigl/libigl
   description: A simple C++ geometry processing library.
   _meta:
-    stars: 5014
+    stars: 5015
     last_commit: '2026-05-07'
     license: GPL-3.0
     language: C++

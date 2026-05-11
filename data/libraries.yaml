@@ -98,7 +98,7 @@
   github: flexible-collision-library/fcl
   badge_github: flexible-collision-library/fcl
   _meta:
-    stars: 1697
+    stars: 1698
     last_commit: '2026-02-02'
     license: Other
     language: C++
@@ -127,7 +127,7 @@
   github: coal-library/coal
   badge_github: humanoid-path-planner/hpp-fcl
   _meta:
-    stars: 586
+    stars: 588
     last_commit: '2026-05-09'
     license: Other
     language: C++
@@ -208,7 +208,7 @@
   github: google-deepmind/mujoco
   badge_github: google-deepmind/mujoco
   _meta:
-    stars: 13427
+    stars: 13434
     last_commit: '2026-05-10'
     license: Apache-2.0
     language: C++
@@ -403,7 +403,7 @@
   github: RandyGaul/tinyheaders
   badge_github: RandyGaul/tinyheaders
   _meta:
-    stars: 4975
+    stars: 4976
     last_commit: '2026-04-22'
     language: C
 - name: qu3e
