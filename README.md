@@ -170,7 +170,7 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 
 ## [Contributing](#contents)
 
-Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-collision-detection/blob/master/CONTRIBUTING.md) first. Also, please feel free to report any error.
+Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-collision-detection/blob/main/CONTRIBUTING.md) first. Also, please feel free to report any error.
 
 ## [Star History](#contents)
 
