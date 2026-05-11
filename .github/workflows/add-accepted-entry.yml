@@ -33,7 +33,7 @@ jobs:
         id: parse
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -172,7 +172,7 @@ jobs:
 
       - name: Comment on issue for unsupported category
         if: steps.parse.outputs.unsupported_category == 'true'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const owner = context.repo.owner;
