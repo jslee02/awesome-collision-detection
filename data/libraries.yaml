@@ -9,7 +9,7 @@
   github: bepu/bepuphysics1
   badge_github: bepu/bepuphysics1
   _meta:
-    stars: 425
+    stars: 426
     last_commit: '2021-08-02'
     license: Apache-2.0
     language: C#
@@ -36,7 +36,7 @@
   github: erincatto/box2d
   badge_github: erincatto/box2d
   _meta:
-    stars: 9653
+    stars: 9661
     last_commit: '2026-05-10'
     license: MIT
     language: C
@@ -51,7 +51,7 @@
   github: bulletphysics/bullet3
   badge_github: bulletphysics/bullet3
   _meta:
-    stars: 14464
+    stars: 14477
     last_commit: '2025-10-22'
     license: Other
     language: C++
@@ -98,7 +98,7 @@
   github: flexible-collision-library/fcl
   badge_github: flexible-collision-library/fcl
   _meta:
-    stars: 1698
+    stars: 1700
     last_commit: '2026-02-02'
     license: Other
     language: C++
@@ -127,8 +127,8 @@
   github: coal-library/coal
   badge_github: humanoid-path-planner/hpp-fcl
   _meta:
-    stars: 588
-    last_commit: '2026-05-09'
+    stars: 597
+    last_commit: '2026-05-17'
     license: Other
     language: C++
 - name: JitterPhysics
@@ -208,8 +208,8 @@
   github: google-deepmind/mujoco
   badge_github: google-deepmind/mujoco
   _meta:
-    stars: 13434
-    last_commit: '2026-05-10'
+    stars: 13506
+    last_commit: '2026-05-17'
     license: Apache-2.0
     language: C++
 - name: ncollide
@@ -258,7 +258,7 @@
   github: MattiaMontanari/openGJK
   badge_github: MattiaMontanari/openGJK
   _meta:
-    stars: 197
+    stars: 198
     last_commit: '2026-04-30'
     license: GPL-3.0
     language: C++
@@ -272,8 +272,8 @@
   github: dimforge/parry
   badge_github: dimforge/parry
   _meta:
-    stars: 819
-    last_commit: '2026-04-04'
+    stars: 821
+    last_commit: '2026-05-12'
     license: Apache-2.0
     language: Rust
 - name: PhysX
@@ -299,7 +299,7 @@
   github: NVIDIA-Omniverse/PhysX
   badge_github: NVIDIA-Omniverse/PhysX
   _meta:
-    stars: 4531
+    stars: 4537
     last_commit: '2026-04-13'
     license: BSD-3-Clause
     language: C++
@@ -353,7 +353,7 @@
   github: UM-ARM-Lab/pytorch_volumetric
   badge_github: UM-ARM-Lab/pytorch_volumetric
   _meta:
-    stars: 246
+    stars: 247
     last_commit: '2026-03-26'
     license: MIT
     language: Python
@@ -367,7 +367,7 @@
   github: DanielChappuis/reactphysics3d
   badge_github: DanielChappuis/reactphysics3d
   _meta:
-    stars: 1744
+    stars: 1745
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -403,7 +403,7 @@
   github: RandyGaul/tinyheaders
   badge_github: RandyGaul/tinyheaders
   _meta:
-    stars: 4976
+    stars: 4990
     last_commit: '2026-04-22'
     language: C
 - name: qu3e
