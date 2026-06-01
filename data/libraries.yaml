@@ -9,7 +9,7 @@
   github: bepu/bepuphysics1
   badge_github: bepu/bepuphysics1
   _meta:
-    stars: 426
+    stars: 429
     last_commit: '2021-08-02'
     license: Apache-2.0
     language: C#
@@ -36,8 +36,8 @@
   github: erincatto/box2d
   badge_github: erincatto/box2d
   _meta:
-    stars: 9661
-    last_commit: '2026-05-10'
+    stars: 9693
+    last_commit: '2026-05-29'
     license: MIT
     language: C
 - name: Bullet
@@ -51,7 +51,7 @@
   github: bulletphysics/bullet3
   badge_github: bulletphysics/bullet3
   _meta:
-    stars: 14477
+    stars: 14512
     last_commit: '2025-10-22'
     license: Other
     language: C++
@@ -98,7 +98,7 @@
   github: flexible-collision-library/fcl
   badge_github: flexible-collision-library/fcl
   _meta:
-    stars: 1700
+    stars: 1701
     last_commit: '2026-02-02'
     license: Other
     language: C++
@@ -127,8 +127,8 @@
   github: coal-library/coal
   badge_github: humanoid-path-planner/hpp-fcl
   _meta:
-    stars: 597
-    last_commit: '2026-05-17'
+    stars: 605
+    last_commit: '2026-05-19'
     license: Other
     language: C++
 - name: JitterPhysics
@@ -180,7 +180,7 @@
   github: danfis/libccd
   badge_github: danfis/libccd
   _meta:
-    stars: 639
+    stars: 642
     last_commit: '2018-12-22'
     license: Other
     language: C
@@ -208,8 +208,8 @@
   github: google-deepmind/mujoco
   badge_github: google-deepmind/mujoco
   _meta:
-    stars: 13506
-    last_commit: '2026-05-17'
+    stars: 13698
+    last_commit: '2026-05-31'
     license: Apache-2.0
     language: C++
 - name: ncollide
@@ -222,7 +222,7 @@
   github: sebcrozet/ncollide
   badge_github: sebcrozet/ncollide
   _meta:
-    stars: 934
+    stars: 933
     last_commit: '2022-03-18'
     license: Apache-2.0
     language: Rust
@@ -272,8 +272,8 @@
   github: dimforge/parry
   badge_github: dimforge/parry
   _meta:
-    stars: 821
-    last_commit: '2026-05-12'
+    stars: 828
+    last_commit: '2026-05-28'
     license: Apache-2.0
     language: Rust
 - name: PhysX
@@ -299,8 +299,8 @@
   github: NVIDIA-Omniverse/PhysX
   badge_github: NVIDIA-Omniverse/PhysX
   _meta:
-    stars: 4537
-    last_commit: '2026-04-13'
+    stars: 4574
+    last_commit: '2026-05-27'
     license: BSD-3-Clause
     language: C++
 - name: python-fcl
@@ -367,7 +367,7 @@
   github: DanielChappuis/reactphysics3d
   badge_github: DanielChappuis/reactphysics3d
   _meta:
-    stars: 1745
+    stars: 1752
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -403,7 +403,7 @@
   github: RandyGaul/tinyheaders
   badge_github: RandyGaul/tinyheaders
   _meta:
-    stars: 4990
+    stars: 5006
     last_commit: '2026-04-22'
     language: C
 - name: qu3e
@@ -415,7 +415,7 @@
   github: RandyGaul/qu3e
   badge_github: RandyGaul/qu3e
   _meta:
-    stars: 991
+    stars: 993
     last_commit: '2021-05-09'
     archived: true
     license: Zlib
