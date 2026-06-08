@@ -23,7 +23,7 @@
   badge_github: SarahWeiii/CoACD
   description: Approximate convex decomposition for collision-aware mesh approximation.
   _meta:
-    stars: 1041
+    stars: 1055
     last_commit: '2026-05-04'
     license: MIT
     language: C++
@@ -33,7 +33,7 @@
   badge_github: libigl/libigl
   description: A simple C++ geometry processing library.
   _meta:
-    stars: 5023
+    stars: 5027
     last_commit: '2026-05-07'
     license: GPL-3.0
     language: C++

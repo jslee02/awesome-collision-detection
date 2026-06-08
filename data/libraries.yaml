@@ -36,8 +36,8 @@
   github: erincatto/box2d
   badge_github: erincatto/box2d
   _meta:
-    stars: 9693
-    last_commit: '2026-05-29'
+    stars: 9706
+    last_commit: '2026-06-08'
     license: MIT
     language: C
 - name: Bullet
@@ -51,7 +51,7 @@
   github: bulletphysics/bullet3
   badge_github: bulletphysics/bullet3
   _meta:
-    stars: 14512
+    stars: 14523
     last_commit: '2025-10-22'
     license: Other
     language: C++
@@ -84,7 +84,7 @@
   github: rustgd/collision-rs
   badge_github: rustgd/collision-rs
   _meta:
-    stars: 130
+    stars: 131
     last_commit: '2021-10-08'
     license: Apache-2.0
     language: Rust
@@ -98,7 +98,7 @@
   github: flexible-collision-library/fcl
   badge_github: flexible-collision-library/fcl
   _meta:
-    stars: 1701
+    stars: 1706
     last_commit: '2026-02-02'
     license: Other
     language: C++
@@ -127,8 +127,8 @@
   github: coal-library/coal
   badge_github: humanoid-path-planner/hpp-fcl
   _meta:
-    stars: 605
-    last_commit: '2026-05-19'
+    stars: 608
+    last_commit: '2026-06-02'
     license: Other
     language: C++
 - name: JitterPhysics
@@ -208,8 +208,8 @@
   github: google-deepmind/mujoco
   badge_github: google-deepmind/mujoco
   _meta:
-    stars: 13698
-    last_commit: '2026-05-31'
+    stars: 13792
+    last_commit: '2026-06-08'
     license: Apache-2.0
     language: C++
 - name: ncollide
@@ -272,8 +272,8 @@
   github: dimforge/parry
   badge_github: dimforge/parry
   _meta:
-    stars: 828
-    last_commit: '2026-05-28'
+    stars: 834
+    last_commit: '2026-06-07'
     license: Apache-2.0
     language: Rust
 - name: PhysX
@@ -299,8 +299,8 @@
   github: NVIDIA-Omniverse/PhysX
   badge_github: NVIDIA-Omniverse/PhysX
   _meta:
-    stars: 4574
-    last_commit: '2026-05-27'
+    stars: 4591
+    last_commit: '2026-06-03'
     license: BSD-3-Clause
     language: C++
 - name: python-fcl
@@ -367,7 +367,7 @@
   github: DanielChappuis/reactphysics3d
   badge_github: DanielChappuis/reactphysics3d
   _meta:
-    stars: 1752
+    stars: 1750
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -403,7 +403,7 @@
   github: RandyGaul/tinyheaders
   badge_github: RandyGaul/tinyheaders
   _meta:
-    stars: 5006
+    stars: 5007
     last_commit: '2026-04-22'
     language: C
 - name: qu3e
@@ -415,7 +415,7 @@
   github: RandyGaul/qu3e
   badge_github: RandyGaul/qu3e
   _meta:
-    stars: 993
+    stars: 995
     last_commit: '2021-05-09'
     archived: true
     license: Zlib
