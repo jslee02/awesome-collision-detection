@@ -174,7 +174,7 @@ Contributions are very welcome! Please read the [contribution guidelines](https:
 
 ## [Star History](#contents)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jslee02/awesome-collision-detection&type=Date)](https://star-history.com/#jslee02/awesome-collision-detection)
+[![Star History Chart](https://star-history.dera.page/svg?repos=jslee02/awesome-collision-detection&type=Date)](https://star-history.dera.page/#jslee02/awesome-collision-detection)
 
 ## [License](#contents)
 
