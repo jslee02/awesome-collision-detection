@@ -13,8 +13,8 @@
   badge_github: mlivesu/cinolib
   description: A generic programming header only C++ library for processing polygonal and polyhedral meshes.
   _meta:
-    stars: 1099
-    last_commit: '2026-06-15'
+    stars: 1109
+    last_commit: '2026-08-19'
     license: MIT
     language: C++
 - name: CoACD
@@ -23,8 +23,8 @@
   badge_github: SarahWeiii/CoACD
   description: Approximate convex decomposition for collision-aware mesh approximation.
   _meta:
-    stars: 1065
-    last_commit: '2026-05-04'
+    stars: 1144
+    last_commit: '2026-08-28'
     license: MIT
     language: C++
 - name: libigl
@@ -33,7 +33,7 @@
   badge_github: libigl/libigl
   description: A simple C++ geometry processing library.
   _meta:
-    stars: 5035
-    last_commit: '2026-05-07'
+    stars: 5082
+    last_commit: '2026-09-04'
     license: GPL-3.0
     language: C++
