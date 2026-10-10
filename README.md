@@ -26,28 +26,29 @@ A curated list of collision detection libraries, algorithms, papers, and related
 
 _Collision detection, distance query, and proximity query libraries. See also [Comparisons](COMPARISONS.md)._
 
-* 🔴 [BEPUphysics 1](http://www.bepuphysics.com/) - Pure C# physics engine with broadphase and narrowphase collision detection. [⭐ 425](https://github.com/bepu/bepuphysics1)
-* 🟢 [Box2D](https://box2d.org) - 2D physics engine with collision, distance, ray cast, and shape cast queries. [⭐ 9.7k](https://github.com/erincatto/box2d)
-* 🟢 [Bullet](http://bulletphysics.org) - Real-time physics SDK with collision detection for games, robotics, and simulation. [⭐ 14.5k](https://github.com/bulletphysics/bullet3)
-* 🔴 [CCD-Wrapper](https://github.com/Continuous-Collision-Detection/CCD-Wrapper) - Wrapper and benchmark for continuous collision detection algorithms. [⭐ 60](https://github.com/Continuous-Collision-Detection/CCD-Wrapper)
-* 🟢 [coal (HPP-FCL)](https://github.com/coal-library/coal) - Collision detection and distance query library derived from HPP-FCL. [⭐ 586](https://github.com/coal-library/coal)
+* 🔴 [BEPUphysics 1](http://www.bepuphysics.com/) - Pure C# physics engine with broadphase and narrowphase collision detection. [⭐ 435](https://github.com/bepu/bepuphysics1)
+* 🟢 [Box2D](https://box2d.org) - 2D physics engine with collision, distance, ray cast, and shape cast queries. [⭐ 10.4k](https://github.com/erincatto/box2d)
+* 🟢 [Bullet](http://bulletphysics.org) - Real-time physics SDK with collision detection for games, robotics, and simulation. [⭐ 14.8k](https://github.com/bulletphysics/bullet3)
+* 🔴 [CCD-Wrapper](https://github.com/Continuous-Collision-Detection/CCD-Wrapper) - Wrapper and benchmark for continuous collision detection algorithms. [⭐ 61](https://github.com/Continuous-Collision-Detection/CCD-Wrapper)
+* 🟢 [coal (HPP-FCL)](https://github.com/coal-library/coal) - Collision detection and distance query library derived from HPP-FCL. [⭐ 646](https://github.com/coal-library/coal)
 * 🔴 collision-rs - Rust collision detection library with broadphase and narrowphase queries. [⭐ 130](https://github.com/rustgd/collision-rs)
-* 🟢 [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library for collision, distance, and continuous collision queries. [⭐ 1.7k](https://github.com/flexible-collision-library/fcl)
+* 🔴 [DifferentiableCollisions.jl](https://github.com/kevin-tracy/DifferentiableCollisions.jl) - Julia implementation of DCOL, differentiable collision detection between convex primitives, with a Python/JAX port (dpax). [⭐ 239](https://github.com/kevin-tracy/DifferentiableCollisions.jl)
+* 🟢 [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library for collision, distance, and continuous collision queries. [⭐ 1.8k](https://github.com/flexible-collision-library/fcl)
 * 🔴 [JitterPhysics](https://github.com/mattleibow/jitterphysics) - C# rigid body physics engine with collision detection support. [⭐ 47](https://github.com/mattleibow/jitterphysics)
-* 🟢 [Kraft](https://github.com/BeRo1985/kraft) - Object Pascal physics engine with discrete and optional continuous collision detection. [⭐ 126](https://github.com/BeRo1985/kraft)
-* 🔴 [libccd](https://github.com/danfis/libccd) - Small C library for collision detection between convex shapes using GJK and EPA. [⭐ 639](https://github.com/danfis/libccd)
-* 🟢 [MuJoCo](https://mujoco.org/) - Physics simulator with contact, collision, and distance queries for robotics and control. [⭐ 13.4k](https://github.com/google-deepmind/mujoco)
-* 🔴 [ncollide](http://ncollide.org/) - Rust collision detection library for 2D and 3D geometric queries. [⭐ 934](https://github.com/sebcrozet/ncollide)
+* 🟢 [Kraft](https://github.com/BeRo1985/kraft) - Object Pascal physics engine with discrete and optional continuous collision detection. [⭐ 132](https://github.com/BeRo1985/kraft)
+* 🔴 [libccd](https://github.com/danfis/libccd) - Small C library for collision detection between convex shapes using GJK and EPA. [⭐ 648](https://github.com/danfis/libccd)
+* 🟢 [MuJoCo](https://mujoco.org/) - Physics simulator with contact, collision, and distance queries for robotics and control. [⭐ 15.5k](https://github.com/google-deepmind/mujoco)
+* 🔴 [ncollide](http://ncollide.org/) - Rust collision detection library for 2D and 3D geometric queries. [⭐ 926](https://github.com/sebcrozet/ncollide)
 * [ODE](http://www.ode.org/) - Open Dynamics Engine with rigid body simulation and collision detection. [[bitbucket](https://bitbucket.org/odedevs/ode)]
-* 🟢 [OpenGJK](https://www.mattiamontanari.com/opengjk/) - GJK-based minimum distance library with bindings for multiple languages. [⭐ 197](https://github.com/MattiaMontanari/openGJK)
-* 🟢 [Parry](https://github.com/dimforge/parry) - Rust collision detection and geometric query library from Dimforge. [⭐ 819](https://github.com/dimforge/parry)
-* 🟢 [PhysX](https://nvidia-omniverse.github.io/PhysX/) - NVIDIA physics SDK with scene queries, contact generation, and collision detection. [⭐ 4.5k](https://github.com/NVIDIA-Omniverse/PhysX)
-* 🟢 [python-fcl](https://github.com/BerkeleyAutomation/python-fcl) - Python bindings for FCL collision, distance, and continuous collision queries. [⭐ 269](https://github.com/BerkeleyAutomation/python-fcl)
-* 🟢 [pytorch_volumetric](https://github.com/UM-ARM-Lab/pytorch_volumetric) - PyTorch utilities for volumetric signed distance fields and differentiable collision queries. [⭐ 246](https://github.com/UM-ARM-Lab/pytorch_volumetric)
-* 💀 qu3e - Lightweight 3D rigid body physics engine with collision detection. [⭐ 991](https://github.com/RandyGaul/qu3e)
-* 🟡 [ReactPhysics3d](http://www.reactphysics3d.com/) - C++ 3D physics engine with rigid body collision detection. [⭐ 1.7k](https://github.com/DanielChappuis/reactphysics3d)
-* 🟢 [Tight-Inclusion](https://continuous-collision-detection.github.io/tight_inclusion/) - Conservative continuous collision detection library with minimum separation support. [⭐ 157](https://github.com/Continuous-Collision-Detection/Tight-Inclusion)
-* 🟢 tinyc2 - Single-header 2D collision detection library for primitive shapes. [⭐ 5k](https://github.com/RandyGaul/tinyheaders)
+* 🟢 [OpenGJK](https://www.mattiamontanari.com/opengjk/) - GJK-based minimum distance library with bindings for multiple languages. [⭐ 206](https://github.com/MattiaMontanari/openGJK)
+* 🟢 [Parry](https://github.com/dimforge/parry) - Rust collision detection and geometric query library from Dimforge. [⭐ 876](https://github.com/dimforge/parry)
+* 🟢 [PhysX](https://nvidia-omniverse.github.io/PhysX/) - NVIDIA physics SDK with scene queries, contact generation, and collision detection. [⭐ 4.8k](https://github.com/NVIDIA-Omniverse/PhysX)
+* 🟢 [python-fcl](https://github.com/BerkeleyAutomation/python-fcl) - Python bindings for FCL collision, distance, and continuous collision queries. [⭐ 271](https://github.com/BerkeleyAutomation/python-fcl)
+* 🟢 [pytorch_volumetric](https://github.com/UM-ARM-Lab/pytorch_volumetric) - PyTorch utilities for volumetric signed distance fields and differentiable collision queries. [⭐ 249](https://github.com/UM-ARM-Lab/pytorch_volumetric)
+* 💀 qu3e - Lightweight 3D rigid body physics engine with collision detection. [⭐ 994](https://github.com/RandyGaul/qu3e)
+* 🟡 [ReactPhysics3d](http://www.reactphysics3d.com/) - C++ 3D physics engine with rigid body collision detection. [⭐ 1.8k](https://github.com/DanielChappuis/reactphysics3d)
+* 🟢 [Tight-Inclusion](https://continuous-collision-detection.github.io/tight_inclusion/) - Conservative continuous collision detection library with minimum separation support. [⭐ 161](https://github.com/Continuous-Collision-Detection/Tight-Inclusion)
+* 🟢 tinyc2 - Single-header 2D collision detection library for primitive shapes. [⭐ 5.1k](https://github.com/RandyGaul/tinyheaders)
 
 > Some libraries, such as ODE and Bullet, are physics engines that can also be used as collision detection libraries.
 
@@ -63,22 +64,26 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 
 _Geometry processing libraries useful for collision-ready meshes and convex approximations._
 
-* 🔴 [bounding-mesh](http://www.boundingmesh.com/) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation. [⭐ 349](https://github.com/gaschler/bounding-mesh)
+* 🔴 [bounding-mesh](http://www.boundingmesh.com/) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation. [⭐ 351](https://github.com/gaschler/bounding-mesh)
 * 🟢 cinolib - A generic programming header only C++ library for processing polygonal and polyhedral meshes. [⭐ 1.1k](https://github.com/mlivesu/cinolib)
-* 🟢 [CoACD](https://colin97.github.io/CoACD/) - Approximate convex decomposition for collision-aware mesh approximation. [⭐ 1k](https://github.com/SarahWeiii/CoACD)
-* 🟢 [libigl](https://libigl.github.io/) - A simple C++ geometry processing library. [⭐ 5k](https://github.com/libigl/libigl)
+* 🟢 [CoACD](https://colin97.github.io/CoACD/) - Approximate convex decomposition for collision-aware mesh approximation. [⭐ 1.2k](https://github.com/SarahWeiii/CoACD)
+* 🟢 CuACD - GPU-accelerated approximate convex decomposition that runs the full CoACD-style search pipeline on CUDA. [⭐ 43](https://github.com/eliphatfs/cuacd)
+* 🟢 [libigl](https://libigl.github.io/) - A simple C++ geometry processing library. [⭐ 5.1k](https://github.com/libigl/libigl)
 
 ## [Papers](#contents)
 
 #### Collision Detection and Distance Computation
 
+* A Ray Intersection Algorithm for Fast Growth Distance Computation Between Convex Sets (2026), A. Thirugnanam and K. Sreenath. [[pdf](https://arxiv.org/pdf/2604.10058), [code](https://github.com/HybridRobotics/differentiable-growth-distance), [benchmarks](https://github.com/AkshayThiru/dgd-benchmark)]
 * GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al. [[pdf](https://hal.science/hal-04070039v1/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/colbench)]
 * Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
 * A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
 
 #### Differentiable Collision Detection
 
+* Robust Rigid Body Assembly via Contact-Implicit Optimal Control with Exact Second-Order Derivatives (2026), C. Dietz et al. [[pdf](https://arxiv.org/pdf/2601.22849)]
 * Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)]
+* Differentiable Collision Detection for a Set of Convex Primitives (2022), K. Tracy et al. [[pdf](https://arxiv.org/pdf/2207.00669), [code](https://github.com/kevin-tracy/DifferentiableCollisions.jl)]
 
 #### Triangle-triangle Test
 
@@ -93,6 +98,7 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 
 * Robust contact generation for robot simulation with unstructured meshes (2013), K. Hauser. [[pdf](https://motion.cs.illinois.edu/papers/ISRR2013-RobustContact.pdf), [web](http://motion.cs.illinois.edu/simulation/index.html)]
 * Approximate Convex Decomposition for 3D Meshes with Collision-Aware Concavity and Tree Search (2022), X. Wei et al. [[pdf](https://arxiv.org/pdf/2205.02961), [project](https://colin97.github.io/CoACD/), [code](https://github.com/SarahWeiii/CoACD), [video](https://www.youtube.com/watch?v=r12O0z0723s)]
+* CuACD: A Fully GPU-Resident Approximate Convex Decomposition (2026), R. Shi et al. [[pdf](https://arxiv.org/pdf/2609.28731), [code](https://github.com/eliphatfs/cuacd)]
 
 #### Penetration Depth Computation
 
@@ -100,6 +106,8 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 
 #### Proximity Query / Signed Distance Field
 
+* Real-Time Collision Handling for Signed Distance Fields via Caching and Importance Sampling (2026), C. Giles and S. Andrews. [[pdf](https://savant117.github.io/sdf-dcd-demo/paper.pdf), [project](https://savant117.github.io/sdf-dcd-demo/), [code](https://github.com/savant117/sdf-dcd-demo), [demo](https://savant117.github.io/sdf-dcd-demo/demo/index.html), [video](https://savant117.github.io/sdf-dcd-demo/videos/sdf_collisions.mp4)]
+* Factory: Fast Contact for Robotic Assembly (2022), Y. Narang et al. [[pdf](https://arxiv.org/pdf/2205.03532), [project](https://research.nvidia.com/publication/2022-05_factory-fast-contact-robotic-assembly), [code](https://github.com/isaac-sim/IsaacLab/tree/main/source/isaaclab_tasks/isaaclab_tasks/direct/factory)]
 * Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al. [[pdf](https://mmacklin.com/sdfcontact.pdf), [slides](https://mmacklin.com/sdfcontact_slides.pdf), [video](https://youtu.be/icU6Bm-HZ-E)]
 * Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]
 * Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]
@@ -139,6 +147,7 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 #### Overview & Tutorial
 
 * [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by [Nilson Souto](https://www.toptal.com/resume/nilson-souto)
+* [Rethinking Contact Simulation for Robot Manipulation](https://medium.com/toyotaresearch/rethinking-contact-simulation-for-robot-manipulation-434a56b5ec88) (TRI 2022), Michael Sherman - Why point contact fails for manipulation and how Drake's hydroelastic contact model computes pressure-field contact patches instead.
 * [GPU Rigid Body Simulation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC2013_ErwinCoumans_GPU_rigid_body_simulation.pdf) (GDC 2013), Erwin Coumans
 * [OpenCL accelerated rigid body and collision detection](https://www.cse.lehigh.edu/~trink/RSS-2011/Presentations/coumans.pdf) (RSS 2011), Erwin Coumans
 * [Contact Generation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/GDC10_Coumans_Erwin_Contact.pdf) (GDC 2010), Erwin Coumans
@@ -166,7 +175,7 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 
 ## [Other Awesome Lists](#contents)
 
-* [Awesome Robotics Libraries](https://github.com/jslee02/awesome-robotics-libraries) [⭐ 2.9k](https://github.com/jslee02/awesome-robotics-libraries) - This is a list of various libraries and software for robotics. It's also attempting to provide some comparisons for selected libraries and software.
+* [Awesome Robotics Libraries](https://github.com/jslee02/awesome-robotics-libraries) [⭐ 3.1k](https://github.com/jslee02/awesome-robotics-libraries) - This is a list of various libraries and software for robotics. It's also attempting to provide some comparisons for selected libraries and software.
 
 ## [Contributing](#contents)
 

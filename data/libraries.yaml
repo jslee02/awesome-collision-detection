@@ -88,6 +88,31 @@
     last_commit: '2021-10-08'
     license: Apache-2.0
     language: Rust
+- name: DifferentiableCollisions.jl
+  _subsection: Active
+  url: https://github.com/kevin-tracy/DifferentiableCollisions.jl
+  description: Julia implementation of DCOL, differentiable collision detection between convex primitives, with a Python/JAX port (dpax).
+  shapes:
+  - Polytope
+  - Capsule
+  - Cylinder
+  - Cone
+  - Sphere
+  - Ellipsoid
+  - Padded Polygon
+  features:
+  - Collision
+  - Differentiable Queries
+  languages:
+  - Julia
+  license: MIT
+  github: kevin-tracy/DifferentiableCollisions.jl
+  badge_github: kevin-tracy/DifferentiableCollisions.jl
+  _meta:
+    stars: 239
+    last_commit: '2024-01-29'
+    license: MIT
+    language: Julia
 - name: FCL
   _subsection: Active
   url: https://github.com/flexible-collision-library/fcl

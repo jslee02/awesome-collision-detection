@@ -1,3 +1,13 @@
+- name: A Ray Intersection Algorithm for Fast Growth Distance Computation Between Convex Sets (2026), A. Thirugnanam and K.
+    Sreenath.
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2604.10058
+  - label: code
+    url: https://github.com/HybridRobotics/differentiable-growth-distance
+  - label: benchmarks
+    url: https://github.com/AkshayThiru/dgd-benchmark
+  _subsection: Collision Detection and Distance Computation
 - name: 'GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al.'
   links:
   - label: pdf
@@ -22,12 +32,25 @@
   - label: pdf
     url: https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf
   _subsection: Collision Detection and Distance Computation
+- name: Robust Rigid Body Assembly via Contact-Implicit Optimal Control with Exact Second-Order Derivatives (2026), C. Dietz
+    et al.
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2601.22849
+  _subsection: Differentiable Collision Detection
 - name: 'Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al.'
   links:
   - label: pdf
     url: https://hal.archives-ouvertes.fr/hal-03780482v2/document
   - label: code
     url: https://github.com/humanoid-path-planner/hpp-fcl
+  _subsection: Differentiable Collision Detection
+- name: Differentiable Collision Detection for a Set of Convex Primitives (2022), K. Tracy et al.
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2207.00669
+  - label: code
+    url: https://github.com/kevin-tracy/DifferentiableCollisions.jl
   _subsection: Differentiable Collision Detection
 - name: A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
   _subsection: Triangle-triangle Test
@@ -75,11 +98,41 @@
   - label: video
     url: https://www.youtube.com/watch?v=r12O0z0723s
   _subsection: Mesh Collision
+- name: 'CuACD: A Fully GPU-Resident Approximate Convex Decomposition (2026), R. Shi et al.'
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2609.28731
+  - label: code
+    url: https://github.com/eliphatfs/cuacd
+  _subsection: Mesh Collision
 - name: 'PolyDepth: Real-time Penetration Depth Computation using Iterative Contact-Space Projection (2012), C. Je et al.'
   links:
   - label: pdf
     url: https://arxiv.org/pdf/1508.06181v1.pdf
   _subsection: Penetration Depth Computation
+- name: Real-Time Collision Handling for Signed Distance Fields via Caching and Importance Sampling (2026), C. Giles and S.
+    Andrews.
+  links:
+  - label: pdf
+    url: https://savant117.github.io/sdf-dcd-demo/paper.pdf
+  - label: project
+    url: https://savant117.github.io/sdf-dcd-demo/
+  - label: code
+    url: https://github.com/savant117/sdf-dcd-demo
+  - label: demo
+    url: https://savant117.github.io/sdf-dcd-demo/demo/index.html
+  - label: video
+    url: https://savant117.github.io/sdf-dcd-demo/videos/sdf_collisions.mp4
+  _subsection: Proximity Query / Signed Distance Field
+- name: 'Factory: Fast Contact for Robotic Assembly (2022), Y. Narang et al.'
+  links:
+  - label: pdf
+    url: https://arxiv.org/pdf/2205.03532
+  - label: project
+    url: https://research.nvidia.com/publication/2022-05_factory-fast-contact-robotic-assembly
+  - label: code
+    url: https://github.com/isaac-sim/IsaacLab/tree/main/source/isaaclab_tasks/isaaclab_tasks/direct/factory
+  _subsection: Proximity Query / Signed Distance Field
 - name: Local Optimization for Robust Signed Distance Field Collision (2020), [M. Macklin](http://blog.mmacklin.com/) et al.
   links:
   - label: pdf
