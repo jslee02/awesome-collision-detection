@@ -96,11 +96,20 @@ def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | str | None:
 
 def in_repository(url: str, slug: str) -> bool:
     """Whether a URL points into a GitHub repository, however written (scheme, www., query,
-    fragment, .git)."""
+    fragment, .git), its raw file URLs included."""
     parts = urllib.parse.urlsplit((url or "").strip())
-    path = parts.path.lower().removesuffix(".git").rstrip("/")
+    path = parts.path.lower().rstrip("/").removesuffix(".git").rstrip("/")
     root = "/" + slug.lower()
-    return (parts.hostname or "").removeprefix("www.") == "github.com" and (path == root or path.startswith(root + "/"))
+    host = (parts.hostname or "").removeprefix("www.")
+    return host in ("github.com", "raw.githubusercontent.com") and (path == root or path.startswith(root + "/"))
+
+
+def moved(url: str, old: str, new: str) -> str:
+    """A URL into repository `old` rewritten for its new name `new`; any other URL unchanged."""
+    if not in_repository(url, old):
+        return url
+    parts = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit(parts._replace(path="/" + new + parts.path[len(old) + 1:]))
 
 
 def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None = None) -> tuple[int, int]:
@@ -131,7 +140,11 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
                 links = entry.get("links") or []
                 other_links = [link for link in links if not in_repository(link.get("url", ""), github)]
                 own_url = entry.get("url") or ""
-                if yaml_path.stem in MANUAL_REVIEW and ((own_url and not in_repository(own_url, github)) or other_links):
+                if entry.get("code_url") and in_repository(entry["code_url"], github):
+                    entry.pop("code_url")  # a download from the gone repository
+                elsewhere = entry.get("gitlab") or entry.get("bitbucket") or entry.get("code_url")
+                if yaml_path.stem in MANUAL_REVIEW and (
+                        (own_url and not in_repository(own_url, github)) or other_links or elsewhere):
                     # A paper or book outlives its code: drop every link into the dead repository and
                     # keep the entry. One whose only home was that repository goes with it, like software.
                     for key in ("github", "badge_github", "_meta"):
@@ -159,6 +172,13 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
             if full_name.lower() != github.lower():
                 print(f"(renamed to {full_name})", end=" ")
                 entry["github"] = full_name
+                # Links into the repository follow it, so they're still recognized as its own.
+                for key in ("url", "code_url"):
+                    if entry.get(key):
+                        entry[key] = moved(entry[key], github, full_name)
+                for link in entry.get("links") or []:
+                    if link.get("url"):
+                        link["url"] = moved(link["url"], github, full_name)
             updated += 1
             stars = meta.get("stars", "?")
             print(f"★ {stars}")

@@ -173,8 +173,15 @@ class RepositoryUrlTest(unittest.TestCase):
         for url in ("https://github.com/a/code#readme", "https://github.com/a/code?tab=readme-ov-file",
                     "http://www.github.com/A/Code.git", "https://github.com/a/code/blob/main/x.pdf"):
             self.assertTrue(fetch_metadata.in_repository(url, "a/code"), url)
+        for url in ("https://raw.githubusercontent.com/a/code/main/paper.pdf", "https://github.com/a/code.git/"):
+            self.assertTrue(fetch_metadata.in_repository(url, "a/code"), url)
         for url in ("https://github.com/a/code2", "https://arxiv.org/abs/1", ""):
             self.assertFalse(fetch_metadata.in_repository(url, "a/code"), url)
+
+    def test_links_follow_a_renamed_repository(self):
+        self.assertEqual(fetch_metadata.moved("https://github.com/Old/Code/wiki/Tutorial#top", "old/code", "new/code"),
+                         "https://github.com/new/code/wiki/Tutorial#top")
+        self.assertEqual(fetch_metadata.moved("https://arxiv.org/abs/1", "old/code", "new/code"), "https://arxiv.org/abs/1")
 
     def test_a_paper_keeps_its_independent_links(self):
         entries = [{"name": "GJK++", "github": "a/code", "_meta": {"gone_since": "2026-10-01"},
