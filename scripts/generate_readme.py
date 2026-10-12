@@ -41,6 +41,8 @@ SECTIONS = [
 ]
 
 RESOURCE_SECTIONS = {"papers", "books", "articles"}
+# Reviewed by hand by the shared suggestion triage, even when they link code on GitHub.
+MANUAL_REVIEW = RESOURCE_SECTIONS
 ACTIVE_DAYS = 365
 INACTIVE_DAYS = 3 * 365
 AS_OF_FILE = "as-of.txt"

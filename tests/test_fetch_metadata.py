@@ -143,5 +143,19 @@ class LookupTest(unittest.TestCase):
             self.assertEqual(result, fetch_metadata.GONE if code in (404, 451) else None)
 
 
+class ManualReviewGoneTest(unittest.TestCase):
+    def test_a_resource_keeps_its_entry_when_its_code_is_gone(self):
+        entries = [{"name": "Paper", "url": "https://arxiv.org/abs/1", "github": "a/code",
+                    "_meta": {"gone_since": "2026-10-01"}}]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "papers.yaml"
+            path.write_text(yaml.dump(entries), encoding="utf-8")
+            with mock.patch.object(fetch_metadata, "fetch_repo_metadata", return_value=fetch_metadata.GONE), \
+                    mock.patch.object(fetch_metadata.time, "sleep"):
+                fetch_metadata.process_yaml_file(path, today=date(2026, 10, 12))
+            self.assertEqual(yaml.safe_load(path.read_text(encoding="utf-8")),
+                             [{"name": "Paper", "url": "https://arxiv.org/abs/1"}])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -41,8 +41,9 @@ When a suggestion passes, a maintainer reviews the generated PR for scope and ca
 - **Not on GitHub** (GitLab, commercial tools, papers, books, articles, and other resources
   without a GitHub repository): reviewed by a maintainer, who looks for wide use in collision
   detection or related geometry. Fill in **Evidence of use** (independent users or customers,
-  citations, third-party tutorials); without it, the bot asks for it first. Anything with a
-  GitHub repository, including curated lists, goes through the gates above.
+  citations, third-party tutorials); without it, the bot asks for it first. Papers, books, and
+  articles are always reviewed this way, even when they link code on GitHub; other suggestions
+  with a GitHub repository, including curated lists, go through the gates above.
 - **Maintainer picks**: a maintainer may add a resource outside these gates and says why in the PR. This is rare.
 
 **Why these signals:** AI tools make a polished README, docs, tests, and steady commits

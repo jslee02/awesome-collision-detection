@@ -13,8 +13,10 @@ from pathlib import Path
 import yaml
 
 try:
+    from scripts.generate_readme import MANUAL_REVIEW
     from scripts.github_metadata import fetch_default_branch_commit_date, fetch_json
 except ModuleNotFoundError:
+    from generate_readme import MANUAL_REVIEW
     from github_metadata import fetch_default_branch_commit_date, fetch_json
 
 RATE_LIMIT_PAUSE = 2  # seconds between requests to avoid abuse detection
@@ -116,8 +118,14 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
             meta = entry.setdefault("_meta", {})
             since = meta.get("gone_since")
             if since and (today - date.fromisoformat(str(since))).days >= GONE_GRACE_DAYS:
-                kept.pop()
-                print(f"removed (gone since {since})")
+                if yaml_path.stem in MANUAL_REVIEW:
+                    # A paper or book outlives its code: drop the dead repository, keep the entry.
+                    for key in ("github", "badge_github", "_meta"):
+                        entry.pop(key, None)
+                    print(f"repository gone since {since}; link removed")
+                else:
+                    kept.pop()
+                    print(f"removed (gone since {since})")
             else:
                 meta.setdefault("gone_since", today.isoformat())
                 print("gone")
