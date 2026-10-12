@@ -13,11 +13,45 @@ import yaml
 
 REPO = "jslee02/awesome-collision-detection"
 
-RESOURCE_SECTIONS = [
-    ("papers", "Papers"),
-    ("books", "Books"),
-    ("articles", "Articles"),
+# (yaml_key, title, scope), in README order. Shared triage imports this registry.
+SECTIONS = [
+    (
+        "libraries",
+        "Libraries",
+        "Collision detection, distance query, and proximity query libraries. "
+        "See also [Comparisons](COMPARISONS.md).",
+    ),
+    (
+        "mesh-processing",
+        "Mesh Processing",
+        "Geometry processing libraries useful for collision-ready meshes and convex approximations.",
+    ),
+    (
+        "papers",
+        "Papers",
+        "Research papers on collision detection, distance and proximity queries, and supporting algorithms.",
+    ),
+    ("books", "Books", "Books on collision detection algorithms and their implementation."),
+    (
+        "articles",
+        "Articles",
+        "Articles, talks, tutorials, and blog posts about collision detection and related geometry algorithms.",
+    ),
+    ("other-awesome-lists", "Other Awesome Lists", "Related curated lists and collections."),
 ]
+
+RESOURCE_SECTIONS = {"papers", "books", "articles"}
+ACTIVE_DAYS = 365
+INACTIVE_DAYS = 3 * 365
+AS_OF_FILE = "as-of.txt"
+
+
+def as_of_date(data_dir: Path) -> date:
+    """Use the metadata snapshot date so activity does not change between refreshes."""
+    path = data_dir / AS_OF_FILE
+    if path.exists():
+        return date.fromisoformat(path.read_text(encoding="utf-8").strip())
+    return date.today()
 
 
 def load_yaml(path: Path) -> list[dict]:
@@ -40,9 +74,32 @@ def code_link(entry: dict) -> tuple[str, str] | None:
     return None
 
 
-def repo_url(entry: dict) -> str | None:
-    link = code_link(entry)
-    return link[1] if link else None
+def stars(entry: dict) -> int | None:
+    return (entry.get("_meta") or {}).get("stars")
+
+
+def is_archived(entry: dict) -> bool:
+    return bool(entry.get("archived") or (entry.get("_meta") or {}).get("archived"))
+
+
+def idle_days(entry: dict, as_of: date) -> int | None:
+    last_commit = (entry.get("_meta") or {}).get("last_commit")
+    if not last_commit:
+        return None
+    try:
+        return (as_of - date.fromisoformat(str(last_commit))).days
+    except ValueError:
+        return None
+
+
+def is_inactive(entry: dict, as_of: date) -> bool:
+    days = idle_days(entry, as_of)
+    # Preserve legacy inactive projects whose commit history is not on GitHub.
+    return (
+        entry.get("_subsection") == "Inactive"
+        or is_archived(entry)
+        or (days is not None and days > INACTIVE_DAYS)
+    )
 
 
 def format_stars(count: int) -> str:
@@ -51,25 +108,13 @@ def format_stars(count: int) -> str:
     return str(count)
 
 
-def activity_emoji(entry: dict) -> str:
-    if entry.get("archived") or (entry.get("_meta") or {}).get("archived"):
+def activity_emoji(entry: dict, as_of: date, folded: bool = False) -> str:
+    if is_archived(entry):
         return "💀"
-
-    last_commit = (entry.get("_meta") or {}).get("last_commit")
-    if not last_commit:
-        return ""
-
-    try:
-        commit_date = date.fromisoformat(str(last_commit))
-    except (TypeError, ValueError):
-        return ""
-
-    days_ago = (date.today() - commit_date).days
-    if days_ago <= 365:
-        return "🟢"
-    if days_ago <= 730:
-        return "🟡"
-    return "🔴"
+    days = idle_days(entry, as_of)
+    if not folded and days is not None:
+        return "🟢" if days <= ACTIVE_DAYS else "🟡"
+    return ""
 
 
 def render_name(entry: dict) -> str:
@@ -89,9 +134,9 @@ def render_repo_ref(entry: dict) -> str:
     return f" [[{link[0]}]({link[1]})]"
 
 
-def render_library_bullet(entry: dict) -> str:
+def render_library_bullet(entry: dict, as_of: date, folded: bool = False) -> str:
     parts = ["*"]
-    emoji = activity_emoji(entry)
+    emoji = activity_emoji(entry, as_of, folded)
     if emoji:
         parts.append(emoji)
 
@@ -105,19 +150,10 @@ def render_library_bullet(entry: dict) -> str:
     if repo_ref:
         parts.append(repo_ref.strip())
 
+    last_commit = (entry.get("_meta") or {}).get("last_commit")
+    if folded and last_commit:
+        parts.append(f"· last commit {str(last_commit)[:4]}")
     return " ".join(parts)
-
-
-def render_standard_bullet(entry: dict) -> str:
-    line = f"* {render_name(entry)}"
-    repo_ref = render_repo_ref(entry)
-    if repo_ref:
-        line += repo_ref
-
-    description = entry.get("description") or ""
-    if description:
-        line += f" - {description}"
-    return line
 
 
 def render_resource_links(entry: dict) -> str:
@@ -176,100 +212,48 @@ def render_grouped_resource_section(entries: list[dict]) -> list[str]:
     return lines
 
 
-def sort_libraries(entries: list[dict], sort_key: str) -> list[dict]:
-    if sort_key == "none":
-        return entries
-    if sort_key == "stars":
-        return sorted(
-            entries,
-            key=lambda entry: (entry.get("_meta") or {}).get("stars") or 0,
-            reverse=True,
-        )
-    if sort_key == "last_commit":
-        return sorted(
-            entries,
-            key=lambda entry: (entry.get("_meta") or {}).get("last_commit") or "",
-            reverse=True,
-        )
-    return sorted(entries, key=lambda entry: entry.get("name", "").lower())
+def sort_libraries(entries: list[dict]) -> list[dict]:
+    return sorted(
+        entries,
+        key=lambda entry: (stars(entry) is None, -(stars(entry) or 0), entry["name"].lower()),
+    )
 
 
-def render_library_section(
-    libraries: list[dict],
-    mesh_processing: list[dict],
-    *,
-    sort_key: str,
-) -> list[str]:
-    active = [
-        entry for entry in libraries if entry.get("_subsection") == "Active"
-    ]
-    inactive = [
-        entry for entry in libraries if entry.get("_subsection") == "Inactive"
-    ]
-
-    lines = [
-        "## [Libraries](#contents)",
-        "",
-        "### [Active](#contents)",
-        "",
-        "_Collision detection, distance query, and proximity query libraries. See also [Comparisons](COMPARISONS.md)._",
-        "",
-    ]
-
-    for entry in sort_libraries(active, sort_key):
-        lines.append(render_library_bullet(entry))
-
-    lines.extend(
-        [
-            "",
+def render_library_section(key: str, entries: list[dict], as_of: date) -> list[str]:
+    active = [entry for entry in entries if not is_inactive(entry, as_of)]
+    inactive = [entry for entry in entries if is_inactive(entry, as_of)]
+    lines = [render_library_bullet(entry, as_of) for entry in sort_libraries(active)]
+    if active:
+        lines.append("")
+    if key == "libraries":
+        lines += [
             "> Some libraries, such as ODE and Bullet, are physics engines that can also be used as collision detection libraries.",
             "",
-            "### [Inactive](#contents)",
+        ]
+    if inactive:
+        lines += [
+            "<details>",
+            f"<summary>Inactive ({len(inactive)}): archived or no commits for 3+ years</summary>",
             "",
         ]
-    )
-    for entry in sort_libraries(inactive, sort_key):
-        lines.append(render_library_bullet(entry))
-
-    lines.extend(
-        [
-            "",
-            "### [Mesh Processing](#contents)",
-            "",
-            "_Geometry processing libraries useful for collision-ready meshes and convex approximations._",
-            "",
-        ]
-    )
-    for entry in sort_libraries(mesh_processing, sort_key):
-        lines.append(render_library_bullet(entry))
-
-    lines.append("")
+        lines += [render_library_bullet(entry, as_of, folded=True) for entry in sort_libraries(inactive)]
+        lines += ["", "</details>", ""]
     return lines
 
 
-def render_toc() -> str:
-    return """\
-## Contents
-* [Libraries](#libraries)
-  * [Active](#active)
-  * [Inactive](#inactive)
-  * [Mesh Processing](#mesh-processing)
-* [Comparisons](COMPARISONS.md)
-* [Papers](#papers)
-* [Books](#books)
-* [Articles](#articles)
-* [Other Awesome Lists](#other-awesome-lists)
-* [Contributing](#contributing)
-* [Star History](#star-history)
-* [License](#license)"""
+def anchor(title: str) -> str:
+    """GitHub heading anchor: lowercase, drop punctuation, spaces to hyphens."""
+    kept = "".join(ch for ch in title.lower() if ch.isalnum() or ch in " -")
+    return kept.replace(" ", "-")
 
 
-def generate_readme(sort_key: str = "name") -> str:
-    root = Path(__file__).resolve().parent.parent
-    data_dir = root / "data"
-    libraries = load_yaml(data_dir / "libraries.yaml")
-    mesh_processing = load_yaml(data_dir / "mesh-processing.yaml")
-    other_lists = load_yaml(data_dir / "other-awesome-lists.yaml")
+def generate(data_dir: Path) -> str:
+    as_of = as_of_date(data_dir)
+    sections = [
+        (key, title, scope, load_yaml(data_dir / f"{key}.yaml"))
+        for key, title, scope in SECTIONS
+        if (data_dir / f"{key}.yaml").exists()
+    ]
 
     lines: list[str] = [
         "# Awesome Collision Detection",
@@ -278,35 +262,48 @@ def generate_readme(sort_key: str = "name") -> str:
         "",
         "A curated list of collision detection libraries, algorithms, papers, and related resources.",
         "",
-        render_toc(),
+        "## Contents",
+    ]
+    lines += [f"* [{title}](#{anchor(title)})" for _, title, _, entries in sections if entries]
+    lines += [
+        "* [Comparisons](COMPARISONS.md)",
+        "* [Contributing](#contributing)",
+        "* [Star History](#star-history)",
+        "* [License](#license)",
         "",
-        "> **Legend**: 🟢 Active (<1yr) · 🟡 Slow (1-2yr) · 🔴 Stale (>2yr) · 💀 Archived",
+        "> **Legend**: 🟢 commit within 1 yr · 🟡 commit within 3 yr · 💀 archived · "
+        f"⭐ GitHub stars as of {as_of.isoformat()}. Software entries are ordered by stars; inactive "
+        "entries (archived, or no commits for 3+ years) are folded at the end of each category.",
         "",
     ]
 
-    lines.extend(render_library_section(libraries, mesh_processing, sort_key=sort_key))
-
-    for key, title in RESOURCE_SECTIONS:
-        entries = load_yaml(data_dir / f"{key}.yaml")
+    for key, title, scope, entries in sections:
         if not entries:
             continue
-        lines.extend([f"## [{title}](#contents)", ""])
-        lines.extend(render_grouped_resource_section(entries))
-
-    lines.extend(["## [Other Awesome Lists](#contents)", ""])
-    for entry in other_lists:
-        lines.append(render_standard_bullet(entry))
+        lines += [f"## [{title}](#contents)", "", f"_{scope}_", ""]
+        if key in RESOURCE_SECTIONS:
+            lines.extend(render_grouped_resource_section(entries))
+        else:
+            lines.extend(render_library_section(key, entries, as_of))
 
     lines.extend(
         [
-            "",
             "## [Contributing](#contents)",
             "",
             "Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-collision-detection/blob/main/CONTRIBUTING.md) first. Also, please feel free to report any error.",
             "",
             "## [Star History](#contents)",
             "",
-            f"[![Star History Chart](https://api.star-history.com/svg?repos={REPO}&type=Date)](https://star-history.com/#{REPO})",
+            f'<a href="https://www.star-history.com/?repos={REPO.replace("/", "%2F")}">\n'
+            "  <picture>\n"
+            '    <source media="(prefers-color-scheme: dark)" '
+            f'srcset="https://api.star-history.com/chart?repos={REPO}&type=date&theme=dark&legend=top-left" />\n'
+            '    <source media="(prefers-color-scheme: light)" '
+            f'srcset="https://api.star-history.com/chart?repos={REPO}&type=date&legend=top-left" />\n'
+            '    <img alt="Star History Chart" '
+            f'src="https://api.star-history.com/chart?repos={REPO}&type=date&legend=top-left" />\n'
+            "  </picture>\n"
+            "</a>",
             "",
             "## [License](#contents)",
             "",
@@ -325,12 +322,6 @@ def main() -> int:
         default=None,
         help="Output file path (default: README.md in repo root)",
     )
-    parser.add_argument(
-        "--sort",
-        choices=["name", "stars", "last_commit", "none"],
-        default="name",
-        help="Sort libraries and mesh-processing entries (default: name)",
-    )
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parent.parent
@@ -340,7 +331,7 @@ def main() -> int:
         return 1
 
     output_path = Path(args.output) if args.output else root / "README.md"
-    output_path.write_text(generate_readme(sort_key=args.sort), encoding="utf-8")
+    output_path.write_text(generate(data_dir), encoding="utf-8")
     print(f"Wrote {output_path}")
     return 0
 
