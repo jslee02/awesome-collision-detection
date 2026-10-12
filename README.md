@@ -32,7 +32,6 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 * 🔴 [CCD-Wrapper](https://github.com/Continuous-Collision-Detection/CCD-Wrapper) - Wrapper and benchmark for continuous collision detection algorithms. [⭐ 61](https://github.com/Continuous-Collision-Detection/CCD-Wrapper)
 * 🟢 [coal (HPP-FCL)](https://github.com/coal-library/coal) - Collision detection and distance query library derived from HPP-FCL. [⭐ 646](https://github.com/coal-library/coal)
 * 🔴 collision-rs - Rust collision detection library with broadphase and narrowphase queries. [⭐ 130](https://github.com/rustgd/collision-rs)
-* 🔴 [DifferentiableCollisions.jl](https://github.com/kevin-tracy/DifferentiableCollisions.jl) - Julia implementation of DCOL, differentiable collision detection between convex primitives, with a Python/JAX port (dpax). [⭐ 239](https://github.com/kevin-tracy/DifferentiableCollisions.jl)
 * 🟢 [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library for collision, distance, and continuous collision queries. [⭐ 1.8k](https://github.com/flexible-collision-library/fcl)
 * 🔴 [JitterPhysics](https://github.com/mattleibow/jitterphysics) - C# rigid body physics engine with collision detection support. [⭐ 47](https://github.com/mattleibow/jitterphysics)
 * 🟢 [Kraft](https://github.com/BeRo1985/kraft) - Object Pascal physics engine with discrete and optional continuous collision detection. [⭐ 132](https://github.com/BeRo1985/kraft)
@@ -67,7 +66,6 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 * 🔴 [bounding-mesh](http://www.boundingmesh.com/) - Implementation of the bounding mesh and bounding convex decomposition algorithms for single-sided mesh approximation. [⭐ 351](https://github.com/gaschler/bounding-mesh)
 * 🟢 cinolib - A generic programming header only C++ library for processing polygonal and polyhedral meshes. [⭐ 1.1k](https://github.com/mlivesu/cinolib)
 * 🟢 [CoACD](https://colin97.github.io/CoACD/) - Approximate convex decomposition for collision-aware mesh approximation. [⭐ 1.2k](https://github.com/SarahWeiii/CoACD)
-* 🟢 CuACD - GPU-accelerated approximate convex decomposition that runs the full CoACD-style search pipeline on CUDA. [⭐ 43](https://github.com/eliphatfs/cuacd)
 * 🟢 [libigl](https://libigl.github.io/) - A simple C++ geometry processing library. [⭐ 5.1k](https://github.com/libigl/libigl)
 
 ## [Papers](#contents)
