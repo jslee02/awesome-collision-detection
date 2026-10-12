@@ -211,9 +211,12 @@ def render_grouped_resource_section(entries: list[dict]) -> list[str]:
             grouped[subsection] = []
         grouped[subsection].append(entry)
 
+    named = [subsection for subsection in ordered_subsections if subsection]
+    if named and "" in grouped:  # unclassified entries (as triage adds them) last, under their own heading
+        ordered_subsections = named + [""]
     for subsection in ordered_subsections:
-        if subsection:
-            lines.append(f"#### {subsection}")
+        if subsection or named:
+            lines.append(f"#### {subsection or 'Other'}")
             lines.append("")
         for entry in grouped[subsection]:
             lines.extend(render_resource_entry(entry))

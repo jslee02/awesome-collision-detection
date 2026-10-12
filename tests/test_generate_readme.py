@@ -95,6 +95,13 @@ class TriageEntryTest(unittest.TestCase):
         entry = {"name": "Notes", "github": "o/notes", "description": "- Collision detection notes."}
         self.assertEqual(readme.render_resource_entry(entry), ["* [Notes](https://github.com/o/notes) - Collision detection notes."])
 
+    def test_unclassified_resources_get_their_own_heading(self):
+        entries = [{"name": "A", "url": "https://a.example", "_subsection": "Survey"},
+                   {"name": "New", "url": "https://n.example"}]  # as triage adds it: no subsection
+        lines = readme.render_grouped_resource_section(entries)
+        self.assertEqual([l for l in lines if l.startswith("####")], ["#### Survey", "#### Other"])
+        self.assertLess(lines.index("#### Other"), lines.index("* [New](https://n.example)"))
+
     def test_resource_with_a_website_also_links_its_repository(self):
         entry = {"name": "Paper", "url": "https://arxiv.org/abs/1", "github": "o/code", "description": "- A paper."}
         self.assertEqual(readme.render_resource_entry(entry), ["* [Paper](https://arxiv.org/abs/1) - A paper. [[github](https://github.com/o/code)]"])

@@ -7,6 +7,7 @@ import os
 import sys
 import time
 import urllib.error
+import urllib.parse
 from datetime import date
 from pathlib import Path
 
@@ -93,6 +94,15 @@ def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | str | None:
     return meta, full_name
 
 
+def in_repository(url: str, slug: str) -> bool:
+    """Whether a URL points into a GitHub repository, however written (scheme, www., query,
+    fragment, .git)."""
+    parts = urllib.parse.urlsplit((url or "").strip())
+    path = parts.path.lower().removesuffix(".git").rstrip("/")
+    root = "/" + slug.lower()
+    return (parts.hostname or "").removeprefix("www.") == "github.com" and (path == root or path.startswith(root + "/"))
+
+
 def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None = None) -> tuple[int, int]:
     with open(yaml_path, encoding="utf-8") as f:
         entries = yaml.safe_load(f)
@@ -118,15 +128,19 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
             meta = entry.setdefault("_meta", {})
             since = meta.get("gone_since")
             if since and (today - date.fromisoformat(str(since))).days >= GONE_GRACE_DAYS:
-                repo_url = f"https://github.com/{github}".lower()
-                own_url = (entry.get("url") or "").lower().rstrip("/")
-                if yaml_path.stem in MANUAL_REVIEW and own_url and not (
-                        own_url == repo_url or own_url.startswith(repo_url + "/")):
-                    # A paper or book outlives its code: drop the dead repository, keep the entry.
-                    # One whose only home was that repository goes with it, like software.
+                links = entry.get("links") or []
+                other_links = [link for link in links if not in_repository(link.get("url", ""), github)]
+                own_url = entry.get("url") or ""
+                if yaml_path.stem in MANUAL_REVIEW and ((own_url and not in_repository(own_url, github)) or other_links):
+                    # A paper or book outlives its code: drop every link into the dead repository and
+                    # keep the entry. One whose only home was that repository goes with it, like software.
                     for key in ("github", "badge_github", "_meta"):
                         entry.pop(key, None)
-                    print(f"repository gone since {since}; link removed")
+                    if own_url and in_repository(own_url, github):
+                        entry.pop("url")
+                    if len(other_links) < len(links):
+                        entry["links"] = other_links
+                    print(f"repository gone since {since}; links to it removed")
                 else:
                     kept.pop()
                     print(f"removed (gone since {since})")

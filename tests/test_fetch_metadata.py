@@ -168,5 +168,27 @@ class ManualReviewGoneTest(unittest.TestCase):
             self.assertEqual(yaml.safe_load(path.read_text(encoding="utf-8")), [])
 
 
+class RepositoryUrlTest(unittest.TestCase):
+    def test_urls_into_the_repository_however_written(self):
+        for url in ("https://github.com/a/code#readme", "https://github.com/a/code?tab=readme-ov-file",
+                    "http://www.github.com/A/Code.git", "https://github.com/a/code/blob/main/x.pdf"):
+            self.assertTrue(fetch_metadata.in_repository(url, "a/code"), url)
+        for url in ("https://github.com/a/code2", "https://arxiv.org/abs/1", ""):
+            self.assertFalse(fetch_metadata.in_repository(url, "a/code"), url)
+
+    def test_a_paper_keeps_its_independent_links(self):
+        entries = [{"name": "GJK++", "github": "a/code", "_meta": {"gone_since": "2026-10-01"},
+                    "links": [{"label": "pdf", "url": "https://x.example/gjk.pdf"},
+                              {"label": "code", "url": "https://github.com/a/code"}]}]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "papers.yaml"
+            path.write_text(yaml.dump(entries), encoding="utf-8")
+            with mock.patch.object(fetch_metadata, "fetch_repo_metadata", return_value=fetch_metadata.GONE), \
+                    mock.patch.object(fetch_metadata.time, "sleep"):
+                fetch_metadata.process_yaml_file(path, today=date(2026, 10, 12))
+            self.assertEqual(yaml.safe_load(path.read_text(encoding="utf-8")),
+                             [{"name": "GJK++", "links": [{"label": "pdf", "url": "https://x.example/gjk.pdf"}]}])
+
+
 if __name__ == "__main__":
     unittest.main()
