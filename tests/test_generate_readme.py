@@ -95,6 +95,12 @@ class TriageEntryTest(unittest.TestCase):
         entry = {"name": "Notes", "github": "o/notes", "description": "- Collision detection notes."}
         self.assertEqual(readme.render_resource_entry(entry), ["* [Notes](https://github.com/o/notes) - Collision detection notes."])
 
+    def test_resource_with_a_website_also_links_its_repository(self):
+        entry = {"name": "Paper", "url": "https://arxiv.org/abs/1", "github": "o/code", "description": "- A paper."}
+        self.assertEqual(readme.render_resource_entry(entry), ["* [Paper](https://arxiv.org/abs/1) - A paper. [[github](https://github.com/o/code)]"])
+        listed = {**entry, "links": [{"label": "code", "url": "https://github.com/o/code"}]}
+        self.assertNotIn("[[github]", readme.render_resource_entry(listed)[0])
+
 
 if __name__ == "__main__":
     unittest.main()

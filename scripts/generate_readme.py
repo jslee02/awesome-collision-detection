@@ -186,6 +186,12 @@ def render_resource_entry(entry: dict) -> list[str]:
     if not (entry.get("url") and entry.get("links")):
         line += render_resource_links(entry)
 
+    # A resource with both a website and a repository (as triage writes them) shows both,
+    # unless the repository is already among its links.
+    link = code_link(entry)
+    if entry.get("url") and link and link[1] not in {item.get("url") for item in entry.get("links") or []}:
+        line += render_repo_ref(entry)
+
     lines = [line]
     for note in entry.get("notes") or []:
         lines.append(f"{indent}  * {note}")
