@@ -156,6 +156,17 @@ class ManualReviewGoneTest(unittest.TestCase):
             self.assertEqual(yaml.safe_load(path.read_text(encoding="utf-8")),
                              [{"name": "Paper", "url": "https://arxiv.org/abs/1"}])
 
+    def test_a_resource_whose_home_was_the_repository_goes_with_it(self):
+        entries = [{"name": "Tutorial", "url": "https://github.com/a/code", "github": "a/code",
+                    "_meta": {"gone_since": "2026-10-01"}}]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "papers.yaml"
+            path.write_text(yaml.dump(entries), encoding="utf-8")
+            with mock.patch.object(fetch_metadata, "fetch_repo_metadata", return_value=fetch_metadata.GONE), \
+                    mock.patch.object(fetch_metadata.time, "sleep"):
+                fetch_metadata.process_yaml_file(path, today=date(2026, 10, 12))
+            self.assertEqual(yaml.safe_load(path.read_text(encoding="utf-8")), [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -118,8 +118,12 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
             meta = entry.setdefault("_meta", {})
             since = meta.get("gone_since")
             if since and (today - date.fromisoformat(str(since))).days >= GONE_GRACE_DAYS:
-                if yaml_path.stem in MANUAL_REVIEW:
+                repo_url = f"https://github.com/{github}".lower()
+                own_url = (entry.get("url") or "").lower().rstrip("/")
+                if yaml_path.stem in MANUAL_REVIEW and own_url and not (
+                        own_url == repo_url or own_url.startswith(repo_url + "/")):
                     # A paper or book outlives its code: drop the dead repository, keep the entry.
+                    # One whose only home was that repository goes with it, like software.
                     for key in ("github", "badge_github", "_meta"):
                         entry.pop(key, None)
                     print(f"repository gone since {since}; link removed")
