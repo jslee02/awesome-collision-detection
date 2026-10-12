@@ -89,5 +89,12 @@ class GenerateReadmeTest(unittest.TestCase):
         ])
 
 
+class TriageEntryTest(unittest.TestCase):
+    def test_resource_without_a_website_links_its_repository(self):
+        # The shared triage stores a GitHub-hosted resource's repository in `github`, not `url`.
+        entry = {"name": "Notes", "github": "o/notes", "description": "- Collision detection notes."}
+        self.assertEqual(readme.render_resource_entry(entry), ["* [Notes](https://github.com/o/notes) - Collision detection notes."])
+
+
 if __name__ == "__main__":
     unittest.main()

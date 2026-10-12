@@ -117,9 +117,10 @@ def activity_emoji(entry: dict, as_of: date, folded: bool = False) -> str:
     return ""
 
 
-def render_name(entry: dict) -> str:
+def render_name(entry: dict, link_repo: bool = False) -> str:
+    """The name, linked to the website; for a resource without one, to its repository."""
     name = entry.get("name", "")
-    url = entry.get("url")
+    url = entry.get("url") or ((code_link(entry) or (None, None))[1] if link_repo else None)
     return f"[{name}]({url})" if url else name
 
 
@@ -171,7 +172,7 @@ def render_resource_entry(entry: dict) -> list[str]:
     if entry.get("_type") == "header":
         return [f"{indent}* {entry['name']}"]
 
-    line = f"{indent}* {render_name(entry)}"
+    line = f"{indent}* {render_name(entry, link_repo=True)}"
     if entry.get("url") and entry.get("links"):
         line += render_resource_links(entry)
 
