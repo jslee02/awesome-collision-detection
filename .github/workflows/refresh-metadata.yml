@@ -2,7 +2,7 @@ name: Refresh Metadata
 
 on:
   schedule:
-    - cron: "0 8 * * 2"
+    - cron: "0 8 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -12,3 +12,5 @@ permissions:
 jobs:
   refresh:
     uses: jslee02/awesome-list-infra/.github/workflows/refresh-metadata.yml@main
+    secrets:
+      CREATE_PR_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}

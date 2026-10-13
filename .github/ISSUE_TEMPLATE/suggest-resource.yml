@@ -1,8 +1,13 @@
 name: Suggest a Resource
-description: Suggest a collision detection library, paper, article, book, or related list
+description: Suggest a collision detection library, paper, book, article, or related curated list
 title: "[Suggestion] "
 labels: ["suggestion"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Automation checks every suggestion against the [acceptance bar](https://github.com/jslee02/awesome-collision-detection/blob/main/CONTRIBUTING.md#acceptance-bar): for GitHub-hosted software, at least 6 months old (or 1,000+ stars), 100+ stars, 3+ outside people who opened issues or PRs, a commit within 12 months, and a license. Non-software resources receive maintainer review, even when linked from GitHub. Please keep one open suggestion at a time.
+
   - type: input
     id: name
     attributes:
@@ -14,7 +19,7 @@ body:
     id: url
     attributes:
       label: URL
-      description: Primary project, paper, article, or landing-page URL
+      description: Resource website, publication URL, or repository URL if there is no website
     validations:
       required: true
 
@@ -22,21 +27,27 @@ body:
     id: github
     attributes:
       label: GitHub Repository
-      description: "GitHub `owner/repo` slug if available. Leave blank for non-GitHub resources."
+      description: "GitHub `owner/repo` (e.g., `flexible-collision-library/fcl`). Leave blank if the project is not on GitHub; a maintainer will review it."
       placeholder: owner/repo
 
   - type: input
     id: alt_repo
     attributes:
       label: Alternative Repository
-      description: GitLab, Bitbucket, or other repository URL if the project is not on GitHub
+      description: GitLab, Bitbucket, or other source URL, if not on GitHub
       placeholder: https://gitlab.com/org/project
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of use
+      description: "Required for resources not on GitHub, commercial tools, and non-software resources: show wide use in collision detection or related geometry, for example independent users or customers, citations, or third-party tutorials."
 
   - type: dropdown
     id: category
     attributes:
       label: Category
-      description: "Choose `New Category` only if none of the existing categories fit. Accepted suggestions in a new category require a manual maintainer PR."
+      description: "Pick by the resource's main subject and role. See the [category definitions](https://github.com/jslee02/awesome-collision-detection/blob/main/CONTRIBUTING.md#categories)."
       options:
         - Libraries
         - Mesh Processing
@@ -44,68 +55,15 @@ body:
         - Books
         - Articles
         - Other Awesome Lists
-        - New Category
+        - Not sure
     validations:
       required: true
 
   - type: input
-    id: subsection
-    attributes:
-      label: Subsection
-      description: For papers or articles, the subsection heading to use, for example `Continuous Collision Detection`
-
-  - type: dropdown
-    id: library_status
-    attributes:
-      label: Library Status
-      description: For `Libraries` only
-      options:
-        - Not applicable
-        - Active
-        - Inactive
-
-  - type: input
-    id: shapes
-    attributes:
-      label: Shapes
-      description: For active libraries only. Comma-separated.
-      placeholder: Sphere, Box, Meshes
-
-  - type: input
-    id: features
-    attributes:
-      label: Features
-      description: For active libraries only. Comma-separated.
-      placeholder: Collision, Distance, Continuous Collision Detection
-
-  - type: input
-    id: languages
-    attributes:
-      label: Languages
-      description: For libraries or mesh-processing tools. Comma-separated.
-      placeholder: C++, Python
-
-  - type: input
-    id: license
-    attributes:
-      label: License
-      description: SPDX identifier or short license text if known
-      placeholder: BSD-3-Clause
-
-  - type: textarea
-    id: additional_links
-    attributes:
-      label: Additional Links
-      description: "Optional. One per line as `label: https://...`, for example `pdf: https://...`"
-      placeholder: |
-        pdf: https://example.com/paper.pdf
-        code: https://github.com/org/project
-
-  - type: textarea
     id: description
     attributes:
       label: Description
-      description: For libraries, a short summary. For papers, books, or articles, use this for citation, author, publisher, or other trailing text that should appear after the title.
+      description: "One neutral sentence, 100 characters or fewer, e.g. `C++ library for collision, distance, and continuous collision queries.`"
     validations:
       required: true
 
@@ -113,26 +71,25 @@ body:
     id: why
     attributes:
       label: Why should it be included?
-      description: Explain why this is a strong fit for the list.
+      description: Optional. What gap does it fill, and who uses it?
+
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Suggesting your own project is welcome; we just ask you to say so.
+      options:
+        - I am an author or maintainer
+        - I contribute to it
+        - I use it
+        - No affiliation
+    validations:
+      required: true
 
   - type: checkboxes
-    id: must_have
+    id: attestation
     attributes:
-      label: "Must-have checklist (all required)"
+      label: Confirmation
       options:
-        - label: Relevant to collision detection, distance computation, proximity queries, or closely related geometry processing
-        - label: Publicly accessible
-        - label: Not a duplicate of an existing entry
-        - label: Has a meaningful description
-
-  - type: checkboxes
-    id: scoring
-    attributes:
-      label: "Scoring checklist (need ≥ 3 of 5)"
-      description: We will verify these during review. For non-GitHub resources, equivalent evidence is acceptable.
-      options:
-        - label: "**Popularity**: ≥ 50 GitHub stars (or equivalent community adoption)"
-        - label: "**Activity**: At least one commit within the last 2 years"
-        - label: "**Documentation**: Has a README, paper text, or usable documentation"
-        - label: "**Maturity**: Project is ≥ 6 months old"
-        - label: "**Uniqueness**: Fills a niche not already covered by existing entries"
+        - label: I am a person, and I wrote or reviewed this suggestion myself.
+          required: true
