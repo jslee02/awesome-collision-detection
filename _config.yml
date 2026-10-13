@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: Awesome Collision Detection
 description: A curated list of collision detection libraries, algorithms, papers, and related resources.
+kramdown:
+  parse_block_html: true
