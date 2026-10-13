@@ -13,6 +13,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import fetch_metadata  # noqa: E402
+import generate_readme  # noqa: E402
 
 
 def setUpModule():
@@ -67,6 +68,24 @@ class GoneRepoTest(unittest.TestCase):
             "a/x": ({"stars": 2, "_commit_lookup_failed": True}, "a/x")
         })
         self.assertEqual(refreshed[0]["_meta"], {"stars": 2})
+
+    def test_first_refresh_keeps_the_date_and_inactive_status_on_a_transient_failure(self):
+        entries = [{"name": "X", "github": "a/x", "_meta": {"last_commit": "2022-03-18"}}]
+        for canonical in ("a/x", "A/X"):
+            with self.subTest(canonical=canonical):
+                refreshed = self.refresh(entries, date(2026, 10, 19), {
+                    "a/x": ({"id": 1, "stars": 2, "_commit_lookup_failed": True}, canonical)
+                })
+                self.assertEqual(refreshed[0]["_meta"], {"id": 1, "stars": 2, "last_commit": "2022-03-18"})
+                self.assertTrue(generate_readme.is_inactive(refreshed[0], date(2026, 10, 19)))
+
+    def test_first_refresh_does_not_keep_a_date_for_a_changed_repository_slug(self):
+        entries = [{"name": "X", "github": "a/x", "_meta": {"last_commit": "2022-03-18"}}]
+        refreshed = self.refresh(entries, date(2026, 10, 19), {
+            "a/x": ({"id": 1, "stars": 2, "_commit_lookup_failed": True}, "new/x")
+        })
+        self.assertEqual(refreshed[0]["github"], "new/x")
+        self.assertEqual(refreshed[0]["_meta"], {"id": 1, "stars": 2})
 
     def test_successfully_empty_commit_lookup_clears_the_previous_date(self):
         entries = [{"name": "X", "github": "a/x", "_meta": {"id": 1, "last_commit": "2026-01-02"}}]

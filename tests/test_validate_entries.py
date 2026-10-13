@@ -14,7 +14,9 @@ class DroppedDataTest(unittest.TestCase):
     def check(self, files: dict[str, str]) -> bool:
         with tempfile.TemporaryDirectory() as tmp:
             for name, text in files.items():
-                (Path(tmp) / name).write_text(text, encoding="utf-8")
+                path = Path(tmp) / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(text, encoding="utf-8")
             return validate_entries.validate_entries(tmp)
 
     def test_valid_category(self):
@@ -24,7 +26,10 @@ class DroppedDataTest(unittest.TestCase):
         self.assertFalse(self.check({"libraries.yaml": "name: Tool\ngithub: o/r\n"}))  # missing "- "
 
     def test_file_that_is_not_a_category(self):
-        self.assertFalse(self.check({"library.yaml": "- name: Tool\n  github: o/r\n"}))
+        for filename in ("library.yaml", "libraries.yml", "library.yml",
+                         "nested/libraries.yaml", "nested/libraries.yml"):
+            with self.subTest(filename=filename):
+                self.assertFalse(self.check({filename: "- name: Tool\n  github: o/r\n"}))
 
     def test_empty_file_is_not_a_list(self):
         self.assertFalse(self.check({"libraries.yaml": ""}))

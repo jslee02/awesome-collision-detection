@@ -166,7 +166,9 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None
             # Only transient failures for the same repository retain the last known commit date.
             commit_lookup_failed = meta.pop("_commit_lookup_failed", False)
             if (commit_lookup_failed and previous.get("last_commit")
-                    and meta.get("id") is not None and previous.get("id") == meta["id"]):
+                    and meta.get("id") is not None
+                    and (previous.get("id") == meta["id"]
+                         or (previous.get("id") is None and full_name.lower() == github.lower()))):
                 meta["last_commit"] = previous["last_commit"]
             entry["_meta"] = meta
             if full_name.lower() != github.lower():

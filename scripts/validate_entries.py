@@ -45,7 +45,7 @@ def validate_entries(data_dir=None):
         return False
 
     # Find all YAML files
-    yaml_files = sorted(data_dir.glob("*.yaml"))
+    yaml_files = sorted([*data_dir.rglob("*.yaml"), *data_dir.rglob("*.yml")])
     if not yaml_files:
         print(f"WARNING: No YAML files found in {data_dir}")
         return True
@@ -55,9 +55,10 @@ def validate_entries(data_dir=None):
     total_errors = 0
 
     for yaml_file in yaml_files:
-        if yaml_file.name not in categories:
+        filename = yaml_file.relative_to(data_dir).as_posix()
+        if filename not in categories:
             # The generator reads only registered categories, so these entries would vanish.
-            print(f"ERROR: {yaml_file.name} is not a category in scripts/generate_readme.py SECTIONS",
+            print(f"ERROR: {filename} is not a category in scripts/generate_readme.py SECTIONS",
                   file=sys.stderr)
             all_valid = False
             continue
