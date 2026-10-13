@@ -33,6 +33,7 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 * 🟢 [coal (HPP-FCL)](https://github.com/coal-library/coal) - Collision detection and distance query library derived from HPP-FCL. [⭐ 650](https://github.com/coal-library/coal)
 * 🟢 [python-fcl](https://github.com/BerkeleyAutomation/python-fcl) - Python bindings for FCL collision, distance, and continuous collision queries. [⭐ 271](https://github.com/BerkeleyAutomation/python-fcl)
 * 🟢 [pytorch_volumetric](https://github.com/UM-ARM-Lab/pytorch_volumetric) - PyTorch utilities for volumetric signed distance fields and differentiable collision queries. [⭐ 250](https://github.com/UM-ARM-Lab/pytorch_volumetric)
+* 🟡 [DifferentiableCollisions.jl](https://github.com/kevin-tracy/DifferentiableCollisions.jl) - Julia implementation of DCOL for differentiable collision queries between convex primitives. [⭐ 239](https://github.com/kevin-tracy/DifferentiableCollisions.jl)
 * 🟢 [OpenGJK](https://www.mattiamontanari.com/opengjk/) - GJK-based minimum distance library with bindings for multiple languages. [⭐ 206](https://github.com/MattiaMontanari/openGJK)
 * 🟢 [Tight-Inclusion](https://continuous-collision-detection.github.io/tight_inclusion/) - Conservative continuous collision detection library with minimum separation support. [⭐ 161](https://github.com/Continuous-Collision-Detection/Tight-Inclusion)
 * 🟢 [Kraft](https://github.com/BeRo1985/kraft) - Object Pascal physics engine with discrete and optional continuous collision detection. [⭐ 132](https://github.com/BeRo1985/kraft)
@@ -65,6 +66,7 @@ _Geometry processing libraries useful for collision-ready meshes and convex appr
 * 🟢 [libigl](https://libigl.github.io/) - A simple C++ geometry processing library. [⭐ 5.1k](https://github.com/libigl/libigl)
 * 🟢 [CoACD](https://colin97.github.io/CoACD/) - Approximate convex decomposition for collision-aware mesh approximation. [⭐ 1.2k](https://github.com/SarahWeiii/CoACD)
 * 🟢 cinolib - A generic programming header only C++ library for processing polygonal and polyhedral meshes. [⭐ 1.1k](https://github.com/mlivesu/cinolib)
+* 🟢 [CuACD](https://github.com/eliphatfs/cuacd) - GPU-accelerated approximate convex decomposition for collision-ready meshes. [⭐ 45](https://github.com/eliphatfs/cuacd)
 
 <details>
 <summary>Inactive (1): archived or no commits for 3+ years</summary>
