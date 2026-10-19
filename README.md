@@ -27,7 +27,7 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 * 🟢 [Box2D](https://box2d.org) - 2D physics engine with collision, distance, ray cast, and shape cast queries. [⭐ 10.4k](https://github.com/erincatto/box2d)
 * 🟢 tinyc2 - Single-header 2D collision detection library for primitive shapes. [⭐ 5.1k](https://github.com/RandyGaul/tinyheaders)
 * 🟢 [PhysX](https://nvidia-omniverse.github.io/PhysX/) - NVIDIA physics SDK with scene queries, contact generation, and collision detection. [⭐ 4.8k](https://github.com/NVIDIA-Omniverse/PhysX)
-* 🟡 [ReactPhysics3d](http://www.reactphysics3d.com/) - C++ 3D physics engine with rigid body collision detection. [⭐ 1.8k](https://github.com/DanielChappuis/reactphysics3d)
+* 🟡 [ReactPhysics3d](https://www.reactphysics3d.com/) - C++ 3D physics engine with rigid body collision detection. [⭐ 1.8k](https://github.com/DanielChappuis/reactphysics3d)
 * 🟢 [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library for collision, distance, and continuous collision queries. [⭐ 1.8k](https://github.com/flexible-collision-library/fcl)
 * 🟢 [Parry](https://github.com/dimforge/parry) - Rust collision detection and geometric query library from Dimforge. [⭐ 879](https://github.com/dimforge/parry)
 * 🟢 [coal (HPP-FCL)](https://github.com/coal-library/coal) - Collision detection and distance query library derived from HPP-FCL. [⭐ 650](https://github.com/coal-library/coal)
@@ -36,7 +36,7 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 * 🟢 [OpenGJK](https://www.mattiamontanari.com/opengjk/) - GJK-based minimum distance library with bindings for multiple languages. [⭐ 206](https://github.com/MattiaMontanari/openGJK)
 * 🟢 [Tight-Inclusion](https://continuous-collision-detection.github.io/tight_inclusion/) - Conservative continuous collision detection library with minimum separation support. [⭐ 161](https://github.com/Continuous-Collision-Detection/Tight-Inclusion)
 * 🟢 [Kraft](https://github.com/BeRo1985/kraft) - Object Pascal physics engine with discrete and optional continuous collision detection. [⭐ 132](https://github.com/BeRo1985/kraft)
-* [ODE](http://www.ode.org/) - Open Dynamics Engine with rigid body simulation and collision detection. [[bitbucket](https://bitbucket.org/odedevs/ode)]
+* [ODE](https://ode.org/) - Open Dynamics Engine with rigid body simulation and collision detection. [[bitbucket](https://bitbucket.org/odedevs/ode)]
 
 > Some libraries, such as ODE and Bullet, are physics engines that can also be used as collision detection libraries.
 
@@ -52,9 +52,9 @@ _Collision detection, distance query, and proximity query libraries. See also [C
 * [JitterPhysics](https://github.com/mattleibow/jitterphysics) - C# rigid body physics engine with collision detection support. [⭐ 47](https://github.com/mattleibow/jitterphysics) · last commit 2021
 * OZCollide - Legacy collision detection library. [⭐ 4](https://github.com/jslee02/OZCollide) · last commit 2017
 * [ColDet](https://sourceforge.net/projects/coldet/) - 3D Collision Detection.
-* [GIMPACT](http://gimpact.sourceforge.net/) - Tools for geometry processing and collision detection.
+* [GIMPACT](https://gimpact.sourceforge.net/) - Tools for geometry processing and collision detection.
 * [OPCODE](http://www.codercorner.com/Opcode.htm) - Optimized Collision Detection.
-* [SOLID](http://solid.sourceforge.net/) - Collision detection of 3D objects undergoing rigid motion and deformation.
+* [SOLID](https://solid.sourceforge.net/) - Collision detection of 3D objects undergoing rigid motion and deformation.
 
 </details>
 
@@ -79,19 +79,19 @@ _Research papers on collision detection, distance and proximity queries, and sup
 
 #### Collision Detection and Distance Computation
 
-* GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al. [[pdf](https://hal.science/hal-04070039v1/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/colbench)]
-* Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/humanoid-path-planner/hpp-fcl), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
+* GJK++: Leveraging Acceleration Methods for Faster Collision Detection (2023), Montaut et al. [[pdf](https://hal.science/hal-04070039v1/document), [code](https://github.com/coal-library/coal), [benchmarks](https://github.com/lmontaut/colbench)]
+* Collision Detection Accelerated: An Optimization Perspective (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03662157/document), [code](https://github.com/coal-library/coal), [benchmarks](https://github.com/lmontaut/collision-detection-benchmark)]
 * A fast procedure for computing the distance between complex objects in three-dimensional space (1988) Gilbert, Johnson and Keerthi [[pdf](https://graphics.stanford.edu/courses/cs448b-00-winter/papers/gilbert.pdf)]
 
 #### Differentiable Collision Detection
 
-* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/humanoid-path-planner/hpp-fcl)]
+* Differentiable Collision Detection: a Randomized Smoothing Approach (2022), Montaut et al. [[pdf](https://hal.archives-ouvertes.fr/hal-03780482v2/document), [code](https://github.com/coal-library/coal)]
 
 #### Triangle-triangle Test
 
 * A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
 * Efficient triangle-triangle intersection test for OBB-based collision detection (2009), J.-W. Chang et al. [[pdf](http://ldc.usb.ve/~vtheok/cursos/ci6322/escogidos/Efficient%20triangle%E2%80%93triangleintersectiontestforOBB.pdf)]
-* A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf)]
+* A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al. [[pdf](https://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf)]
   * A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
 * Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al. [[pdf](https://hal.inria.fr/inria-00072100/document), [code](https://github.com/CGAL/cgal/blob/076c982dbf37cc244206fd7962e73360fb17ea47/Intersections_3/include/CGAL/Triangle_3_Triangle_3_do_intersect.h)]
 * A Fast Triangle-Triangle Intersecion Test (1997), T. Muller. [[pdf](http://web.stanford.edu/class/cs277/resources/papers/Moller1997b.pdf), [code](https://github.com/erich666/jgt-code/blob/master/Volume_02/Number_2/Moller1997b/tritri_isectline.c)]
@@ -111,7 +111,7 @@ _Research papers on collision detection, distance and proximity queries, and sup
 * Hierarchical hp-Adaptive Signed Distance Fields (2016), D. Koschier et al. [[pdf](https://pdfs.semanticscholar.org/0dac/60f8ebf218a5510799cab4c74c5bb1f276e9.pdf), [video](https://youtu.be/x_Iq2yM4FcA)]
 * Voxblox: Building 3d signed distance fields for planning (2016), H Oleynikova et al. [[pdf](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/128028/eth-50485-01.pdf), [code](https://github.com/ethz-asl/voxblox)]
 * Signed distance fields for polygon soup meshes (2014), H. Xu and Jernej Barbic. [[pdf](https://pdfs.semanticscholar.org/6247/71efeaff92c9826b9fa176e8c76a2def1d9f.pdf)]
-* Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al. [[pdf](https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf), [web](http://gamma.cs.unc.edu/SSV/)]
+* Fast Proximity Queries with Swept Sphere Volumes (1999), E. Larsen et al. [[pdf](https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf), [web](https://gamma.cs.unc.edu/SSV/)]
 
 #### Continuous Collision Detection
 
@@ -124,8 +124,8 @@ _Research papers on collision detection, distance and proximity queries, and sup
 #### Nearest Neighbor
 
 * Faster cover tree (2015), M. Izbicki et al. [[pdf](http://proceedings.mlr.press/v37/izbicki15.pdf), [code](https://github.com/manzilzaheer/CoverTree)]
-* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf), [code](https://github.com/mariusmuja/flann)]
-* Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](http://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
+* Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration (2009), M. Muja and D. Lowe. [[pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf), [code](https://github.com/flann-lib/flann)]
+* Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al. [[pdf](https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf), [web](https://hunch.net/~jl/projects/cover_tree/cover_tree.html), [code](https://github.com/DNCrane/Cover-Tree)]
 
 #### Comprehensive Collision Detection Library
 
@@ -140,8 +140,8 @@ _Research papers on collision detection, distance and proximity queries, and sup
 
 _Books on collision detection algorithms and their implementation._
 
-* Real-Time Collision Detection, CRC Press 2004 ([amazon](http://www.amazon.com/Real-Time-Collision-Detection-Interactive-Technology/dp/1558607323/ref=sr_1_1?s=books&ie=UTF8&qid=1463804277&sr=1-1&keywords=real+time+collision+detection))
-* Collision Detection in Interactive 3D Environments, CRC Press 2003 ([amazon](http://www.amazon.com/Collision-Detection-Interactive-Environments-Technology/dp/155860801X))
+* Real-Time Collision Detection, CRC Press 2004 ([amazon](https://www.amazon.com/Real-Time-Collision-Detection-Interactive-Technology/dp/1558607323/ref=sr_1_1?s=books&ie=UTF8&qid=1463804277&sr=1-1&keywords=real+time+collision+detection))
+* Collision Detection in Interactive 3D Environments, CRC Press 2003 ([amazon](https://www.amazon.com/Collision-Detection-Interactive-Environments-Technology/dp/155860801X))
 
 ## [Articles](#contents)
 
@@ -162,15 +162,15 @@ _Articles, talks, tutorials, and blog posts about collision detection and relate
 #### Narrow-phase
 
 * [Algorithm table for narrowphase algorithms](http://www.realtimerendering.com/intersections.html)
-* [3D Collision detection](http://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
+* [3D Collision detection](https://www.miguelcasillas.com/?mcportfolio=collision-detection-c) by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
 * [Collision Detection](http://www.jeffreythompson.org/collision-detection/) ([code](https://github.com/jeffThompson/CollisionDetection)) by Jeff Thompson - This book explains the algorithms behind those collisions using basic shapes like circles, rectangles, and lines so you can implement them into your own projects.
-* [Note: The Gibert-Jonson-Keerthi algorithm](http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
+* [Note: The Gibert-Jonson-Keerthi algorithm](https://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf) by Christer Ericson
 
 #### Space Partitioning
 
 * [Benchmark of various spatial data structures for collision detection](https://github.com/ttvd/spatial-collision-datastructures)
 * Bounding volume hierarchy
-  * [Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring](http://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf) ([paper](http://dl.acm.org/citation.cfm?id=2790065), [code](https://github.com/leonardo-domingues/atrbvh)) by Leonardo R. Domingues and Helio Pedrini.
+  * [Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring](https://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf) ([paper](http://dl.acm.org/citation.cfm?id=2790065), [code](https://github.com/leonardo-domingues/atrbvh)) by Leonardo R. Domingues and Helio Pedrini.
   * [Dynamic AABB Tree](http://www.randygaul.net/2013/08/06/dynamic-aabb-tree/) by [Randy Gaul](http://www.randygaul.net/about/)
   * [Efficient BVH Construction via Approximate Agglomerative Clustering](http://dl.acm.org/citation.cfm?id=2492054) ([pdf](http://repository.cmu.edu/cgi/viewcontent.cgi?article=3602&context=compsci)) by Yan Gu et al.
   * [Octree vs BVH](http://thomasdiewald.com/blog/?p=1488) by [Thomas Diewald](http://thomasdiewald.com/blog/?page_id=14)
