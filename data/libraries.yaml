@@ -240,7 +240,7 @@
     language: Rust
 - name: ODE
   _subsection: Active
-  url: http://www.ode.org/
+  url: https://ode.org/
   description: Open Dynamics Engine with rigid body simulation and collision detection.
   shapes:
   - Sphere
@@ -376,7 +376,7 @@
     language: Python
 - name: ReactPhysics3d
   _subsection: Active
-  url: http://www.reactphysics3d.com/
+  url: https://www.reactphysics3d.com/
   description: C++ 3D physics engine with rigid body collision detection.
   languages:
   - C++
@@ -447,7 +447,7 @@
   description: 3D Collision Detection.
   _subsection: Inactive
 - name: GIMPACT
-  url: http://gimpact.sourceforge.net/
+  url: https://gimpact.sourceforge.net/
   description: Tools for geometry processing and collision detection.
   _subsection: Inactive
 - name: OPCODE
@@ -465,6 +465,6 @@
     license: LGPL-2.1
     language: C++
 - name: SOLID
-  url: http://solid.sourceforge.net/
+  url: https://solid.sourceforge.net/
   description: Collision detection of 3D objects undergoing rigid motion and deformation.
   _subsection: Inactive

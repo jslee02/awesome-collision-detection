@@ -29,7 +29,7 @@
   url: http://www.realtimerendering.com/intersections.html
   _subsection: Narrow-phase
 - name: 3D Collision detection
-  url: http://www.miguelcasillas.com/?mcportfolio=collision-detection-c
+  url: https://www.miguelcasillas.com/?mcportfolio=collision-detection-c
   description: by [Miguel Casillas](http://www.miguelcasillas.com/?page_id=451)
   _subsection: Narrow-phase
 - name: Collision Detection
@@ -41,7 +41,7 @@
     url: https://github.com/jeffThompson/CollisionDetection
   _subsection: Narrow-phase
 - name: 'Note: The Gibert-Jonson-Keerthi algorithm'
-  url: http://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf
+  url: https://realtimecollisiondetection.net/pubs/SIGGRAPH04_Ericson_GJK_notes.pdf
   description: by Christer Ericson
   _subsection: Narrow-phase
 - name: Benchmark of various spatial data structures for collision detection
@@ -52,7 +52,7 @@
   _type: header
 - _indent: 1
   name: Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring
-  url: http://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf
+  url: https://www.highperformancegraphics.org/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf
   description: by Leonardo R. Domingues and Helio Pedrini.
   links:
   - label: paper
