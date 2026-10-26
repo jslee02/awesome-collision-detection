@@ -38,8 +38,8 @@
   badge_github: erincatto/box2d
   _meta:
     id: 32222044
-    stars: 10410
-    last_commit: '2026-10-04'
+    stars: 10451
+    last_commit: '2026-10-20'
     license: MIT
     language: C
 - name: Bullet
@@ -54,7 +54,7 @@
   badge_github: bulletphysics/bullet3
   _meta:
     id: 1605598
-    stars: 14772
+    stars: 14817
     last_commit: '2026-10-09'
     license: Other
     language: C++
@@ -104,8 +104,8 @@
   badge_github: flexible-collision-library/fcl
   _meta:
     id: 5875030
-    stars: 1761
-    last_commit: '2026-09-09'
+    stars: 1767
+    last_commit: '2026-10-21'
     license: Other
     language: C++
 - name: coal (HPP-FCL)
@@ -134,8 +134,8 @@
   badge_github: humanoid-path-planner/hpp-fcl
   _meta:
     id: 27596602
-    stars: 650
-    last_commit: '2026-10-08'
+    stars: 658
+    last_commit: '2026-10-26'
     license: Other
     language: C++
 - name: JitterPhysics
@@ -176,8 +176,8 @@
   badge_github: BeRo1985/kraft
   _meta:
     id: 37377686
-    stars: 132
-    last_commit: '2026-10-11'
+    stars: 133
+    last_commit: '2026-10-24'
     language: Pascal
 - name: libccd
   _subsection: Active
@@ -190,7 +190,7 @@
   badge_github: danfis/libccd
   _meta:
     id: 5603558
-    stars: 652
+    stars: 653
     last_commit: '2018-12-22'
     license: Other
     language: C
@@ -219,8 +219,8 @@
   badge_github: google-deepmind/mujoco
   _meta:
     id: 400501136
-    stars: 15630
-    last_commit: '2026-10-12'
+    stars: 15902
+    last_commit: '2026-10-26'
     license: Apache-2.0
     language: C++
 - name: ncollide
@@ -230,11 +230,11 @@
   languages:
   - Rust
   license: BSD-3-Clause
-  github: sebcrozet/ncollide
+  github: dimforge/ncollide
   badge_github: sebcrozet/ncollide
   _meta:
     id: 10066282
-    stars: 925
+    stars: 926
     last_commit: '2022-03-18'
     license: Apache-2.0
     language: Rust
@@ -271,7 +271,7 @@
   badge_github: MattiaMontanari/openGJK
   _meta:
     id: 146979600
-    stars: 206
+    stars: 209
     last_commit: '2026-04-30'
     license: GPL-3.0
     language: C++
@@ -286,7 +286,7 @@
   badge_github: dimforge/parry
   _meta:
     id: 322360701
-    stars: 879
+    stars: 885
     last_commit: '2026-10-06'
     license: Apache-2.0
     language: Rust
@@ -314,8 +314,8 @@
   badge_github: NVIDIA-Omniverse/PhysX
   _meta:
     id: 545381143
-    stars: 4787
-    last_commit: '2026-10-09'
+    stars: 4814
+    last_commit: '2026-10-15'
     license: BSD-3-Clause
     language: C++
 - name: python-fcl
@@ -370,7 +370,7 @@
   badge_github: UM-ARM-Lab/pytorch_volumetric
   _meta:
     id: 604436894
-    stars: 250
+    stars: 252
     last_commit: '2026-03-26'
     license: MIT
     language: Python
@@ -385,7 +385,7 @@
   badge_github: DanielChappuis/reactphysics3d
   _meta:
     id: 10272113
-    stars: 1774
+    stars: 1778
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -407,7 +407,7 @@
   badge_github: Continuous-Collision-Detection/Tight-Inclusion
   _meta:
     id: 297984949
-    stars: 161
+    stars: 160
     last_commit: '2026-08-06'
     license: MIT
     language: C++
@@ -419,11 +419,11 @@
   languages:
   - C/C++
   license: Zlib
-  github: RandyGaul/tinyheaders
+  github: RandyGaul/cute_headers
   badge_github: RandyGaul/tinyheaders
   _meta:
     id: 60436054
-    stars: 5086
+    stars: 5094
     last_commit: '2026-08-05'
     license: Other
     language: C
