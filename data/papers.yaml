@@ -3,7 +3,7 @@
   - label: pdf
     url: https://hal.science/hal-04070039v1/document
   - label: code
-    url: https://github.com/humanoid-path-planner/hpp-fcl
+    url: https://github.com/coal-library/coal
   - label: benchmarks
     url: https://github.com/lmontaut/colbench
   _subsection: Collision Detection and Distance Computation
@@ -12,7 +12,7 @@
   - label: pdf
     url: https://hal.archives-ouvertes.fr/hal-03662157/document
   - label: code
-    url: https://github.com/humanoid-path-planner/hpp-fcl
+    url: https://github.com/coal-library/coal
   - label: benchmarks
     url: https://github.com/lmontaut/collision-detection-benchmark
   _subsection: Collision Detection and Distance Computation
@@ -27,7 +27,7 @@
   - label: pdf
     url: https://hal.archives-ouvertes.fr/hal-03780482v2/document
   - label: code
-    url: https://github.com/humanoid-path-planner/hpp-fcl
+    url: https://github.com/coal-library/coal
   _subsection: Differentiable Collision Detection
 - name: A faster triangle-to-triangle intersection test algorithm (2013), L.-Y. Wei.
   _subsection: Triangle-triangle Test
@@ -39,7 +39,7 @@
 - name: A fast triangle to triangle intersection test for collision detection (2006), O. Tropp et al.
   links:
   - label: pdf
-    url: http://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf
+    url: https://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf
   _subsection: Triangle-triangle Test
   notes:
   - A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
@@ -113,7 +113,7 @@
   - label: pdf
     url: https://www.researchgate.net/profile/Dinesh_Manocha/publication/2318075_Fast_Proximity_Queries_with_Swept_Sphere_Volumes/links/54ecdc250cf2465f53305253/Fast-Proximity-Queries-with-Swept-Sphere-Volumes.pdf
   - label: web
-    url: http://gamma.cs.unc.edu/SSV/
+    url: https://gamma.cs.unc.edu/SSV/
   _subsection: Proximity Query / Signed Distance Field
 - name: Hierarchical and Controlled Advancement for Continuous Collision Detection of Rigid and Articulated Models (2013),
     M. Tang et al.
@@ -161,14 +161,14 @@
   - label: pdf
     url: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.1721&rep=rep1&type=pdf
   - label: code
-    url: https://github.com/mariusmuja/flann
+    url: https://github.com/flann-lib/flann
   _subsection: Nearest Neighbor
 - name: Cover Tree for Nearest Neighbor (2006), A. Beygelzimer et al.
   links:
   - label: pdf
     url: https://homes.cs.washington.edu/~sham/papers/ml/cover_tree.pdf
   - label: web
-    url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
+    url: https://hunch.net/~jl/projects/cover_tree/cover_tree.html
   - label: code
     url: https://github.com/DNCrane/Cover-Tree
   _subsection: Nearest Neighbor
