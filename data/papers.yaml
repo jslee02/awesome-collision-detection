@@ -42,7 +42,7 @@
     url: https://webee.technion.ac.il/~ayellet/Ps/TroppTalShimshoni.pdf
   _subsection: Triangle-triangle Test
   notes:
-  - A failure case was reported in [Stack Overflow](http://stackoverflow.com/a/29563443/3122234).
+  - A failure case was reported in [Stack Overflow](https://stackoverflow.com/a/29563443/3122234).
 - name: Faster Triangle-Triangle Intersection Tests (2006), O. Devillers et al.
   links:
   - label: pdf
